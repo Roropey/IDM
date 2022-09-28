@@ -1,0 +1,35 @@
+import 'SimplePDL.ecore'
+
+package simplepdl
+
+context Process
+inv warningSeverity: false
+inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
+/*inv errorSeverity: null*/
+
+context Process
+inv Noms('Les noms de deux activités différentes de ' + self.name + ' sont dentiques.'):
+	self.processElements->select(p:ProcessElement | p.oclIsKindOf(WorkDefinition))
+						->collect(p:ProcessElement | p.oclAsType(WorkDefinition))
+						->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
+
+context WorkSequence
+inv Reflexivite('Dépendance réflexive entre ' + self.predecessor.name + ' et ' + self.successor.name + '.'):
+	self.predecessor <> self.successor
+	
+						
+context Process
+inv validName('Invalid name: ' + self.name):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+context WorkDefinition
+inv taillNomInv('Le nom de l\'activité ' + self.name + ' comporte moins de deux lettres.'): self.name.size() > 1
+
+context WorkDefinition
+inv nomActivite('le nom de l\'activité '+self.name+'n\'est pas bien composé.'):self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+context WorkDefinition
+inv relationActivite('L\'activité ' + self.name + 'est liée à une ressource qui n\'est pas liée à elle'):
+	self.ressource.work.name = self.name
+
+endpackage
