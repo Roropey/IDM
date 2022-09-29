@@ -1,11 +1,11 @@
 import 'SimplePDL.ecore'
 
 package simplepdl
-
+/*
 context Process
 inv warningSeverity: false
 inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
-/*inv errorSeverity: null*/
+inv errorSeverity: null*/
 
 context Process
 inv Noms('Les noms de deux activités différentes de ' + self.name + ' sont dentiques.'):
@@ -19,17 +19,21 @@ inv Reflexivite('Dépendance réflexive entre ' + self.predecessor.name + ' et '
 	
 						
 context Process
-inv validName('Invalid name: ' + self.name):
+inv validName('Invalid name: ' + self.name+ '.'):
 	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
 
 context WorkDefinition
 inv taillNomInv('Le nom de l\'activité ' + self.name + ' comporte moins de deux lettres.'): self.name.size() > 1
 
 context WorkDefinition
-inv nomActivite('le nom de l\'activité '+self.name+'n\'est pas bien composé.'):self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+inv nomActivite('le nom de l\'activité '+self.name+' n\'est pas bien composé.'):self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
 
 context WorkDefinition
-inv relationActivite('L\'activité ' + self.name + 'est liée à une ressource qui n\'est pas liée à elle'):
+inv relationActivite('L\'activité ' + self.name + ' utilise une ressource qui n\'est pas liée à elle.'):
 	self.ressource.work.name = self.name
+	
+context Ressource
+inv relationUtilisation('La ressource ' + self.name + ' est utilisé par une activité qui n\'est pas liée à elle.'):
+	self.work.ressource.name = self.name
 
 endpackage
