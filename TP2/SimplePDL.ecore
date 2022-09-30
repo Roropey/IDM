@@ -18,8 +18,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="linksToSuccessors" upperBound="-1"
         eType="#//WorkSequence" eOpposite="#//WorkSequence/predecessor"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ressource" upperBound="-1"
-        eType="#//Ressource" eOpposite="#//Ressource/work"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="askedRessource" upperBound="-1"
+        eType="#//AskedRessource" containment="true" eOpposite="#//AskedRessource/workActivity"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="WorkSequence" eSuperTypes="#//ProcessElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="linkType" lowerBound="1"
@@ -36,8 +36,17 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Ressource" eSuperTypes="#//ProcessElement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="work" eType="#//WorkDefinition"
-        eOpposite="#//WorkDefinition/ressource"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stock" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="work" upperBound="-1" eType="#//AskedRessource"
+        eOpposite="#//AskedRessource/ressource"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AskedRessource" eSuperTypes="#//ProcessElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ressource" lowerBound="1"
+        eType="#//Ressource" eOpposite="#//Ressource/work"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="workActivity" lowerBound="1"
+        eType="#//WorkDefinition" eOpposite="#//WorkDefinition/askedRessource"/>
   </eClassifiers>
 </ecore:EPackage>

@@ -1,6 +1,27 @@
 import 'SimplePDL.ecore'
 
 package simplepdl
+
+	/*
+	 * context Process
+	 * inv warningSeverity: false
+	 * inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
+	 * inv errorSeverity: null
+	 */
+
+	/*
+	 * context Process
+	 * inv warningSeverity: false
+	 * inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
+	 * inv errorSeverity: null
+	 */
+
+	/*
+	 * context Process
+	 * inv warningSeverity: false
+	 * inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
+	 * inv errorSeverity: null
+	 */
 /*
 context Process
 inv warningSeverity: false
@@ -8,7 +29,7 @@ inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): 
 inv errorSeverity: null*/
 
 context Process
-inv Noms('Les noms de deux activités différentes de ' + self.name + ' sont dentiques.'):
+inv NomsActivites('Les noms de deux activités différentes de ' + self.name + ' sont dentiques.'):
 	self.processElements->select(p:ProcessElement | p.oclIsKindOf(WorkDefinition))
 						->collect(p:ProcessElement | p.oclAsType(WorkDefinition))
 						->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
@@ -16,7 +37,14 @@ inv Noms('Les noms de deux activités différentes de ' + self.name + ' sont den
 context WorkSequence
 inv Reflexivite('Dépendance réflexive entre ' + self.predecessor.name + ' et ' + self.successor.name + '.'):
 	self.predecessor <> self.successor
-	
+
+	/*
+	 * context Process
+	 * inv warningSeverity: false
+	 * inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
+	 * inv errorSeverity: null
+	 */
+
 						
 context Process
 inv validName('Invalid name: ' + self.name+ '.'):
@@ -26,14 +54,22 @@ context WorkDefinition
 inv taillNomInv('Le nom de l\'activité ' + self.name + ' comporte moins de deux lettres.'): self.name.size() > 1
 
 context WorkDefinition
-inv nomActivite('le nom de l\'activité '+self.name+' n\'est pas bien composé.'):self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+inv nomActivite('le nom de l\'activité '+self.name+' n\'est pas bien composé.'): self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
 
-context WorkDefinition
-inv relationActivite('L\'activité ' + self.name + ' utilise une ressource qui n\'est pas liée à elle.'):
-	self.ressource.work.name = self.name
-	
+
 context Ressource
-inv relationUtilisation('La ressource ' + self.name + ' est utilisé par une activité qui n\'est pas liée à elle.'):
-	self.work.ressource.name = self.name
+inv stockPositif('La ressource '+self.name+' a un stock négatif.'): self.stock >= 0
+
+context Process
+inv NomsRessources('Les noms de deux ressources différentes de ' + self.name + ' sont dentiques.'):
+	self.processElements->select(p:ProcessElement | p.oclIsKindOf(Ressource))
+						->collect(p:ProcessElement | p.oclAsType(Ressource))
+						->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
+						
+context Ressource
+inv nomRessource('Le nom de la ressource '+self.name+' n\'est pas bien composé.'):self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+context AskedRessource
+inv demandePositif('L\'activité demande une quantité négative.'): self.quantity>=0
 
 endpackage

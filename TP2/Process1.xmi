@@ -5,4 +5,16 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:simplepdl="http://simplepdl"
     xsi:schemaLocation="http://simplepdl SimplePDL.ecore"
-    name="test"/>
+    name="test">
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      name="Activite 1">
+    <askedRessource
+        ressource="//@processElements.1"
+        quantity="5"/>
+  </processElements>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      name="Ressource 1"
+      stock="3"/>
+</simplepdl:Process>
