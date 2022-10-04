@@ -9,25 +9,6 @@ package simplepdl
 	 * inv errorSeverity: null
 	 */
 
-	/*
-	 * context Process
-	 * inv warningSeverity: false
-	 * inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
-	 * inv errorSeverity: null
-	 */
-
-	/*
-	 * context Process
-	 * inv warningSeverity: false
-	 * inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
-	 * inv errorSeverity: null
-	 */
-/*
-context Process
-inv warningSeverity: false
-inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
-inv errorSeverity: null*/
-
 context Process
 inv NomsActivites('Les noms de deux activités différentes de ' + self.name + ' sont dentiques.'):
 	self.processElements->select(p:ProcessElement | p.oclIsKindOf(WorkDefinition))
@@ -37,13 +18,6 @@ inv NomsActivites('Les noms de deux activités différentes de ' + self.name + '
 context WorkSequence
 inv Reflexivite('Dépendance réflexive entre ' + self.predecessor.name + ' et ' + self.successor.name + '.'):
 	self.predecessor <> self.successor
-
-	/*
-	 * context Process
-	 * inv warningSeverity: false
-	 * inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
-	 * inv errorSeverity: null
-	 */
 
 						
 context Process
