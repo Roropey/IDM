@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pivot:Model [
+<!ENTITY _0 "petriNet.ecore.oclas">
+<!ENTITY _1 "http://www.eclipse.org/ocl/2015/Library.oclas">
+<!ENTITY _2 "http://www.eclipse.org/emf/2002/Ecore.oclas">
+]>
+<pivot:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pivot="http://www.eclipse.org/ocl/2015/Pivot"
+    xsi:schemaLocation="http://www.eclipse.org/ocl/2015/Pivot java://org.eclipse.ocl.pivot.PivotPackage" xmi:id="AAAAA" name="petriNetOCL.ocl" externalURI="platform:/resource/PetriNet/model/petriNetOCL.ocl" xmiidVersion="1">
+  <ownedImports importedNamespace="pivot:Model &_0;#AAAAA" xmiidVersion="1"/>
+  <ownedPackages xmi:id="h+Jom" name="petriNet" URI="http://www.example.org/ecore">
+    <ownedClasses xmi:id="Ug1Xv" name="Arc">
+      <ownedInvariants xmi:id="fsZJB" name="poidsPositif">
+        <ownedSpecification xsi:type="pivot:ExpressionInOCL" type="pivot:PrimitiveType &_1;#XEMMs" body="Tuple {&#xA;&#x9;message : String = 'Poids de l\'arc entre '+self.place.name+' et '+self.transition.name+' négatif.',&#xA;&#x9;status : Boolean = &#x9;self.poids>=0&#xA;&#xA;&#xA;}.status">
+          <ownedBody xsi:type="pivot:PropertyCallExp" type="pivot:PrimitiveType &_1;#XEMMs" referredProperty="#NklaF">
+            <ownedSource xsi:type="pivot:TupleLiteralExp" type="#,5eVD">
+              <ownedParts name="message" type="pivot:PrimitiveType &_1;#AlwVZ">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                  <ownedSource xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                    <ownedSource xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                      <ownedSource xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                        <ownedSource xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="Poids de l'arc entre "/>
+                        <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#IrjKy">
+                          <ownedSource xsi:type="pivot:PropertyCallExp" name="place" type="pivot:Class &_0;#J7D+z" referredProperty="&_0;#jl3gi">
+                            <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#Ug1Xv" referredVariable="#HURH+"/>
+                          </ownedSource>
+                        </ownedArguments>
+                      </ownedSource>
+                      <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol=" et "/>
+                    </ownedSource>
+                    <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#eElUd">
+                      <ownedSource xsi:type="pivot:PropertyCallExp" name="transition" type="pivot:Class &_0;#X95a," referredProperty="&_0;#x2gY1">
+                        <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#Ug1Xv" referredVariable="#HURH+"/>
+                      </ownedSource>
+                    </ownedArguments>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol=" négatif."/>
+                </ownedInit>
+              </ownedParts>
+              <ownedParts name="status" type="pivot:PrimitiveType &_1;#XEMMs">
+                <ownedInit xsi:type="pivot:OperationCallExp" name=">=" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#6crvY">
+                  <ownedSource xsi:type="pivot:PropertyCallExp" name="poids" type="pivot:DataType &_2;#1EhKl" referredProperty="&_0;#1SPhi">
+                    <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#Ug1Xv" referredVariable="#HURH+"/>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:IntegerLiteralExp" type="pivot:PrimitiveType &_1;#tYtCd" integerSymbol="0"/>
+                </ownedInit>
+              </ownedParts>
+            </ownedSource>
+          </ownedBody>
+          <ownedContext xsi:type="pivot:ParameterVariable" xmi:id="HURH+" name="self" type="pivot:Class &_0;#Ug1Xv"/>
+        </ownedSpecification>
+      </ownedInvariants>
+    </ownedClasses>
+    <ownedClasses xmi:id="pg0+Q" name="PetriNet">
+      <ownedInvariants xmi:id="deppS" name="NomsPlace">
+        <ownedSpecification xsi:type="pivot:ExpressionInOCL" type="pivot:PrimitiveType &_1;#XEMMs" body="Tuple {&#xA;&#x9;message : String = 'Les noms de deux places différentes de ' + self.name + ' sont identiques.',&#xA;&#x9;status : Boolean = &#xA;&#x9;self.petriElements->select(p:PetriElement | p.oclIsKindOf(Place))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;->collect(p:PetriElement | p.oclAsType(Place))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;->forAll(w1, w2 | w1 = w2 or w1.name &lt;> w2.name)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#xA;}.status">
+          <ownedBody xsi:type="pivot:PropertyCallExp" type="pivot:PrimitiveType &_1;#XEMMs" referredProperty="#NklaF">
+            <ownedSource xsi:type="pivot:TupleLiteralExp" type="#,5eVD">
+              <ownedParts name="message" type="pivot:PrimitiveType &_1;#AlwVZ">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                  <ownedSource xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                    <ownedSource xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="Les noms de deux places différentes de "/>
+                    <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#o6pRn">
+                      <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#pg0+Q" referredVariable="#1Vi2L"/>
+                    </ownedArguments>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol=" sont identiques."/>
+                </ownedInit>
+              </ownedParts>
+              <ownedParts name="status" type="pivot:PrimitiveType &_1;#XEMMs">
+                <ownedInit xsi:type="pivot:IteratorExp" name="forAll" isRequired="false" type="pivot:PrimitiveType &_1;#XEMMs" referredIteration="&_1;#YtmML">
+                  <ownedSource xsi:type="pivot:IteratorExp" name="collect" type="#ZaAGk" referredIteration="&_1;#jV1iE">
+                    <ownedSource xsi:type="pivot:IteratorExp" name="select" type="#0LtBo" referredIteration="&_1;#1ky8V">
+                      <ownedSource xsi:type="pivot:PropertyCallExp" name="petriElements" type="#0LtBo" referredProperty="&_0;#KbkPd">
+                        <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#pg0+Q" referredVariable="#1Vi2L"/>
+                      </ownedSource>
+                      <ownedBody xsi:type="pivot:OperationCallExp" name="oclBadOperation" isRequired="false" type="pivot:InvalidType &_1;#urQRp"
+                          referredOperation="&_1;#FGLX2">
+                        <ownedSource xsi:type="pivot:VariableExp" name="p" type="pivot:Class &_0;#IiFVo" referredVariable="#cQMpN"/>
+                      </ownedBody>
+                      <ownedIterators xsi:type="pivot:IteratorVariable" xmi:id="cQMpN" name="p" type="pivot:Class &_0;#IiFVo" representedParameter="&_1;#//@ownedPackages.0/@ownedClasses.27/@ownedOperations.21/@ownedIterators.0"/>
+                    </ownedSource>
+                    <ownedBody xsi:type="pivot:OperationCallExp" name="oclAsType" type="pivot:Class &_0;#J7D+z" referredOperation="&_1;#xOh0M">
+                      <ownedSource xsi:type="pivot:VariableExp" name="p" type="pivot:Class &_0;#IiFVo" referredVariable="#spvKB"/>
+                      <ownedArguments xsi:type="pivot:TypeExp" name="Place" type="pivot:Class &_1;#nZ3,I" referredType="pivot:Class &_0;#J7D+z"/>
+                    </ownedBody>
+                    <ownedIterators xsi:type="pivot:IteratorVariable" xmi:id="spvKB" name="p" type="pivot:Class &_0;#IiFVo" representedParameter="&_1;#//@ownedPackages.0/@ownedClasses.27/@ownedOperations.19/@ownedIterators.0"/>
+                  </ownedSource>
+                  <ownedBody xsi:type="pivot:OperationCallExp" name="or" isRequired="false" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#I9IYU">
+                    <ownedSource xsi:type="pivot:OperationCallExp" name="=" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#SYOvl">
+                      <ownedSource xsi:type="pivot:VariableExp" name="w1" type="pivot:Class &_0;#J7D+z" referredVariable="#mEGd8"/>
+                      <ownedArguments xsi:type="pivot:VariableExp" name="w2" type="pivot:Class &_0;#J7D+z" referredVariable="#nEGd8"/>
+                    </ownedSource>
+                    <ownedArguments xsi:type="pivot:OperationCallExp" name="&lt;>" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#Ap5cn">
+                      <ownedSource xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#IrjKy">
+                        <ownedSource xsi:type="pivot:VariableExp" name="w1" type="pivot:Class &_0;#J7D+z" referredVariable="#mEGd8"/>
+                      </ownedSource>
+                      <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#IrjKy">
+                        <ownedSource xsi:type="pivot:VariableExp" name="w2" type="pivot:Class &_0;#J7D+z" referredVariable="#nEGd8"/>
+                      </ownedArguments>
+                    </ownedArguments>
+                  </ownedBody>
+                  <ownedIterators xsi:type="pivot:IteratorVariable" xmi:id="mEGd8" name="w1" type="pivot:Class &_0;#J7D+z" representedParameter="&_1;#//@ownedPackages.0/@ownedClasses.25/@ownedOperations.36/@ownedIterators.0"/>
+                  <ownedIterators xsi:type="pivot:IteratorVariable" xmi:id="nEGd8" name="w2" type="pivot:Class &_0;#J7D+z" representedParameter="&_1;#//@ownedPackages.0/@ownedClasses.25/@ownedOperations.36/@ownedIterators.1"/>
+                </ownedInit>
+              </ownedParts>
+            </ownedSource>
+          </ownedBody>
+          <ownedContext xsi:type="pivot:ParameterVariable" xmi:id="1Vi2L" name="self" type="pivot:Class &_0;#pg0+Q"/>
+        </ownedSpecification>
+      </ownedInvariants>
+      <ownedInvariants xmi:id="Z2BHC" name="NomsTransition">
+        <ownedSpecification xsi:type="pivot:ExpressionInOCL" type="pivot:PrimitiveType &_1;#XEMMs" body="Tuple {&#xA;&#x9;message : String = 'Les noms de deux transitions différentes de ' + self.name + ' sont identiques.',&#xA;&#x9;status : Boolean = &#xA;&#x9;self.petriElements->select(p:PetriElement | p.oclIsKindOf(Transition))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;->collect(p:PetriElement | p.oclAsType(Transition))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;->forAll(w1, w2 | w1 = w2 or w1.name &lt;> w2.name)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#xA;}.status">
+          <ownedBody xsi:type="pivot:PropertyCallExp" type="pivot:PrimitiveType &_1;#XEMMs" referredProperty="#NklaF">
+            <ownedSource xsi:type="pivot:TupleLiteralExp" type="#,5eVD">
+              <ownedParts name="message" type="pivot:PrimitiveType &_1;#AlwVZ">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                  <ownedSource xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                    <ownedSource xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="Les noms de deux transitions différentes de "/>
+                    <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#o6pRn">
+                      <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#pg0+Q" referredVariable="#RtDLS"/>
+                    </ownedArguments>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol=" sont identiques."/>
+                </ownedInit>
+              </ownedParts>
+              <ownedParts name="status" type="pivot:PrimitiveType &_1;#XEMMs">
+                <ownedInit xsi:type="pivot:IteratorExp" name="forAll" isRequired="false" type="pivot:PrimitiveType &_1;#XEMMs" referredIteration="&_1;#YtmML">
+                  <ownedSource xsi:type="pivot:IteratorExp" name="collect" type="#3fJNf" referredIteration="&_1;#jV1iE">
+                    <ownedSource xsi:type="pivot:IteratorExp" name="select" type="#0LtBo" referredIteration="&_1;#1ky8V">
+                      <ownedSource xsi:type="pivot:PropertyCallExp" name="petriElements" type="#0LtBo" referredProperty="&_0;#KbkPd">
+                        <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#pg0+Q" referredVariable="#RtDLS"/>
+                      </ownedSource>
+                      <ownedBody xsi:type="pivot:OperationCallExp" name="oclBadOperation" isRequired="false" type="pivot:InvalidType &_1;#urQRp"
+                          referredOperation="&_1;#FGLX2">
+                        <ownedSource xsi:type="pivot:VariableExp" name="p" type="pivot:Class &_0;#IiFVo" referredVariable="#YOSq9"/>
+                      </ownedBody>
+                      <ownedIterators xsi:type="pivot:IteratorVariable" xmi:id="YOSq9" name="p" type="pivot:Class &_0;#IiFVo" representedParameter="&_1;#//@ownedPackages.0/@ownedClasses.27/@ownedOperations.21/@ownedIterators.0"/>
+                    </ownedSource>
+                    <ownedBody xsi:type="pivot:OperationCallExp" name="oclAsType" type="pivot:Class &_0;#X95a," referredOperation="&_1;#xOh0M">
+                      <ownedSource xsi:type="pivot:VariableExp" name="p" type="pivot:Class &_0;#IiFVo" referredVariable="#YqGFT"/>
+                      <ownedArguments xsi:type="pivot:TypeExp" name="Transition" type="pivot:Class &_1;#nZ3,I" referredType="pivot:Class &_0;#X95a,"/>
+                    </ownedBody>
+                    <ownedIterators xsi:type="pivot:IteratorVariable" xmi:id="YqGFT" name="p" type="pivot:Class &_0;#IiFVo" representedParameter="&_1;#//@ownedPackages.0/@ownedClasses.27/@ownedOperations.19/@ownedIterators.0"/>
+                  </ownedSource>
+                  <ownedBody xsi:type="pivot:OperationCallExp" name="or" isRequired="false" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#I9IYU">
+                    <ownedSource xsi:type="pivot:OperationCallExp" name="=" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#SYOvl">
+                      <ownedSource xsi:type="pivot:VariableExp" name="w1" type="pivot:Class &_0;#X95a," referredVariable="#CvgC+"/>
+                      <ownedArguments xsi:type="pivot:VariableExp" name="w2" type="pivot:Class &_0;#X95a," referredVariable="#DvgC+"/>
+                    </ownedSource>
+                    <ownedArguments xsi:type="pivot:OperationCallExp" name="&lt;>" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#Ap5cn">
+                      <ownedSource xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#eElUd">
+                        <ownedSource xsi:type="pivot:VariableExp" name="w1" type="pivot:Class &_0;#X95a," referredVariable="#CvgC+"/>
+                      </ownedSource>
+                      <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#eElUd">
+                        <ownedSource xsi:type="pivot:VariableExp" name="w2" type="pivot:Class &_0;#X95a," referredVariable="#DvgC+"/>
+                      </ownedArguments>
+                    </ownedArguments>
+                  </ownedBody>
+                  <ownedIterators xsi:type="pivot:IteratorVariable" xmi:id="CvgC+" name="w1" type="pivot:Class &_0;#X95a," representedParameter="&_1;#//@ownedPackages.0/@ownedClasses.25/@ownedOperations.36/@ownedIterators.0"/>
+                  <ownedIterators xsi:type="pivot:IteratorVariable" xmi:id="DvgC+" name="w2" type="pivot:Class &_0;#X95a," representedParameter="&_1;#//@ownedPackages.0/@ownedClasses.25/@ownedOperations.36/@ownedIterators.1"/>
+                </ownedInit>
+              </ownedParts>
+            </ownedSource>
+          </ownedBody>
+          <ownedContext xsi:type="pivot:ParameterVariable" xmi:id="RtDLS" name="self" type="pivot:Class &_0;#pg0+Q"/>
+        </ownedSpecification>
+      </ownedInvariants>
+      <ownedInvariants xmi:id="LmlPR" name="validNamePetriNet">
+        <ownedSpecification xsi:type="pivot:ExpressionInOCL" type="pivot:PrimitiveType &_1;#XEMMs" body="Tuple {&#xA;&#x9;message : String = 'Invalid name: ' + self.name+ '.',&#xA;&#x9;status : Boolean = &#xA;&#x9;self.name.matches('[A-Za-z_][A-Za-z0-9_]*')&#xA;&#xA;&#xA;}.status">
+          <ownedBody xsi:type="pivot:PropertyCallExp" type="pivot:PrimitiveType &_1;#XEMMs" referredProperty="#NklaF">
+            <ownedSource xsi:type="pivot:TupleLiteralExp" type="#,5eVD">
+              <ownedParts name="message" type="pivot:PrimitiveType &_1;#AlwVZ">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                  <ownedSource xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                    <ownedSource xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="Invalid name: "/>
+                    <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#o6pRn">
+                      <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#pg0+Q" referredVariable="#Tba4j"/>
+                    </ownedArguments>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="."/>
+                </ownedInit>
+              </ownedParts>
+              <ownedParts name="status" type="pivot:PrimitiveType &_1;#XEMMs">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="matches" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#otjl7">
+                  <ownedSource xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#o6pRn">
+                    <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#pg0+Q" referredVariable="#Tba4j"/>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="[A-Za-z_][A-Za-z0-9_]*"/>
+                </ownedInit>
+              </ownedParts>
+            </ownedSource>
+          </ownedBody>
+          <ownedContext xsi:type="pivot:ParameterVariable" xmi:id="Tba4j" name="self" type="pivot:Class &_0;#pg0+Q"/>
+        </ownedSpecification>
+      </ownedInvariants>
+    </ownedClasses>
+    <ownedClasses xmi:id="J7D+z" name="Place">
+      <ownedInvariants xmi:id="dJZpQ" name="validNamePlace">
+        <ownedSpecification xsi:type="pivot:ExpressionInOCL" type="pivot:PrimitiveType &_1;#XEMMs" body="Tuple {&#xA;&#x9;message : String = 'Invalid name: ' + self.name+ '.',&#xA;&#x9;status : Boolean = &#xA;&#x9;self.name.matches('[A-Za-z_][A-Za-z0-9_]*')&#xA;&#x9;&#xA;&#xA;}.status">
+          <ownedBody xsi:type="pivot:PropertyCallExp" type="pivot:PrimitiveType &_1;#XEMMs" referredProperty="#NklaF">
+            <ownedSource xsi:type="pivot:TupleLiteralExp" type="#,5eVD">
+              <ownedParts name="message" type="pivot:PrimitiveType &_1;#AlwVZ">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                  <ownedSource xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                    <ownedSource xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="Invalid name: "/>
+                    <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#IrjKy">
+                      <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#J7D+z" referredVariable="#1YvT+"/>
+                    </ownedArguments>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="."/>
+                </ownedInit>
+              </ownedParts>
+              <ownedParts name="status" type="pivot:PrimitiveType &_1;#XEMMs">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="matches" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#otjl7">
+                  <ownedSource xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#IrjKy">
+                    <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#J7D+z" referredVariable="#1YvT+"/>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="[A-Za-z_][A-Za-z0-9_]*"/>
+                </ownedInit>
+              </ownedParts>
+            </ownedSource>
+          </ownedBody>
+          <ownedContext xsi:type="pivot:ParameterVariable" xmi:id="1YvT+" name="self" type="pivot:Class &_0;#J7D+z"/>
+        </ownedSpecification>
+      </ownedInvariants>
+      <ownedInvariants xmi:id="BB6ju" name="jetonPositif">
+        <ownedSpecification xsi:type="pivot:ExpressionInOCL" type="pivot:PrimitiveType &_1;#XEMMs" body="Tuple {&#xA;&#x9;message : String = 'La place '+self.name+' a un nombre négatif de jetons.',&#xA;&#x9;status : Boolean = self.jeton>=0&#xA;&#xA;&#xA;}.status">
+          <ownedBody xsi:type="pivot:PropertyCallExp" type="pivot:PrimitiveType &_1;#XEMMs" referredProperty="#NklaF">
+            <ownedSource xsi:type="pivot:TupleLiteralExp" type="#,5eVD">
+              <ownedParts name="message" type="pivot:PrimitiveType &_1;#AlwVZ">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                  <ownedSource xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                    <ownedSource xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="La place "/>
+                    <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#IrjKy">
+                      <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#J7D+z" referredVariable="#5MBf4"/>
+                    </ownedArguments>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol=" a un nombre négatif de jetons."/>
+                </ownedInit>
+              </ownedParts>
+              <ownedParts name="status" type="pivot:PrimitiveType &_1;#XEMMs">
+                <ownedInit xsi:type="pivot:OperationCallExp" name=">=" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#6crvY">
+                  <ownedSource xsi:type="pivot:PropertyCallExp" name="jeton" type="pivot:DataType &_2;#1EhKl" referredProperty="&_0;#1ZC,3">
+                    <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#J7D+z" referredVariable="#5MBf4"/>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:IntegerLiteralExp" type="pivot:PrimitiveType &_1;#tYtCd" integerSymbol="0"/>
+                </ownedInit>
+              </ownedParts>
+            </ownedSource>
+          </ownedBody>
+          <ownedContext xsi:type="pivot:ParameterVariable" xmi:id="5MBf4" name="self" type="pivot:Class &_0;#J7D+z"/>
+        </ownedSpecification>
+      </ownedInvariants>
+    </ownedClasses>
+    <ownedClasses xmi:id="X95a," name="Transition">
+      <ownedInvariants xmi:id="vVpf2" name="validNameTransition">
+        <ownedSpecification xsi:type="pivot:ExpressionInOCL" type="pivot:PrimitiveType &_1;#XEMMs" body="Tuple {&#xA;&#x9;message : String = 'Invalid name: ' + self.name+ '.',&#xA;&#x9;status : Boolean = &#xA;&#x9;self.name.matches('[A-Za-z_][A-Za-z0-9_]*')&#xA;&#x9;&#xA;&#xA;}.status">
+          <ownedBody xsi:type="pivot:PropertyCallExp" type="pivot:PrimitiveType &_1;#XEMMs" referredProperty="#NklaF">
+            <ownedSource xsi:type="pivot:TupleLiteralExp" type="#,5eVD">
+              <ownedParts name="message" type="pivot:PrimitiveType &_1;#AlwVZ">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                  <ownedSource xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                    <ownedSource xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="Invalid name: "/>
+                    <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#eElUd">
+                      <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#X95a," referredVariable="#XHmxr"/>
+                    </ownedArguments>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="."/>
+                </ownedInit>
+              </ownedParts>
+              <ownedParts name="status" type="pivot:PrimitiveType &_1;#XEMMs">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="matches" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#otjl7">
+                  <ownedSource xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#eElUd">
+                    <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#X95a," referredVariable="#XHmxr"/>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="[A-Za-z_][A-Za-z0-9_]*"/>
+                </ownedInit>
+              </ownedParts>
+            </ownedSource>
+          </ownedBody>
+          <ownedContext xsi:type="pivot:ParameterVariable" xmi:id="XHmxr" name="self" type="pivot:Class &_0;#X95a,"/>
+        </ownedSpecification>
+      </ownedInvariants>
+      <ownedInvariants xmi:id="qTQRv" name="arcSortant">
+        <ownedSpecification xsi:type="pivot:ExpressionInOCL" type="pivot:PrimitiveType &_1;#XEMMs" body="Tuple {&#xA;&#x9;message : String = 'La transition '+self.name+' n\'a pas d\'arc sortant.',&#xA;&#x9;status : Boolean = &#xA;&#x9;self.liens->exists(p:Arc | p.sens = ArcSens::transitionToPlace)&#xA;&#x9;&#xA;&#xA;}.status">
+          <ownedBody xsi:type="pivot:PropertyCallExp" type="pivot:PrimitiveType &_1;#XEMMs" referredProperty="#NklaF">
+            <ownedSource xsi:type="pivot:TupleLiteralExp" type="#,5eVD">
+              <ownedParts name="message" type="pivot:PrimitiveType &_1;#AlwVZ">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                  <ownedSource xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                    <ownedSource xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="La transition "/>
+                    <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#eElUd">
+                      <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#X95a," referredVariable="#qUM,H"/>
+                    </ownedArguments>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol=" n'a pas d'arc sortant."/>
+                </ownedInit>
+              </ownedParts>
+              <ownedParts name="status" type="pivot:PrimitiveType &_1;#XEMMs">
+                <ownedInit xsi:type="pivot:IteratorExp" name="exists" isRequired="false" type="pivot:PrimitiveType &_1;#XEMMs" referredIteration="&_1;#arQ+J">
+                  <ownedSource xsi:type="pivot:PropertyCallExp" name="liens" type="#dra2a" referredProperty="&_0;#gTgQj">
+                    <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#X95a," referredVariable="#qUM,H"/>
+                  </ownedSource>
+                  <ownedBody xsi:type="pivot:OperationCallExp" name="=" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#SYOvl">
+                    <ownedSource xsi:type="pivot:PropertyCallExp" name="sens" type="pivot:Enumeration &_0;#LLj9l" referredProperty="&_0;#z,GXc">
+                      <ownedSource xsi:type="pivot:VariableExp" name="p" type="pivot:Class &_0;#Ug1Xv" referredVariable="#Bt2xY"/>
+                    </ownedSource>
+                    <ownedArguments xsi:type="pivot:EnumLiteralExp" name="transitionToPlace" type="pivot:Enumeration &_0;#LLj9l" referredLiteral="&_0;#jjuh,"/>
+                  </ownedBody>
+                  <ownedIterators xsi:type="pivot:IteratorVariable" xmi:id="Bt2xY" name="p" type="pivot:Class &_0;#Ug1Xv" representedParameter="&_1;#//@ownedPackages.0/@ownedClasses.25/@ownedOperations.34/@ownedIterators.0"/>
+                </ownedInit>
+              </ownedParts>
+            </ownedSource>
+          </ownedBody>
+          <ownedContext xsi:type="pivot:ParameterVariable" xmi:id="qUM,H" name="self" type="pivot:Class &_0;#X95a,"/>
+        </ownedSpecification>
+      </ownedInvariants>
+      <ownedInvariants xmi:id="BUDFJ" name="arcEntrant">
+        <ownedSpecification xsi:type="pivot:ExpressionInOCL" type="pivot:PrimitiveType &_1;#XEMMs" body="Tuple {&#xA;&#x9;message : String = 'La transition '+self.name+' n\'a pas d\'arc entrant.',&#xA;&#x9;status : Boolean = &#xA;&#x9;self.liens->exists(p:Arc | p.sens = ArcSens::placeToTransition)&#x9;&#xA;&#xA;&#x9;&#xA;}.status">
+          <ownedBody xsi:type="pivot:PropertyCallExp" type="pivot:PrimitiveType &_1;#XEMMs" referredProperty="#NklaF">
+            <ownedSource xsi:type="pivot:TupleLiteralExp" type="#,5eVD">
+              <ownedParts name="message" type="pivot:PrimitiveType &_1;#AlwVZ">
+                <ownedInit xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                  <ownedSource xsi:type="pivot:OperationCallExp" name="+" type="pivot:PrimitiveType &_1;#AlwVZ" referredOperation="&_1;#gJ7dJ">
+                    <ownedSource xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol="La transition "/>
+                    <ownedArguments xsi:type="pivot:PropertyCallExp" name="name" type="pivot:PrimitiveType &_1;#AlwVZ" referredProperty="&_0;#eElUd">
+                      <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#X95a," referredVariable="#530MF"/>
+                    </ownedArguments>
+                  </ownedSource>
+                  <ownedArguments xsi:type="pivot:StringLiteralExp" type="pivot:PrimitiveType &_1;#AlwVZ" stringSymbol=" n'a pas d'arc entrant."/>
+                </ownedInit>
+              </ownedParts>
+              <ownedParts name="status" type="pivot:PrimitiveType &_1;#XEMMs">
+                <ownedInit xsi:type="pivot:IteratorExp" name="exists" isRequired="false" type="pivot:PrimitiveType &_1;#XEMMs" referredIteration="&_1;#arQ+J">
+                  <ownedSource xsi:type="pivot:PropertyCallExp" name="liens" type="#dra2a" referredProperty="&_0;#gTgQj">
+                    <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#X95a," referredVariable="#530MF"/>
+                  </ownedSource>
+                  <ownedBody xsi:type="pivot:OperationCallExp" name="=" type="pivot:PrimitiveType &_1;#XEMMs" referredOperation="&_1;#SYOvl">
+                    <ownedSource xsi:type="pivot:PropertyCallExp" name="sens" type="pivot:Enumeration &_0;#LLj9l" referredProperty="&_0;#z,GXc">
+                      <ownedSource xsi:type="pivot:VariableExp" name="p" type="pivot:Class &_0;#Ug1Xv" referredVariable="#AT2yq"/>
+                    </ownedSource>
+                    <ownedArguments xsi:type="pivot:EnumLiteralExp" name="placeToTransition" type="pivot:Enumeration &_0;#LLj9l" referredLiteral="&_0;#D2Vq9"/>
+                  </ownedBody>
+                  <ownedIterators xsi:type="pivot:IteratorVariable" xmi:id="AT2yq" name="p" type="pivot:Class &_0;#Ug1Xv" representedParameter="&_1;#//@ownedPackages.0/@ownedClasses.25/@ownedOperations.34/@ownedIterators.0"/>
+                </ownedInit>
+              </ownedParts>
+            </ownedSource>
+          </ownedBody>
+          <ownedContext xsi:type="pivot:ParameterVariable" xmi:id="530MF" name="self" type="pivot:Class &_0;#X95a,"/>
+        </ownedSpecification>
+      </ownedInvariants>
+    </ownedClasses>
+  </ownedPackages>
+  <ownedPackages name="$$" URI="http://www.eclipse.org/ocl/2015/Orphanage" nsPrefix="orphanage">
+    <ownedClasses xsi:type="pivot:TupleType" xmi:id=",5eVD" name="Tuple" superClasses="&_1;#,qHxF">
+      <ownedProperties xmi:id="ik4hz" name="message" type="pivot:PrimitiveType &_1;#AlwVZ"/>
+      <ownedProperties xmi:id="NklaF" name="status" type="pivot:PrimitiveType &_1;#XEMMs"/>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:SequenceType" xmi:id="ZaAGk" name="Sequence" superClasses="#+mAMV" isNullFree="true">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#J7D+z" formal="&_1;#l1i6D"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:OrderedSetType" xmi:id="0LtBo" name="OrderedSet" superClasses="#l0PNJ #JfKyC" isNullFree="true">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#IiFVo" formal="&_1;#53+C2"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:SequenceType" xmi:id="3fJNf" name="Sequence" superClasses="#csJTQ" isNullFree="true">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#X95a," formal="&_1;#l1i6D"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:OrderedSetType" xmi:id="dra2a" name="OrderedSet" superClasses="#RT9B8 #193m1" isNullFree="true" lower="1">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#Ug1Xv" formal="&_1;#53+C2"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="+mAMV" name="OrderedCollection" superClasses="#xWL1e">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#J7D+z" formal="&_1;#feFHs"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="l0PNJ" name="OrderedCollection" superClasses="#Yka2S">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#IiFVo" formal="&_1;#feFHs"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="JfKyC" name="UniqueCollection" superClasses="#Yka2S">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#IiFVo" formal="&_1;#jdfjE"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="csJTQ" name="OrderedCollection" superClasses="#PcU8Z">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#X95a," formal="&_1;#feFHs"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="RT9B8" name="OrderedCollection" superClasses="#EDIrF">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#Ug1Xv" formal="&_1;#feFHs"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="193m1" name="UniqueCollection" superClasses="#EDIrF">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#Ug1Xv" formal="&_1;#jdfjE"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="xWL1e" name="Collection" superClasses="&_1;#jbMkR">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#J7D+z" formal="&_1;#qs59R"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="Yka2S" name="Collection" superClasses="&_1;#jbMkR">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#IiFVo" formal="&_1;#qs59R"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="PcU8Z" name="Collection" superClasses="&_1;#jbMkR">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#X95a," formal="&_1;#qs59R"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="EDIrF" name="Collection" superClasses="&_1;#jbMkR">
+      <ownedBindings>
+        <ownedSubstitutions actual="pivot:Class &_0;#Ug1Xv" formal="&_1;#qs59R"/>
+      </ownedBindings>
+    </ownedClasses>
+  </ownedPackages>
+</pivot:Model>

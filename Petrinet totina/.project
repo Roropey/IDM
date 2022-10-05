@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>IDM.TP2.simplePDL</name>
+	<name>petrinet.totina</name>
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
-		<buildCommand>
-			<name>org.eclipse.ocl.pivot.ui.oclbuilder</name>
-			<arguments>
-				<dictionary>
-					<key>disabledExtensions</key>
-					<value>*,essentialocl</value>
-				</dictionary>
-				<dictionary>
-					<key>disabledPaths</key>
-					<value>bin/**,target/**</value>
-				</dictionary>
-				<dictionary>
-					<key>enabledExtensions</key>
-					<value>ecore,ocl,oclinecore,oclstdlib,uml</value>
-				</dictionary>
-				<dictionary>
-					<key>enabledPaths</key>
-					<value>**</value>
-				</dictionary>
-			</arguments>
-		</buildCommand>
 		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
@@ -44,6 +23,22 @@
 		<buildCommand>
 			<name>org.eclipse.acceleo.ide.ui.acceleoBuilder</name>
 			<arguments>
+				<dictionary>
+					<key>compilation.kind</key>
+					<value>compilation.platform.resource</value>
+				</dictionary>
+				<dictionary>
+					<key>compliance</key>
+					<value>pragmatic</value>
+				</dictionary>
+				<dictionary>
+					<key>resource.kind</key>
+					<value>xmi</value>
+				</dictionary>
+				<dictionary>
+					<key>trim-position</key>
+					<value>false</value>
+				</dictionary>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
@@ -51,6 +46,5 @@
 		<nature>org.eclipse.acceleo.ide.ui.acceleoNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.pde.PluginNature</nature>
-		<nature>org.eclipse.ocl.pivot.ui.oclnature</nature>
 	</natures>
 </projectDescription>

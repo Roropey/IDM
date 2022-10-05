@@ -1,0 +1,44 @@
+import 'petriNet.ecore'
+
+package petriNet
+
+context PetriNet
+inv NomsPlace('Les noms de deux places différentes de ' + self.name + ' sont identiques.'):
+	self.petriElements->select(p:PetriElement | p.oclIsKindOf(Place))
+						->collect(p:PetriElement | p.oclAsType(Place))
+						->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
+						
+context PetriNet
+inv NomsTransition('Les noms de deux transitions différentes de ' + self.name + ' sont identiques.'):
+	self.petriElements->select(p:PetriElement | p.oclIsKindOf(Transition))
+						->collect(p:PetriElement | p.oclAsType(Transition))
+						->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
+						
+context PetriNet
+inv validNamePetriNet('Invalid name: ' + self.name+ '.'):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+context Place
+inv validNamePlace('Invalid name: ' + self.name+ '.'):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+	
+context Transition
+inv validNameTransition('Invalid name: ' + self.name+ '.'):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+	
+context Arc
+inv poidsPositif('Poids de l\'arc entre '+self.place.name+' et '+self.transition.name+' négatif.'):	self.poids>=0
+
+context Place
+inv jetonPositif('La place '+self.name+' a un nombre négatif de jetons.'): self.jeton>=0
+
+context Transition
+inv arcSortant ('La transition '+self.name+' n\'a pas d\'arc sortant.'):
+	self.liens->exists(p:Arc | p.sens = ArcSens::transitionToPlace)
+	
+context Transition
+inv arcEntrant ('La transition '+self.name+' n\'a pas d\'arc entrant.'):
+	self.liens->exists(p:Arc | p.sens = ArcSens::placeToTransition)
+
+
+endpackage

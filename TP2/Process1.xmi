@@ -8,13 +8,38 @@
     name="test">
   <processElements
       xsi:type="simplepdl:WorkDefinition"
-      name="Activite 1">
+      linksToPredecessors="//@processElements.6"
+      linksToSuccessors="//@processElements.3"
+      name="Activite1">
     <askedRessource
         ressource="//@processElements.1"
         quantity="5"/>
   </processElements>
   <processElements
       xsi:type="simplepdl:Ressource"
-      name="Ressource 1"
-      stock="3"/>
+      name="Ressource1"
+      stock="3"
+      work="//@processElements.0/@askedRessource.0"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.3"
+      linksToSuccessors="//@processElements.5"
+      name="Activite22"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.2"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.5"
+      linksToSuccessors="//@processElements.6"
+      name="Activite333"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.2"
+      successor="//@processElements.4"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.4"
+      successor="//@processElements.0"/>
 </simplepdl:Process>

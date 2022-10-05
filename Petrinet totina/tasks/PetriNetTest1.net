@@ -1,0 +1,5 @@
+net PetriNetTest1
+pl Place1 (0)
+pl Place2 (0)
+tr Transition1  ->    
+
