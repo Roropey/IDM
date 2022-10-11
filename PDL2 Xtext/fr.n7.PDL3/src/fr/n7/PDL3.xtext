@@ -1,0 +1,18 @@
+grammar fr.n7.PDL3 with org.eclipse.xtext.common.Terminals
+
+generate pDL3 "http://www.n7.fr/PDL3"
+
+Process : 'process' ':' name=ID 
+	'workdefintions' ':' WorkDefinitions+= WorkDefinition*
+	'worksequences' ':' WorkSequences+=WorkSequence*
+;
+
+WorkDefinition : name=ID ';';
+
+
+WorkSequence :  predecesor=[WorkDefinition] linkType=WorkSequenceType successor=[WorkDefinition] ';';
+	
+enum WorkSequenceType : startToStart = 's2s'
+	| finishToFinish ='f2f'
+	| startToFinish = 's2f'
+	| finishToStart = 'f2s';
