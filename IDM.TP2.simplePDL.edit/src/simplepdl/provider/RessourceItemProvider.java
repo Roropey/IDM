@@ -45,8 +45,9 @@ public class RessourceItemProvider extends ProcessElementItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addWorkPropertyDescriptor(object);
 			addNamePropertyDescriptor(object);
+			addStockPropertyDescriptor(object);
+			addWorkPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -96,6 +97,28 @@ public class RessourceItemProvider extends ProcessElementItemProvider {
 	}
 
 	/**
+	 * This adds a property descriptor for the Stock feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addStockPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Ressource_stock_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Ressource_stock_feature", "_UI_Ressource_type"),
+				 SimplepdlPackage.Literals.RESSOURCE__STOCK,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Ressource.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -134,6 +157,7 @@ public class RessourceItemProvider extends ProcessElementItemProvider {
 
 		switch (notification.getFeatureID(Ressource.class)) {
 			case SimplepdlPackage.RESSOURCE__NAME:
+			case SimplepdlPackage.RESSOURCE__STOCK:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

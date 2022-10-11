@@ -2,6 +2,8 @@
  */
 package simplepdl;
 
+import org.eclipse.emf.common.util.EList;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -12,8 +14,9 @@ package simplepdl;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link simplepdl.Ressource#getWork <em>Work</em>}</li>
  *   <li>{@link simplepdl.Ressource#getName <em>Name</em>}</li>
+ *   <li>{@link simplepdl.Ressource#getStock <em>Stock</em>}</li>
+ *   <li>{@link simplepdl.Ressource#getWork <em>Work</em>}</li>
  * </ul>
  *
  * @see simplepdl.SimplepdlPackage#getRessource()
@@ -22,28 +25,18 @@ package simplepdl;
  */
 public interface Ressource extends ProcessElement {
 	/**
-	 * Returns the value of the '<em><b>Work</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link simplepdl.WorkDefinition#getRessource <em>Ressource</em>}'.
+	 * Returns the value of the '<em><b>Work</b></em>' reference list.
+	 * The list contents are of type {@link simplepdl.AskedRessource}.
+	 * It is bidirectional and its opposite is '{@link simplepdl.AskedRessource#getRessource <em>Ressource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work</em>' reference.
-	 * @see #setWork(WorkDefinition)
+	 * @return the value of the '<em>Work</em>' reference list.
 	 * @see simplepdl.SimplepdlPackage#getRessource_Work()
-	 * @see simplepdl.WorkDefinition#getRessource
+	 * @see simplepdl.AskedRessource#getRessource
 	 * @model opposite="ressource"
 	 * @generated
 	 */
-	WorkDefinition getWork();
-
-	/**
-	 * Sets the value of the '{@link simplepdl.Ressource#getWork <em>Work</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Work</em>' reference.
-	 * @see #getWork()
-	 * @generated
-	 */
-	void setWork(WorkDefinition value);
+	EList<AskedRessource> getWork();
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -66,5 +59,27 @@ public interface Ressource extends ProcessElement {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Stock</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Stock</em>' attribute.
+	 * @see #setStock(int)
+	 * @see simplepdl.SimplepdlPackage#getRessource_Stock()
+	 * @model required="true"
+	 * @generated
+	 */
+	int getStock();
+
+	/**
+	 * Sets the value of the '{@link simplepdl.Ressource#getStock <em>Stock</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Stock</em>' attribute.
+	 * @see #getStock()
+	 * @generated
+	 */
+	void setStock(int value);
 
 } // Ressource

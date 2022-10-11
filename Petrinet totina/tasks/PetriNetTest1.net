@@ -1,5 +1,7 @@
 net PetriNetTest1
-pl Place1 (0)
+pl Place1 (1)
 pl Place2 (0)
-tr Transition1  ->    
+pl Place3 (5)
+tr Transition1 Place2 Place1*2 -> Place1   
+tr Transition2 Place3?4 -> Place1   
 

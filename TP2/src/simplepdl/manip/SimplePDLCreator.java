@@ -44,15 +44,15 @@ public class SimplePDLCreator {
 		Process process = myFactory.createProcess();
 		process.setName("Mon premier processus");
 		
-		// Ajouter le Process dans le modÃ¨le
+		// Ajouter le Process dans le modèle
 		resource.getContents().add(process);
 
 		// Ajouter deux WorkDefinitions
 	    WorkDefinition wd1 = myFactory.createWorkDefinition();
-	    wd1.setName("Ma premiÃ¨re WorkDefinition, quelle Ã©motion");
+	    wd1.setName("Ma première WorkDefinition, quelle émotion");
 	    
 	    WorkDefinition wd2 = myFactory.createWorkDefinition();
-	    wd2.setName("Ma deuxiÃ¨me WorkDefinition, toujours autant d'Ã©motion");
+	    wd2.setName("Ma deuxième WorkDefinition, toujours autant d'émotion");
 	    
 	    process.getProcessElements().add(wd1);
 	    process.getProcessElements().add(wd2);

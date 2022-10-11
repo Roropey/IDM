@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
+import simplepdl.AskedRessource;
 import simplepdl.Guidance;
 import simplepdl.ProcessElement;
 import simplepdl.Ressource;
@@ -70,6 +71,7 @@ public class SimplepdlFactoryImpl extends EFactoryImpl implements SimplepdlFacto
 			case SimplepdlPackage.PROCESS_ELEMENT: return createProcessElement();
 			case SimplepdlPackage.GUIDANCE: return createGuidance();
 			case SimplepdlPackage.RESSOURCE: return createRessource();
+			case SimplepdlPackage.ASKED_RESSOURCE: return createAskedRessource();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -163,6 +165,16 @@ public class SimplepdlFactoryImpl extends EFactoryImpl implements SimplepdlFacto
 	public Ressource createRessource() {
 		RessourceImpl ressource = new RessourceImpl();
 		return ressource;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AskedRessource createAskedRessource() {
+		AskedRessourceImpl askedRessource = new AskedRessourceImpl();
+		return askedRessource;
 	}
 
 	/**

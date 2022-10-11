@@ -7,6 +7,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
+import simplepdl.AskedRessource;
 import simplepdl.Guidance;
 import simplepdl.ProcessElement;
 import simplepdl.Ressource;
@@ -111,6 +112,13 @@ public class SimplepdlSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case SimplepdlPackage.ASKED_RESSOURCE: {
+				AskedRessource askedRessource = (AskedRessource)theEObject;
+				T result = caseAskedRessource(askedRessource);
+				if (result == null) result = caseProcessElement(askedRessource);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -202,6 +210,21 @@ public class SimplepdlSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRessource(Ressource object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Asked Ressource</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Asked Ressource</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAskedRessource(AskedRessource object) {
 		return null;
 	}
 

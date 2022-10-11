@@ -16,7 +16,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link simplepdl.WorkDefinition#getLinksToPredecessors <em>Links To Predecessors</em>}</li>
  *   <li>{@link simplepdl.WorkDefinition#getLinksToSuccessors <em>Links To Successors</em>}</li>
  *   <li>{@link simplepdl.WorkDefinition#getName <em>Name</em>}</li>
- *   <li>{@link simplepdl.WorkDefinition#getRessource <em>Ressource</em>}</li>
+ *   <li>{@link simplepdl.WorkDefinition#getAskedRessource <em>Asked Ressource</em>}</li>
  * </ul>
  *
  * @see simplepdl.SimplepdlPackage#getWorkDefinition()
@@ -75,17 +75,17 @@ public interface WorkDefinition extends ProcessElement {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Ressource</b></em>' reference list.
-	 * The list contents are of type {@link simplepdl.Ressource}.
-	 * It is bidirectional and its opposite is '{@link simplepdl.Ressource#getWork <em>Work</em>}'.
+	 * Returns the value of the '<em><b>Asked Ressource</b></em>' containment reference list.
+	 * The list contents are of type {@link simplepdl.AskedRessource}.
+	 * It is bidirectional and its opposite is '{@link simplepdl.AskedRessource#getWorkActivity <em>Work Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Ressource</em>' reference list.
-	 * @see simplepdl.SimplepdlPackage#getWorkDefinition_Ressource()
-	 * @see simplepdl.Ressource#getWork
-	 * @model opposite="work"
+	 * @return the value of the '<em>Asked Ressource</em>' containment reference list.
+	 * @see simplepdl.SimplepdlPackage#getWorkDefinition_AskedRessource()
+	 * @see simplepdl.AskedRessource#getWorkActivity
+	 * @model opposite="workActivity" containment="true"
 	 * @generated
 	 */
-	EList<Ressource> getRessource();
+	EList<AskedRessource> getAskedRessource();
 
 } // WorkDefinition

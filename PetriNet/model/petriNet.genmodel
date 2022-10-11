@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/PetriNet/src-gen" creationIcons="false" editDirectory="/PetriNet.edit/src-gen"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/PetriNet/src-gen" creationIcons="false" editDirectory="/PetriNet.edit/src-gen"
     editorDirectory="/PetriNet.editor/src-gen" modelPluginID="PetriNet" modelName="PetriNet"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
     operationReflection="true" importOrganizing="true">
   <foreignModel>petriNet.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
-  <genPackages prefix="PetriNet" disposableProviderFactory="true" ecorePackage="petriNet.ecore#/"/>
+  <genPackages prefix="PetriNet" disposableProviderFactory="true" ecorePackage="petriNet.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="petriNet.ecore#//ArcSens">
+      <genEnumLiterals ecoreEnumLiteral="petriNet.ecore#//ArcSens/placeToTransition"/>
+      <genEnumLiterals ecoreEnumLiteral="petriNet.ecore#//ArcSens/transitionToPlace"/>
+    </genEnums>
+    <genClasses ecoreClass="petriNet.ecore#//Place">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Place/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Place/jeton"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference petriNet.ecore#//Place/liens"/>
+    </genClasses>
+    <genClasses ecoreClass="petriNet.ecore#//Transition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Transition/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference petriNet.ecore#//Transition/liens"/>
+    </genClasses>
+    <genClasses ecoreClass="petriNet.ecore#//Arc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Arc/poids"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference petriNet.ecore#//Arc/place"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference petriNet.ecore#//Arc/transition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Arc/sens"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Arc/isReadArc"/>
+    </genClasses>
+    <genClasses ecoreClass="petriNet.ecore#//PetriElement"/>
+    <genClasses ecoreClass="petriNet.ecore#//PetriNet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//PetriNet/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference petriNet.ecore#//PetriNet/petriElements"/>
+    </genClasses>
+  </genPackages>
 </genmodel:GenModel>

@@ -76,6 +76,15 @@ public interface SimplepdlFactory extends EFactory {
 	Ressource createRessource();
 
 	/**
+	 * Returns a new object of class '<em>Asked Ressource</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Asked Ressource</em>'.
+	 * @generated
+	 */
+	AskedRessource createAskedRessource();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

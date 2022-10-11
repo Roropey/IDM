@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:simplepdl="http://simplepdl" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_97OkAEYbEe2DGq2RJVVGZQ" selectedViews="_LCuJQEYdEe2DGq2RJVVGZQ" version="15.0.0.202201261500">
+    <semanticResources>developpement.simplepdl</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_LCuJQEYdEe2DGq2RJVVGZQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_dejOkUYhEe2DGq2RJVVGZQ" name="Test diagram" repPath="#_deingEYhEe2DGq2RJVVGZQ" changeId="edad7321-e014-43b4-bb92-ef61a75a0c88">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']"/>
+        <target xmi:type="simplepdl:Process" href="developpement.simplepdl#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_deingEYhEe2DGq2RJVVGZQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_dejOk0YhEe2DGq2RJVVGZQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_dejOlEYhEe2DGq2RJVVGZQ" type="Sirius" element="_deingEYhEe2DGq2RJVVGZQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_d7hecEYhEe2DGq2RJVVGZQ" type="2001" element="_d7YUgEYhEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_d7hec0YhEe2DGq2RJVVGZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_d7hedEYhEe2DGq2RJVVGZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_d7iFhUYhEe2DGq2RJVVGZQ" type="3016" element="_d7YUgUYhEe2DGq2RJVVGZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_d7iFhkYhEe2DGq2RJVVGZQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7iFh0YhEe2DGq2RJVVGZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_d7hecUYhEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7heckYhEe2DGq2RJVVGZQ" x="275" y="35" width="136" height="36"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_d7hedUYhEe2DGq2RJVVGZQ" type="2001" element="_d7YUg0YhEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_d7heeEYhEe2DGq2RJVVGZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_d7heeUYhEe2DGq2RJVVGZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_d7iFiEYhEe2DGq2RJVVGZQ" type="3016" element="_d7YUhEYhEe2DGq2RJVVGZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_d7iFiUYhEe2DGq2RJVVGZQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7iFikYhEe2DGq2RJVVGZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_d7hedkYhEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7hed0YhEe2DGq2RJVVGZQ" x="20" y="100" width="141" height="36"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_d7heekYhEe2DGq2RJVVGZQ" type="2001" element="_d7YUhkYhEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_d7hefUYhEe2DGq2RJVVGZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_d7hefkYhEe2DGq2RJVVGZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_d7iFi0YhEe2DGq2RJVVGZQ" type="3016" element="_d7YUh0YhEe2DGq2RJVVGZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_d7iFjEYhEe2DGq2RJVVGZQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7iFjUYhEe2DGq2RJVVGZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_d7hee0YhEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7hefEYhEe2DGq2RJVVGZQ" x="160" y="205" width="151" height="36"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_d7iFgEYhEe2DGq2RJVVGZQ" type="2001" element="_d7YUiUYhEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_d7iFg0YhEe2DGq2RJVVGZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_d7iFhEYhEe2DGq2RJVVGZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_d7iFjkYhEe2DGq2RJVVGZQ" type="3016" element="_d7YUikYhEe2DGq2RJVVGZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_d7iFj0YhEe2DGq2RJVVGZQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7iFkEYhEe2DGq2RJVVGZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_d7iFgUYhEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7iFgkYhEe2DGq2RJVVGZQ" x="420" y="205" width="151" height="36"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Q1eb8EYmEe2DGq2RJVVGZQ" type="2001" element="_Q1axkEYmEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_Q1fDAEYmEe2DGq2RJVVGZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Q1fDAUYmEe2DGq2RJVVGZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Q1fDAkYmEe2DGq2RJVVGZQ" type="3003" element="_Q1axkUYmEe2DGq2RJVVGZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Q1fDA0YmEe2DGq2RJVVGZQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q1fDBEYmEe2DGq2RJVVGZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Q1eb8UYmEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q1eb8kYmEe2DGq2RJVVGZQ" x="665" y="65" width="146" height="101"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_dejOlUYhEe2DGq2RJVVGZQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_OejSwEYkEe2DGq2RJVVGZQ" type="4001" element="_OeJDEEYkEe2DGq2RJVVGZQ" source="_d7hecEYhEe2DGq2RJVVGZQ" target="_d7hedUYhEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_OejSxEYkEe2DGq2RJVVGZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OejSxUYkEe2DGq2RJVVGZQ" x="26" y="31"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_OejSxkYkEe2DGq2RJVVGZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OejSx0YkEe2DGq2RJVVGZQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_OejSyEYkEe2DGq2RJVVGZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OejSyUYkEe2DGq2RJVVGZQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_OejSwUYkEe2DGq2RJVVGZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_OejSwkYkEe2DGq2RJVVGZQ" fontColor="4108284" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OejSw0YkEe2DGq2RJVVGZQ" points="[-68, 13, 255, -52]$[-323, 65, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Oej50EYkEe2DGq2RJVVGZQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Oej50UYkEe2DGq2RJVVGZQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Oej50kYkEe2DGq2RJVVGZQ" type="4001" element="_OeJqIkYkEe2DGq2RJVVGZQ" source="_d7hecEYhEe2DGq2RJVVGZQ" target="_d7heekYhEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_Oej51kYkEe2DGq2RJVVGZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Oej510YkEe2DGq2RJVVGZQ" x="7" y="-49"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Oej52EYkEe2DGq2RJVVGZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Oej52UYkEe2DGq2RJVVGZQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Oej52kYkEe2DGq2RJVVGZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Oej520YkEe2DGq2RJVVGZQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Oej500YkEe2DGq2RJVVGZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Oej51EYkEe2DGq2RJVVGZQ" fontColor="4108284" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Oej51UYkEe2DGq2RJVVGZQ" points="[-20, 18, 163, -152]$[-183, 170, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Oej53EYkEe2DGq2RJVVGZQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Oej53UYkEe2DGq2RJVVGZQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Oej53kYkEe2DGq2RJVVGZQ" type="4001" element="_OeJqJ0YkEe2DGq2RJVVGZQ" source="_d7hecEYhEe2DGq2RJVVGZQ" target="_d7iFgEYhEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_Oej54kYkEe2DGq2RJVVGZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Oej540YkEe2DGq2RJVVGZQ" x="25" y="-58"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Oej55EYkEe2DGq2RJVVGZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Oej55UYkEe2DGq2RJVVGZQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Oej55kYkEe2DGq2RJVVGZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Oej550YkEe2DGq2RJVVGZQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Oej530YkEe2DGq2RJVVGZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Oej54EYkEe2DGq2RJVVGZQ" fontColor="4108284" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Oej54UYkEe2DGq2RJVVGZQ" points="[8, 18, -69, -152]$[77, 170, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Oekg4EYkEe2DGq2RJVVGZQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Oekg4UYkEe2DGq2RJVVGZQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Q1fDBUYmEe2DGq2RJVVGZQ" type="4001" element="_Q1b_tkYmEe2DGq2RJVVGZQ" source="_d7iFgEYhEe2DGq2RJVVGZQ" target="_d7heekYhEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_Q1fqEEYmEe2DGq2RJVVGZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q1fqEUYmEe2DGq2RJVVGZQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Q1fqEkYmEe2DGq2RJVVGZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q1fqE0YmEe2DGq2RJVVGZQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Q1fqFEYmEe2DGq2RJVVGZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q1fqFUYmEe2DGq2RJVVGZQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Q1fDBkYmEe2DGq2RJVVGZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Q1fDB0YmEe2DGq2RJVVGZQ" fontColor="4108284" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Q1fDCEYmEe2DGq2RJVVGZQ" points="[0, 0, 260, 0]$[-260, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q1gRIEYmEe2DGq2RJVVGZQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q1gRIUYmEe2DGq2RJVVGZQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Q1gRIkYmEe2DGq2RJVVGZQ" type="4001" element="_Q1cmwEYmEe2DGq2RJVVGZQ" source="_Q1eb8EYmEe2DGq2RJVVGZQ" target="_d7hecEYhEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_Q1gRJkYmEe2DGq2RJVVGZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q1gRJ0YmEe2DGq2RJVVGZQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Q1gRKEYmEe2DGq2RJVVGZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q1gRKUYmEe2DGq2RJVVGZQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Q1gRKkYmEe2DGq2RJVVGZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q1gRK0YmEe2DGq2RJVVGZQ" x="2" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Q1gRI0YmEe2DGq2RJVVGZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Q1gRJEYmEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Q1gRJUYmEe2DGq2RJVVGZQ" points="[-15, -2, 322, 25]$[-269, -22, 68, 5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q1gRLEYmEe2DGq2RJVVGZQ" id="(0.10273972602739725,0.1485148514851485)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q1gRLUYmEe2DGq2RJVVGZQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Q1gRLkYmEe2DGq2RJVVGZQ" type="4001" element="_Q1cmxUYmEe2DGq2RJVVGZQ" source="_Q1eb8EYmEe2DGq2RJVVGZQ" target="_d7iFgEYhEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_Q1g4MEYmEe2DGq2RJVVGZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q1g4MUYmEe2DGq2RJVVGZQ" x="-8" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Q1g4MkYmEe2DGq2RJVVGZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q1g4M0YmEe2DGq2RJVVGZQ" x="10" y="-5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Q1g4NEYmEe2DGq2RJVVGZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q1g4NUYmEe2DGq2RJVVGZQ" x="8" y="-4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Q1gRL0YmEe2DGq2RJVVGZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Q1gRMEYmEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Q1gRMUYmEe2DGq2RJVVGZQ" points="[-15, 11, 170, -132]$[-162, 125, 23, -18]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q1g4NkYmEe2DGq2RJVVGZQ" id="(0.10273972602739725,0.1485148514851485)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q1g4N0YmEe2DGq2RJVVGZQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_SNRVUEYmEe2DGq2RJVVGZQ" type="4001" element="_SNPgKEYmEe2DGq2RJVVGZQ" source="_Q1eb8EYmEe2DGq2RJVVGZQ" target="_d7heekYhEe2DGq2RJVVGZQ">
+          <children xmi:type="notation:Node" xmi:id="_SNRVVEYmEe2DGq2RJVVGZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNRVVUYmEe2DGq2RJVVGZQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_SNRVVkYmEe2DGq2RJVVGZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNRVV0YmEe2DGq2RJVVGZQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_SNRVWEYmEe2DGq2RJVVGZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNRVWUYmEe2DGq2RJVVGZQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_SNRVUUYmEe2DGq2RJVVGZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_SNRVUkYmEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SNRVU0YmEe2DGq2RJVVGZQ" points="[0, 0, 354, -75]$[-354, 75, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SNRVWkYmEe2DGq2RJVVGZQ" id="(0.0,0.693069306930693)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SNRVW0YmEe2DGq2RJVVGZQ" id="(1.0,0.1388888888888889)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_dej1oEYhEe2DGq2RJVVGZQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_dej1oUYhEe2DGq2RJVVGZQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_d7YUgEYhEe2DGq2RJVVGZQ" name="Conception" outgoingEdges="_OeJDEEYkEe2DGq2RJVVGZQ _OeJqIkYkEe2DGq2RJVVGZQ _OeJqJ0YkEe2DGq2RJVVGZQ" incomingEdges="_Q1cmwEYmEe2DGq2RJVVGZQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:WorkDefinition" href="developpement.simplepdl#//@processElements.0"/>
+      <semanticElements xmi:type="simplepdl:WorkDefinition" href="developpement.simplepdl#//@processElements.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_d7YUgUYhEe2DGq2RJVVGZQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_d7YUg0YhEe2DGq2RJVVGZQ" name="RedactionDoc" incomingEdges="_OeJDEEYkEe2DGq2RJVVGZQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:WorkDefinition" href="developpement.simplepdl#//@processElements.1"/>
+      <semanticElements xmi:type="simplepdl:WorkDefinition" href="developpement.simplepdl#//@processElements.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_d7YUhEYhEe2DGq2RJVVGZQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_d7YUhkYhEe2DGq2RJVVGZQ" name="Programmation" incomingEdges="_OeJqIkYkEe2DGq2RJVVGZQ _Q1b_tkYmEe2DGq2RJVVGZQ _SNPgKEYmEe2DGq2RJVVGZQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:WorkDefinition" href="developpement.simplepdl#//@processElements.2"/>
+      <semanticElements xmi:type="simplepdl:WorkDefinition" href="developpement.simplepdl#//@processElements.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_d7YUh0YhEe2DGq2RJVVGZQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_d7YUiUYhEe2DGq2RJVVGZQ" name="RedactionTests" outgoingEdges="_Q1b_tkYmEe2DGq2RJVVGZQ" incomingEdges="_OeJqJ0YkEe2DGq2RJVVGZQ _Q1cmxUYmEe2DGq2RJVVGZQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:WorkDefinition" href="developpement.simplepdl#//@processElements.3"/>
+      <semanticElements xmi:type="simplepdl:WorkDefinition" href="developpement.simplepdl#//@processElements.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_d7YUikYhEe2DGq2RJVVGZQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OeJDEEYkEe2DGq2RJVVGZQ" name="finishToFinish" sourceNode="_d7YUgEYhEe2DGq2RJVVGZQ" targetNode="_d7YUg0YhEe2DGq2RJVVGZQ">
+      <target xmi:type="simplepdl:WorkSequence" href="developpement.simplepdl#//@processElements.4"/>
+      <semanticElements xmi:type="simplepdl:WorkSequence" href="developpement.simplepdl#//@processElements.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_OeJDEUYkEe2DGq2RJVVGZQ" size="2" strokeColor="252,175,62">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkSequence']/@edgeMappings[name='WSEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_OeJDEkYkEe2DGq2RJVVGZQ" labelSize="12" labelColor="252,175,62"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkSequence']/@edgeMappings[name='WSEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OeJqIkYkEe2DGq2RJVVGZQ" name="finishToStart" sourceNode="_d7YUgEYhEe2DGq2RJVVGZQ" targetNode="_d7YUhkYhEe2DGq2RJVVGZQ">
+      <target xmi:type="simplepdl:WorkSequence" href="developpement.simplepdl#//@processElements.5"/>
+      <semanticElements xmi:type="simplepdl:WorkSequence" href="developpement.simplepdl#//@processElements.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_OeJqI0YkEe2DGq2RJVVGZQ" size="2" strokeColor="252,175,62">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkSequence']/@edgeMappings[name='WSEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_OeJqJEYkEe2DGq2RJVVGZQ" labelSize="12" labelColor="252,175,62"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkSequence']/@edgeMappings[name='WSEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OeJqJ0YkEe2DGq2RJVVGZQ" name="startToStart" sourceNode="_d7YUgEYhEe2DGq2RJVVGZQ" targetNode="_d7YUiUYhEe2DGq2RJVVGZQ">
+      <target xmi:type="simplepdl:WorkSequence" href="developpement.simplepdl#//@processElements.6"/>
+      <semanticElements xmi:type="simplepdl:WorkSequence" href="developpement.simplepdl#//@processElements.6"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_OeJqKEYkEe2DGq2RJVVGZQ" size="2" strokeColor="252,175,62">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkSequence']/@edgeMappings[name='WSEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_OeJqKUYkEe2DGq2RJVVGZQ" labelSize="12" labelColor="252,175,62"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkSequence']/@edgeMappings[name='WSEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Q1axkEYmEe2DGq2RJVVGZQ" name="Lol c'est un test" outgoingEdges="_Q1cmwEYmEe2DGq2RJVVGZQ _Q1cmxUYmEe2DGq2RJVVGZQ _SNPgKEYmEe2DGq2RJVVGZQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:Guidance" href="developpement.simplepdl#//@processElements.7"/>
+      <semanticElements xmi:type="simplepdl:Guidance" href="developpement.simplepdl#//@processElements.7"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_Q1axkUYmEe2DGq2RJVVGZQ" labelSize="12" labelPosition="node" color="253,206,137">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Guidance']/@nodeMappings[name='GNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Guidance']/@nodeMappings[name='GNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Q1b_tkYmEe2DGq2RJVVGZQ" name="startToFinish" sourceNode="_d7YUiUYhEe2DGq2RJVVGZQ" targetNode="_d7YUhkYhEe2DGq2RJVVGZQ">
+      <target xmi:type="simplepdl:WorkSequence" href="developpement.simplepdl#//@processElements.8"/>
+      <semanticElements xmi:type="simplepdl:WorkSequence" href="developpement.simplepdl#//@processElements.8"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Q1b_t0YmEe2DGq2RJVVGZQ" size="2" strokeColor="252,175,62">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkSequence']/@edgeMappings[name='WSEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Q1b_uEYmEe2DGq2RJVVGZQ" labelSize="12" labelColor="252,175,62"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkSequence']/@edgeMappings[name='WSEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Q1cmwEYmEe2DGq2RJVVGZQ" sourceNode="_Q1axkEYmEe2DGq2RJVVGZQ" targetNode="_d7YUgEYhEe2DGq2RJVVGZQ">
+      <target xmi:type="simplepdl:Guidance" href="developpement.simplepdl#//@processElements.7"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Q1cmwUYmEe2DGq2RJVVGZQ" lineStyle="dash" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Guidance']/@edgeMappings[name='GRelationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Q1cmwkYmEe2DGq2RJVVGZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Guidance']/@edgeMappings[name='GRelationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Q1cmxUYmEe2DGq2RJVVGZQ" sourceNode="_Q1axkEYmEe2DGq2RJVVGZQ" targetNode="_d7YUiUYhEe2DGq2RJVVGZQ">
+      <target xmi:type="simplepdl:Guidance" href="developpement.simplepdl#//@processElements.7"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Q1cmxkYmEe2DGq2RJVVGZQ" lineStyle="dash" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Guidance']/@edgeMappings[name='GRelationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Q1cmx0YmEe2DGq2RJVVGZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Guidance']/@edgeMappings[name='GRelationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_SNPgKEYmEe2DGq2RJVVGZQ" sourceNode="_Q1axkEYmEe2DGq2RJVVGZQ" targetNode="_d7YUhkYhEe2DGq2RJVVGZQ">
+      <target xmi:type="simplepdl:Guidance" href="developpement.simplepdl#//@processElements.7"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_SNPgKUYmEe2DGq2RJVVGZQ" lineStyle="dash" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Guidance']/@edgeMappings[name='GRelationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_SNPgKkYmEe2DGq2RJVVGZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Guidance']/@edgeMappings[name='GRelationEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_dejOkEYhEe2DGq2RJVVGZQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkSequence']"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Guidance']"/>
+    <target xmi:type="simplepdl:Process" href="developpement.simplepdl#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

@@ -210,6 +210,29 @@ public class SimplepdlItemProviderAdapterFactory extends SimplepdlAdapterFactory
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link simplepdl.AskedRessource} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AskedRessourceItemProvider askedRessourceItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link simplepdl.AskedRessource}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAskedRessourceAdapter() {
+		if (askedRessourceItemProvider == null) {
+			askedRessourceItemProvider = new AskedRessourceItemProvider(this);
+		}
+
+		return askedRessourceItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -314,6 +337,7 @@ public class SimplepdlItemProviderAdapterFactory extends SimplepdlAdapterFactory
 		if (processElementItemProvider != null) processElementItemProvider.dispose();
 		if (guidanceItemProvider != null) guidanceItemProvider.dispose();
 		if (ressourceItemProvider != null) ressourceItemProvider.dispose();
+		if (askedRessourceItemProvider != null) askedRessourceItemProvider.dispose();
 	}
 
 }
