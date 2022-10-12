@@ -58,34 +58,6 @@ public interface PetriNetPackage extends EPackage {
 	PetriNetPackage eINSTANCE = petriNet.impl.PetriNetPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link petriNet.impl.PetriElementImpl <em>Petri Element</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see petriNet.impl.PetriElementImpl
-	 * @see petriNet.impl.PetriNetPackageImpl#getPetriElement()
-	 * @generated
-	 */
-	int PETRI_ELEMENT = 3;
-
-	/**
-	 * The number of structural features of the '<em>Petri Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PETRI_ELEMENT_FEATURE_COUNT = 0;
-
-	/**
-	 * The number of operations of the '<em>Petri Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PETRI_ELEMENT_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link petriNet.impl.PlaceImpl <em>Place</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -102,7 +74,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE__NAME = PETRI_ELEMENT_FEATURE_COUNT + 0;
+	int PLACE__NAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Jeton</b></em>' attribute.
@@ -111,7 +83,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE__JETON = PETRI_ELEMENT_FEATURE_COUNT + 1;
+	int PLACE__JETON = 1;
 
 	/**
 	 * The feature id for the '<em><b>Liens</b></em>' reference list.
@@ -120,7 +92,16 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE__LIENS = PETRI_ELEMENT_FEATURE_COUNT + 2;
+	int PLACE__LIENS = 2;
+
+	/**
+	 * The feature id for the '<em><b>Net</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLACE__NET = 3;
 
 	/**
 	 * The number of structural features of the '<em>Place</em>' class.
@@ -129,7 +110,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE_FEATURE_COUNT = PETRI_ELEMENT_FEATURE_COUNT + 3;
+	int PLACE_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Place</em>' class.
@@ -138,7 +119,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE_OPERATION_COUNT = PETRI_ELEMENT_OPERATION_COUNT + 0;
+	int PLACE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link petriNet.impl.TransitionImpl <em>Transition</em>}' class.
@@ -157,7 +138,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION__NAME = PETRI_ELEMENT_FEATURE_COUNT + 0;
+	int TRANSITION__NAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Liens</b></em>' reference list.
@@ -166,7 +147,16 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION__LIENS = PETRI_ELEMENT_FEATURE_COUNT + 1;
+	int TRANSITION__LIENS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Net</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION__NET = 2;
 
 	/**
 	 * The number of structural features of the '<em>Transition</em>' class.
@@ -175,7 +165,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_FEATURE_COUNT = PETRI_ELEMENT_FEATURE_COUNT + 2;
+	int TRANSITION_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Transition</em>' class.
@@ -184,7 +174,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_OPERATION_COUNT = PETRI_ELEMENT_OPERATION_COUNT + 0;
+	int TRANSITION_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link petriNet.impl.ArcImpl <em>Arc</em>}' class.
@@ -203,7 +193,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__POIDS = PETRI_ELEMENT_FEATURE_COUNT + 0;
+	int ARC__POIDS = 0;
 
 	/**
 	 * The feature id for the '<em><b>Place</b></em>' reference.
@@ -212,7 +202,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__PLACE = PETRI_ELEMENT_FEATURE_COUNT + 1;
+	int ARC__PLACE = 1;
 
 	/**
 	 * The feature id for the '<em><b>Transition</b></em>' reference.
@@ -221,7 +211,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__TRANSITION = PETRI_ELEMENT_FEATURE_COUNT + 2;
+	int ARC__TRANSITION = 2;
 
 	/**
 	 * The feature id for the '<em><b>Sens</b></em>' attribute.
@@ -230,7 +220,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__SENS = PETRI_ELEMENT_FEATURE_COUNT + 3;
+	int ARC__SENS = 3;
 
 	/**
 	 * The feature id for the '<em><b>Is Read Arc</b></em>' attribute.
@@ -239,7 +229,16 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__IS_READ_ARC = PETRI_ELEMENT_FEATURE_COUNT + 4;
+	int ARC__IS_READ_ARC = 4;
+
+	/**
+	 * The feature id for the '<em><b>Net</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARC__NET = 5;
 
 	/**
 	 * The number of structural features of the '<em>Arc</em>' class.
@@ -248,7 +247,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC_FEATURE_COUNT = PETRI_ELEMENT_FEATURE_COUNT + 5;
+	int ARC_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Arc</em>' class.
@@ -257,7 +256,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC_OPERATION_COUNT = PETRI_ELEMENT_OPERATION_COUNT + 0;
+	int ARC_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link petriNet.impl.PetriNetImpl <em>Petri Net</em>}' class.
@@ -267,7 +266,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @see petriNet.impl.PetriNetPackageImpl#getPetriNet()
 	 * @generated
 	 */
-	int PETRI_NET = 4;
+	int PETRI_NET = 3;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -279,13 +278,31 @@ public interface PetriNetPackage extends EPackage {
 	int PETRI_NET__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Petri Elements</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Places</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PETRI_NET__PETRI_ELEMENTS = 1;
+	int PETRI_NET__PLACES = 1;
+
+	/**
+	 * The feature id for the '<em><b>Arcs</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PETRI_NET__ARCS = 2;
+
+	/**
+	 * The feature id for the '<em><b>Transitions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PETRI_NET__TRANSITIONS = 3;
 
 	/**
 	 * The number of structural features of the '<em>Petri Net</em>' class.
@@ -294,7 +311,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PETRI_NET_FEATURE_COUNT = 2;
+	int PETRI_NET_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Petri Net</em>' class.
@@ -313,7 +330,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @see petriNet.impl.PetriNetPackageImpl#getArcSens()
 	 * @generated
 	 */
-	int ARC_SENS = 5;
+	int ARC_SENS = 4;
 
 	/**
 	 * Returns the meta object for class '{@link petriNet.Place <em>Place</em>}'.
@@ -359,6 +376,17 @@ public interface PetriNetPackage extends EPackage {
 	EReference getPlace_Liens();
 
 	/**
+	 * Returns the meta object for the container reference '{@link petriNet.Place#getNet <em>Net</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Net</em>'.
+	 * @see petriNet.Place#getNet()
+	 * @see #getPlace()
+	 * @generated
+	 */
+	EReference getPlace_Net();
+
+	/**
 	 * Returns the meta object for class '{@link petriNet.Transition <em>Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -389,6 +417,17 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getTransition_Liens();
+
+	/**
+	 * Returns the meta object for the container reference '{@link petriNet.Transition#getNet <em>Net</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Net</em>'.
+	 * @see petriNet.Transition#getNet()
+	 * @see #getTransition()
+	 * @generated
+	 */
+	EReference getTransition_Net();
 
 	/**
 	 * Returns the meta object for class '{@link petriNet.Arc <em>Arc</em>}'.
@@ -456,14 +495,15 @@ public interface PetriNetPackage extends EPackage {
 	EAttribute getArc_IsReadArc();
 
 	/**
-	 * Returns the meta object for class '{@link petriNet.PetriElement <em>Petri Element</em>}'.
+	 * Returns the meta object for the container reference '{@link petriNet.Arc#getNet <em>Net</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Petri Element</em>'.
-	 * @see petriNet.PetriElement
+	 * @return the meta object for the container reference '<em>Net</em>'.
+	 * @see petriNet.Arc#getNet()
+	 * @see #getArc()
 	 * @generated
 	 */
-	EClass getPetriElement();
+	EReference getArc_Net();
 
 	/**
 	 * Returns the meta object for class '{@link petriNet.PetriNet <em>Petri Net</em>}'.
@@ -487,15 +527,37 @@ public interface PetriNetPackage extends EPackage {
 	EAttribute getPetriNet_Name();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link petriNet.PetriNet#getPetriElements <em>Petri Elements</em>}'.
+	 * Returns the meta object for the containment reference list '{@link petriNet.PetriNet#getPlaces <em>Places</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Petri Elements</em>'.
-	 * @see petriNet.PetriNet#getPetriElements()
+	 * @return the meta object for the containment reference list '<em>Places</em>'.
+	 * @see petriNet.PetriNet#getPlaces()
 	 * @see #getPetriNet()
 	 * @generated
 	 */
-	EReference getPetriNet_PetriElements();
+	EReference getPetriNet_Places();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link petriNet.PetriNet#getArcs <em>Arcs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Arcs</em>'.
+	 * @see petriNet.PetriNet#getArcs()
+	 * @see #getPetriNet()
+	 * @generated
+	 */
+	EReference getPetriNet_Arcs();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link petriNet.PetriNet#getTransitions <em>Transitions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Transitions</em>'.
+	 * @see petriNet.PetriNet#getTransitions()
+	 * @see #getPetriNet()
+	 * @generated
+	 */
+	EReference getPetriNet_Transitions();
 
 	/**
 	 * Returns the meta object for enum '{@link petriNet.ArcSens <em>Arc Sens</em>}'.
@@ -565,6 +627,14 @@ public interface PetriNetPackage extends EPackage {
 		EReference PLACE__LIENS = eINSTANCE.getPlace_Liens();
 
 		/**
+		 * The meta object literal for the '<em><b>Net</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PLACE__NET = eINSTANCE.getPlace_Net();
+
+		/**
 		 * The meta object literal for the '{@link petriNet.impl.TransitionImpl <em>Transition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -589,6 +659,14 @@ public interface PetriNetPackage extends EPackage {
 		 * @generated
 		 */
 		EReference TRANSITION__LIENS = eINSTANCE.getTransition_Liens();
+
+		/**
+		 * The meta object literal for the '<em><b>Net</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRANSITION__NET = eINSTANCE.getTransition_Net();
 
 		/**
 		 * The meta object literal for the '{@link petriNet.impl.ArcImpl <em>Arc</em>}' class.
@@ -641,14 +719,12 @@ public interface PetriNetPackage extends EPackage {
 		EAttribute ARC__IS_READ_ARC = eINSTANCE.getArc_IsReadArc();
 
 		/**
-		 * The meta object literal for the '{@link petriNet.impl.PetriElementImpl <em>Petri Element</em>}' class.
+		 * The meta object literal for the '<em><b>Net</b></em>' container reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see petriNet.impl.PetriElementImpl
-		 * @see petriNet.impl.PetriNetPackageImpl#getPetriElement()
 		 * @generated
 		 */
-		EClass PETRI_ELEMENT = eINSTANCE.getPetriElement();
+		EReference ARC__NET = eINSTANCE.getArc_Net();
 
 		/**
 		 * The meta object literal for the '{@link petriNet.impl.PetriNetImpl <em>Petri Net</em>}' class.
@@ -669,12 +745,28 @@ public interface PetriNetPackage extends EPackage {
 		EAttribute PETRI_NET__NAME = eINSTANCE.getPetriNet_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Petri Elements</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Places</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PETRI_NET__PETRI_ELEMENTS = eINSTANCE.getPetriNet_PetriElements();
+		EReference PETRI_NET__PLACES = eINSTANCE.getPetriNet_Places();
+
+		/**
+		 * The meta object literal for the '<em><b>Arcs</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PETRI_NET__ARCS = eINSTANCE.getPetriNet_Arcs();
+
+		/**
+		 * The meta object literal for the '<em><b>Transitions</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PETRI_NET__TRANSITIONS = eINSTANCE.getPetriNet_Transitions();
 
 		/**
 		 * The meta object literal for the '{@link petriNet.ArcSens <em>Arc Sens</em>}' enum.

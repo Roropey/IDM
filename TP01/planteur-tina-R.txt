@@ -1,0 +1,48 @@
+Tina version 3.4.4 -- 01/05/16 -- LAAS/CNRS
+
+mode -R
+
+INPUT NET ------------------------------------------------------- 
+
+parsed net noname
+
+5 places, 6 transitions
+
+net noname
+tr cueille champ -> banane champ 
+tr dort jardin -> 
+tr jette jardin peau -> jardin 
+tr leve table -> jardin 
+tr mange banane table -> peau table 
+tr rentre champ -> table 
+pl champ (1)
+
+0.000s
+
+REACHABILITY ANALYSIS ------------------------------------------- 
+
+net unbounded
+path from 0 to 1 increases marking
+
+2 marking(s), 1 transition(s)
+
+MARKINGS:
+
+0 : champ
+1 : banane champ
+
+REACHABILITY GRAPH:
+
+0 -> cueille/1, rentre/?
+1 -> 
+
+0.000s
+
+LIVENESS ANALYSIS ----------------------------------------------- 
+
+enumeration not completed
+
+ANALYSIS COMPLETED ---------------------------------------------- 
+
+
+

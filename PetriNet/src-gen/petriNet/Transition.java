@@ -3,6 +3,7 @@
 package petriNet;
 
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -15,13 +16,14 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link petriNet.Transition#getName <em>Name</em>}</li>
  *   <li>{@link petriNet.Transition#getLiens <em>Liens</em>}</li>
+ *   <li>{@link petriNet.Transition#getNet <em>Net</em>}</li>
  * </ul>
  *
  * @see petriNet.PetriNetPackage#getTransition()
  * @model
  * @generated
  */
-public interface Transition extends PetriElement {
+public interface Transition extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -57,5 +59,29 @@ public interface Transition extends PetriElement {
 	 * @generated
 	 */
 	EList<Arc> getLiens();
+
+	/**
+	 * Returns the value of the '<em><b>Net</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link petriNet.PetriNet#getTransitions <em>Transitions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Net</em>' container reference.
+	 * @see #setNet(PetriNet)
+	 * @see petriNet.PetriNetPackage#getTransition_Net()
+	 * @see petriNet.PetriNet#getTransitions
+	 * @model opposite="transitions" required="true" transient="false"
+	 * @generated
+	 */
+	PetriNet getNet();
+
+	/**
+	 * Sets the value of the '{@link petriNet.Transition#getNet <em>Net</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Net</em>' container reference.
+	 * @see #getNet()
+	 * @generated
+	 */
+	void setNet(PetriNet value);
 
 } // Transition

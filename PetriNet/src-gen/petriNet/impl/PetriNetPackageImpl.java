@@ -52,13 +52,6 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass petriElementEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass petriNetEClass = null;
 
 	/**
@@ -173,6 +166,15 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getPlace_Net() {
+		return (EReference) placeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getTransition() {
 		return transitionEClass;
 	}
@@ -193,6 +195,15 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 */
 	public EReference getTransition_Liens() {
 		return (EReference) transitionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTransition_Net() {
+		return (EReference) transitionEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -254,8 +265,8 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getPetriElement() {
-		return petriElementEClass;
+	public EReference getArc_Net() {
+		return (EReference) arcEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -281,8 +292,26 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getPetriNet_PetriElements() {
+	public EReference getPetriNet_Places() {
 		return (EReference) petriNetEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPetriNet_Arcs() {
+		return (EReference) petriNetEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPetriNet_Transitions() {
+		return (EReference) petriNetEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -327,10 +356,12 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 		createEAttribute(placeEClass, PLACE__NAME);
 		createEAttribute(placeEClass, PLACE__JETON);
 		createEReference(placeEClass, PLACE__LIENS);
+		createEReference(placeEClass, PLACE__NET);
 
 		transitionEClass = createEClass(TRANSITION);
 		createEAttribute(transitionEClass, TRANSITION__NAME);
 		createEReference(transitionEClass, TRANSITION__LIENS);
+		createEReference(transitionEClass, TRANSITION__NET);
 
 		arcEClass = createEClass(ARC);
 		createEAttribute(arcEClass, ARC__POIDS);
@@ -338,12 +369,13 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 		createEReference(arcEClass, ARC__TRANSITION);
 		createEAttribute(arcEClass, ARC__SENS);
 		createEAttribute(arcEClass, ARC__IS_READ_ARC);
-
-		petriElementEClass = createEClass(PETRI_ELEMENT);
+		createEReference(arcEClass, ARC__NET);
 
 		petriNetEClass = createEClass(PETRI_NET);
 		createEAttribute(petriNetEClass, PETRI_NET__NAME);
-		createEReference(petriNetEClass, PETRI_NET__PETRI_ELEMENTS);
+		createEReference(petriNetEClass, PETRI_NET__PLACES);
+		createEReference(petriNetEClass, PETRI_NET__ARCS);
+		createEReference(petriNetEClass, PETRI_NET__TRANSITIONS);
 
 		// Create enums
 		arcSensEEnum = createEEnum(ARC_SENS);
@@ -378,9 +410,6 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		placeEClass.getESuperTypes().add(this.getPetriElement());
-		transitionEClass.getESuperTypes().add(this.getPetriElement());
-		arcEClass.getESuperTypes().add(this.getPetriElement());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(placeEClass, Place.class, "Place", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -391,6 +420,9 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 		initEReference(getPlace_Liens(), this.getArc(), this.getArc_Place(), "liens", null, 0, -1, Place.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPlace_Net(), this.getPetriNet(), this.getPetriNet_Places(), "net", null, 1, 1, Place.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(transitionEClass, Transition.class, "Transition", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -399,9 +431,12 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 		initEReference(getTransition_Liens(), this.getArc(), this.getArc_Transition(), "liens", null, 1, -1,
 				Transition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTransition_Net(), this.getPetriNet(), this.getPetriNet_Transitions(), "net", null, 1, 1,
+				Transition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(arcEClass, Arc.class, "Arc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getArc_Poids(), ecorePackage.getEInt(), "poids", null, 1, 1, Arc.class, !IS_TRANSIENT,
+		initEAttribute(getArc_Poids(), ecorePackage.getEInt(), "poids", "1", 1, 1, Arc.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getArc_Place(), this.getPlace(), this.getPlace_Liens(), "place", null, 1, 1, Arc.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
@@ -413,16 +448,22 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getArc_IsReadArc(), ecorePackage.getEBoolean(), "isReadArc", null, 1, 1, Arc.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(petriElementEClass, PetriElement.class, "PetriElement", !IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getArc_Net(), this.getPetriNet(), this.getPetriNet_Arcs(), "net", null, 1, 1, Arc.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(petriNetEClass, PetriNet.class, "PetriNet", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPetriNet_Name(), ecorePackage.getEString(), "name", null, 1, 1, PetriNet.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPetriNet_PetriElements(), this.getPetriElement(), null, "petriElements", null, 0, -1,
+		initEReference(getPetriNet_Places(), this.getPlace(), this.getPlace_Net(), "places", null, 0, -1,
 				PetriNet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPetriNet_Arcs(), this.getArc(), this.getArc_Net(), "arcs", null, 0, -1, PetriNet.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPetriNet_Transitions(), this.getTransition(), this.getTransition_Net(), "transitions", null,
+				0, -1, PetriNet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals

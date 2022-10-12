@@ -49,15 +49,6 @@ public interface PetriNetFactory extends EFactory {
 	Arc createArc();
 
 	/**
-	 * Returns a new object of class '<em>Petri Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Petri Element</em>'.
-	 * @generated
-	 */
-	PetriElement createPetriElement();
-
-	/**
 	 * Returns a new object of class '<em>Petri Net</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

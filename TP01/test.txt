@@ -1,0 +1,12 @@
+tr ReqR1 [0,w[ {R1_non_réservé} C1_start -> {R1_demandé} C1_dem
+tr AckR1 [0,w[ R1_fre {R1_demandé} C1_dem -> {R1_non_réservé} R1_inUse C1_Recu
+tr ReqR2 [0,w[ {R2_non_demandé} C1_Recu?1 -> {R2_demandé} C1_2dem
+tr AckR2 [0,w[ R2_free {R2_demandé} C1_2dem -> R2_inUse {R2_non_demandé} C1_2Rec
+tr LibR1et2 [0,w[ R2_inUse R1_inUse C1_2Rec C1_Recu -> R2_free C1_End R1_fre
+pl C1_start (1)
+pl {R1_non_réservé} (1)
+pl R1_fre (1)
+pl {R2_non_demandé} (1)
+pl R2_free (1)
+net buffer
+

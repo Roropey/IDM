@@ -16,11 +16,15 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import petriNet.Arc;
 import petriNet.PetriElement;
 import petriNet.PetriNet;
 import petriNet.PetriNetPackage;
+import petriNet.Place;
+import petriNet.Transition;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +35,9 @@ import petriNet.PetriNetPackage;
  * </p>
  * <ul>
  *   <li>{@link petriNet.impl.PetriNetImpl#getName <em>Name</em>}</li>
- *   <li>{@link petriNet.impl.PetriNetImpl#getPetriElements <em>Petri Elements</em>}</li>
+ *   <li>{@link petriNet.impl.PetriNetImpl#getPlaces <em>Places</em>}</li>
+ *   <li>{@link petriNet.impl.PetriNetImpl#getArcs <em>Arcs</em>}</li>
+ *   <li>{@link petriNet.impl.PetriNetImpl#getTransitions <em>Transitions</em>}</li>
  * </ul>
  *
  * @generated
@@ -58,14 +64,34 @@ public class PetriNetImpl extends MinimalEObjectImpl.Container implements PetriN
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getPetriElements() <em>Petri Elements</em>}' containment reference list.
+	 * The cached value of the '{@link #getPlaces() <em>Places</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPetriElements()
+	 * @see #getPlaces()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<PetriElement> petriElements;
+	protected EList<Place> places;
+
+	/**
+	 * The cached value of the '{@link #getArcs() <em>Arcs</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getArcs()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Arc> arcs;
+
+	/**
+	 * The cached value of the '{@link #getTransitions() <em>Transitions</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTransitions()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Transition> transitions;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -112,12 +138,57 @@ public class PetriNetImpl extends MinimalEObjectImpl.Container implements PetriN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PetriElement> getPetriElements() {
-		if (petriElements == null) {
-			petriElements = new EObjectContainmentEList<PetriElement>(PetriElement.class, this,
-					PetriNetPackage.PETRI_NET__PETRI_ELEMENTS);
+	public EList<Place> getPlaces() {
+		if (places == null) {
+			places = new EObjectContainmentWithInverseEList<Place>(Place.class, this, PetriNetPackage.PETRI_NET__PLACES,
+					PetriNetPackage.PLACE__NET);
 		}
-		return petriElements;
+		return places;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Arc> getArcs() {
+		if (arcs == null) {
+			arcs = new EObjectContainmentWithInverseEList<Arc>(Arc.class, this, PetriNetPackage.PETRI_NET__ARCS,
+					PetriNetPackage.ARC__NET);
+		}
+		return arcs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Transition> getTransitions() {
+		if (transitions == null) {
+			transitions = new EObjectContainmentWithInverseEList<Transition>(Transition.class, this,
+					PetriNetPackage.PETRI_NET__TRANSITIONS, PetriNetPackage.TRANSITION__NET);
+		}
+		return transitions;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case PetriNetPackage.PETRI_NET__PLACES:
+			return ((InternalEList<InternalEObject>) (InternalEList<?>) getPlaces()).basicAdd(otherEnd, msgs);
+		case PetriNetPackage.PETRI_NET__ARCS:
+			return ((InternalEList<InternalEObject>) (InternalEList<?>) getArcs()).basicAdd(otherEnd, msgs);
+		case PetriNetPackage.PETRI_NET__TRANSITIONS:
+			return ((InternalEList<InternalEObject>) (InternalEList<?>) getTransitions()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -128,8 +199,12 @@ public class PetriNetImpl extends MinimalEObjectImpl.Container implements PetriN
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case PetriNetPackage.PETRI_NET__PETRI_ELEMENTS:
-			return ((InternalEList<?>) getPetriElements()).basicRemove(otherEnd, msgs);
+		case PetriNetPackage.PETRI_NET__PLACES:
+			return ((InternalEList<?>) getPlaces()).basicRemove(otherEnd, msgs);
+		case PetriNetPackage.PETRI_NET__ARCS:
+			return ((InternalEList<?>) getArcs()).basicRemove(otherEnd, msgs);
+		case PetriNetPackage.PETRI_NET__TRANSITIONS:
+			return ((InternalEList<?>) getTransitions()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -144,8 +219,12 @@ public class PetriNetImpl extends MinimalEObjectImpl.Container implements PetriN
 		switch (featureID) {
 		case PetriNetPackage.PETRI_NET__NAME:
 			return getName();
-		case PetriNetPackage.PETRI_NET__PETRI_ELEMENTS:
-			return getPetriElements();
+		case PetriNetPackage.PETRI_NET__PLACES:
+			return getPlaces();
+		case PetriNetPackage.PETRI_NET__ARCS:
+			return getArcs();
+		case PetriNetPackage.PETRI_NET__TRANSITIONS:
+			return getTransitions();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -162,9 +241,17 @@ public class PetriNetImpl extends MinimalEObjectImpl.Container implements PetriN
 		case PetriNetPackage.PETRI_NET__NAME:
 			setName((String) newValue);
 			return;
-		case PetriNetPackage.PETRI_NET__PETRI_ELEMENTS:
-			getPetriElements().clear();
-			getPetriElements().addAll((Collection<? extends PetriElement>) newValue);
+		case PetriNetPackage.PETRI_NET__PLACES:
+			getPlaces().clear();
+			getPlaces().addAll((Collection<? extends Place>) newValue);
+			return;
+		case PetriNetPackage.PETRI_NET__ARCS:
+			getArcs().clear();
+			getArcs().addAll((Collection<? extends Arc>) newValue);
+			return;
+		case PetriNetPackage.PETRI_NET__TRANSITIONS:
+			getTransitions().clear();
+			getTransitions().addAll((Collection<? extends Transition>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -181,8 +268,14 @@ public class PetriNetImpl extends MinimalEObjectImpl.Container implements PetriN
 		case PetriNetPackage.PETRI_NET__NAME:
 			setName(NAME_EDEFAULT);
 			return;
-		case PetriNetPackage.PETRI_NET__PETRI_ELEMENTS:
-			getPetriElements().clear();
+		case PetriNetPackage.PETRI_NET__PLACES:
+			getPlaces().clear();
+			return;
+		case PetriNetPackage.PETRI_NET__ARCS:
+			getArcs().clear();
+			return;
+		case PetriNetPackage.PETRI_NET__TRANSITIONS:
+			getTransitions().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -198,8 +291,12 @@ public class PetriNetImpl extends MinimalEObjectImpl.Container implements PetriN
 		switch (featureID) {
 		case PetriNetPackage.PETRI_NET__NAME:
 			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-		case PetriNetPackage.PETRI_NET__PETRI_ELEMENTS:
-			return petriElements != null && !petriElements.isEmpty();
+		case PetriNetPackage.PETRI_NET__PLACES:
+			return places != null && !places.isEmpty();
+		case PetriNetPackage.PETRI_NET__ARCS:
+			return arcs != null && !arcs.isEmpty();
+		case PetriNetPackage.PETRI_NET__TRANSITIONS:
+			return transitions != null && !transitions.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

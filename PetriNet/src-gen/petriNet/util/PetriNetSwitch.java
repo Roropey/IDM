@@ -70,8 +70,6 @@ public class PetriNetSwitch<T> extends Switch<T> {
 			Place place = (Place) theEObject;
 			T result = casePlace(place);
 			if (result == null)
-				result = casePetriElement(place);
-			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
@@ -79,23 +77,12 @@ public class PetriNetSwitch<T> extends Switch<T> {
 			Transition transition = (Transition) theEObject;
 			T result = caseTransition(transition);
 			if (result == null)
-				result = casePetriElement(transition);
-			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
 		case PetriNetPackage.ARC: {
 			Arc arc = (Arc) theEObject;
 			T result = caseArc(arc);
-			if (result == null)
-				result = casePetriElement(arc);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case PetriNetPackage.PETRI_ELEMENT: {
-			PetriElement petriElement = (PetriElement) theEObject;
-			T result = casePetriElement(petriElement);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -154,21 +141,6 @@ public class PetriNetSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseArc(Arc object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Petri Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Petri Element</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePetriElement(PetriElement object) {
 		return null;
 	}
 

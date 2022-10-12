@@ -3,6 +3,7 @@
 package petriNet;
 
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -16,13 +17,14 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link petriNet.Place#getName <em>Name</em>}</li>
  *   <li>{@link petriNet.Place#getJeton <em>Jeton</em>}</li>
  *   <li>{@link petriNet.Place#getLiens <em>Liens</em>}</li>
+ *   <li>{@link petriNet.Place#getNet <em>Net</em>}</li>
  * </ul>
  *
  * @see petriNet.PetriNetPackage#getPlace()
  * @model
  * @generated
  */
-public interface Place extends PetriElement {
+public interface Place extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -80,5 +82,29 @@ public interface Place extends PetriElement {
 	 * @generated
 	 */
 	EList<Arc> getLiens();
+
+	/**
+	 * Returns the value of the '<em><b>Net</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link petriNet.PetriNet#getPlaces <em>Places</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Net</em>' container reference.
+	 * @see #setNet(PetriNet)
+	 * @see petriNet.PetriNetPackage#getPlace_Net()
+	 * @see petriNet.PetriNet#getPlaces
+	 * @model opposite="places" required="true" transient="false"
+	 * @generated
+	 */
+	PetriNet getNet();
+
+	/**
+	 * Sets the value of the '{@link petriNet.Place#getNet <em>Net</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Net</em>' container reference.
+	 * @see #getNet()
+	 * @generated
+	 */
+	void setNet(PetriNet value);
 
 } // Place

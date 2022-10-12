@@ -16,7 +16,9 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link petriNet.PetriNet#getName <em>Name</em>}</li>
- *   <li>{@link petriNet.PetriNet#getPetriElements <em>Petri Elements</em>}</li>
+ *   <li>{@link petriNet.PetriNet#getPlaces <em>Places</em>}</li>
+ *   <li>{@link petriNet.PetriNet#getArcs <em>Arcs</em>}</li>
+ *   <li>{@link petriNet.PetriNet#getTransitions <em>Transitions</em>}</li>
  * </ul>
  *
  * @see petriNet.PetriNetPackage#getPetriNet()
@@ -47,15 +49,45 @@ public interface PetriNet extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Petri Elements</b></em>' containment reference list.
-	 * The list contents are of type {@link petriNet.PetriElement}.
+	 * Returns the value of the '<em><b>Places</b></em>' containment reference list.
+	 * The list contents are of type {@link petriNet.Place}.
+	 * It is bidirectional and its opposite is '{@link petriNet.Place#getNet <em>Net</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Petri Elements</em>' containment reference list.
-	 * @see petriNet.PetriNetPackage#getPetriNet_PetriElements()
-	 * @model containment="true"
+	 * @return the value of the '<em>Places</em>' containment reference list.
+	 * @see petriNet.PetriNetPackage#getPetriNet_Places()
+	 * @see petriNet.Place#getNet
+	 * @model opposite="net" containment="true"
 	 * @generated
 	 */
-	EList<PetriElement> getPetriElements();
+	EList<Place> getPlaces();
+
+	/**
+	 * Returns the value of the '<em><b>Arcs</b></em>' containment reference list.
+	 * The list contents are of type {@link petriNet.Arc}.
+	 * It is bidirectional and its opposite is '{@link petriNet.Arc#getNet <em>Net</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Arcs</em>' containment reference list.
+	 * @see petriNet.PetriNetPackage#getPetriNet_Arcs()
+	 * @see petriNet.Arc#getNet
+	 * @model opposite="net" containment="true"
+	 * @generated
+	 */
+	EList<Arc> getArcs();
+
+	/**
+	 * Returns the value of the '<em><b>Transitions</b></em>' containment reference list.
+	 * The list contents are of type {@link petriNet.Transition}.
+	 * It is bidirectional and its opposite is '{@link petriNet.Transition#getNet <em>Net</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Transitions</em>' containment reference list.
+	 * @see petriNet.PetriNetPackage#getPetriNet_Transitions()
+	 * @see petriNet.Transition#getNet
+	 * @model opposite="net" containment="true"
+	 * @generated
+	 */
+	EList<Transition> getTransitions();
 
 } // PetriNet

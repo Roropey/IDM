@@ -63,8 +63,6 @@ public class PetriNetFactoryImpl extends EFactoryImpl implements PetriNetFactory
 			return createTransition();
 		case PetriNetPackage.ARC:
 			return createArc();
-		case PetriNetPackage.PETRI_ELEMENT:
-			return createPetriElement();
 		case PetriNetPackage.PETRI_NET:
 			return createPetriNet();
 		default:
@@ -130,16 +128,6 @@ public class PetriNetFactoryImpl extends EFactoryImpl implements PetriNetFactory
 	public Arc createArc() {
 		ArcImpl arc = new ArcImpl();
 		return arc;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PetriElement createPetriElement() {
-		PetriElementImpl petriElement = new PetriElementImpl();
-		return petriElement;
 	}
 
 	/**

@@ -14,10 +14,13 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import petriNet.Arc;
+import petriNet.PetriNet;
 import petriNet.PetriNetPackage;
 import petriNet.Place;
 
@@ -32,11 +35,12 @@ import petriNet.Place;
  *   <li>{@link petriNet.impl.PlaceImpl#getName <em>Name</em>}</li>
  *   <li>{@link petriNet.impl.PlaceImpl#getJeton <em>Jeton</em>}</li>
  *   <li>{@link petriNet.impl.PlaceImpl#getLiens <em>Liens</em>}</li>
+ *   <li>{@link petriNet.impl.PlaceImpl#getNet <em>Net</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class PlaceImpl extends PetriElementImpl implements Place {
+public class PlaceImpl extends MinimalEObjectImpl.Container implements Place {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -166,12 +170,59 @@ public class PlaceImpl extends PetriElementImpl implements Place {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public PetriNet getNet() {
+		if (eContainerFeatureID() != PetriNetPackage.PLACE__NET)
+			return null;
+		return (PetriNet) eInternalContainer();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetNet(PetriNet newNet, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject) newNet, PetriNetPackage.PLACE__NET, msgs);
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNet(PetriNet newNet) {
+		if (newNet != eInternalContainer() || (eContainerFeatureID() != PetriNetPackage.PLACE__NET && newNet != null)) {
+			if (EcoreUtil.isAncestor(this, newNet))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newNet != null)
+				msgs = ((InternalEObject) newNet).eInverseAdd(this, PetriNetPackage.PETRI_NET__PLACES, PetriNet.class,
+						msgs);
+			msgs = basicSetNet(newNet, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PetriNetPackage.PLACE__NET, newNet, newNet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case PetriNetPackage.PLACE__LIENS:
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getLiens()).basicAdd(otherEnd, msgs);
+		case PetriNetPackage.PLACE__NET:
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			return basicSetNet((PetriNet) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -186,8 +237,24 @@ public class PlaceImpl extends PetriElementImpl implements Place {
 		switch (featureID) {
 		case PetriNetPackage.PLACE__LIENS:
 			return ((InternalEList<?>) getLiens()).basicRemove(otherEnd, msgs);
+		case PetriNetPackage.PLACE__NET:
+			return basicSetNet(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+		case PetriNetPackage.PLACE__NET:
+			return eInternalContainer().eInverseRemove(this, PetriNetPackage.PETRI_NET__PLACES, PetriNet.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
@@ -204,6 +271,8 @@ public class PlaceImpl extends PetriElementImpl implements Place {
 			return getJeton();
 		case PetriNetPackage.PLACE__LIENS:
 			return getLiens();
+		case PetriNetPackage.PLACE__NET:
+			return getNet();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -227,6 +296,9 @@ public class PlaceImpl extends PetriElementImpl implements Place {
 			getLiens().clear();
 			getLiens().addAll((Collection<? extends Arc>) newValue);
 			return;
+		case PetriNetPackage.PLACE__NET:
+			setNet((PetriNet) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -248,6 +320,9 @@ public class PlaceImpl extends PetriElementImpl implements Place {
 		case PetriNetPackage.PLACE__LIENS:
 			getLiens().clear();
 			return;
+		case PetriNetPackage.PLACE__NET:
+			setNet((PetriNet) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -266,6 +341,8 @@ public class PlaceImpl extends PetriElementImpl implements Place {
 			return jeton != JETON_EDEFAULT;
 		case PetriNetPackage.PLACE__LIENS:
 			return liens != null && !liens.isEmpty();
+		case PetriNetPackage.PLACE__NET:
+			return getNet() != null;
 		}
 		return super.eIsSet(featureID);
 	}

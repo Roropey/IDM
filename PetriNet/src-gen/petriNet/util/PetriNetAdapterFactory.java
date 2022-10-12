@@ -82,11 +82,6 @@ public class PetriNetAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter casePetriElement(PetriElement object) {
-			return createPetriElementAdapter();
-		}
-
-		@Override
 		public Adapter casePetriNet(PetriNet object) {
 			return createPetriNetAdapter();
 		}
@@ -149,20 +144,6 @@ public class PetriNetAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createArcAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link petriNet.PetriElement <em>Petri Element</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see petriNet.PetriElement
-	 * @generated
-	 */
-	public Adapter createPetriElementAdapter() {
 		return null;
 	}
 

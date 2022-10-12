@@ -2,6 +2,8 @@
  */
 package petriNet;
 
+import org.eclipse.emf.ecore.EObject;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Arc</b></em>'.
@@ -16,21 +18,23 @@ package petriNet;
  *   <li>{@link petriNet.Arc#getTransition <em>Transition</em>}</li>
  *   <li>{@link petriNet.Arc#getSens <em>Sens</em>}</li>
  *   <li>{@link petriNet.Arc#isIsReadArc <em>Is Read Arc</em>}</li>
+ *   <li>{@link petriNet.Arc#getNet <em>Net</em>}</li>
  * </ul>
  *
  * @see petriNet.PetriNetPackage#getArc()
  * @model
  * @generated
  */
-public interface Arc extends PetriElement {
+public interface Arc extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Poids</b></em>' attribute.
+	 * The default value is <code>"1"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Poids</em>' attribute.
 	 * @see #setPoids(int)
 	 * @see petriNet.PetriNetPackage#getArc_Poids()
-	 * @model required="true"
+	 * @model default="1" required="true"
 	 * @generated
 	 */
 	int getPoids();
@@ -139,5 +143,29 @@ public interface Arc extends PetriElement {
 	 * @generated
 	 */
 	void setIsReadArc(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Net</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link petriNet.PetriNet#getArcs <em>Arcs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Net</em>' container reference.
+	 * @see #setNet(PetriNet)
+	 * @see petriNet.PetriNetPackage#getArc_Net()
+	 * @see petriNet.PetriNet#getArcs
+	 * @model opposite="arcs" required="true" transient="false"
+	 * @generated
+	 */
+	PetriNet getNet();
+
+	/**
+	 * Sets the value of the '{@link petriNet.Arc#getNet <em>Net</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Net</em>' container reference.
+	 * @see #getNet()
+	 * @generated
+	 */
+	void setNet(PetriNet value);
 
 } // Arc

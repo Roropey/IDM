@@ -10,8 +10,11 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import petriNet.Arc;
 import petriNet.ArcSens;
+import petriNet.PetriNet;
 import petriNet.PetriNetPackage;
 import petriNet.Place;
 import petriNet.Transition;
@@ -29,11 +32,12 @@ import petriNet.Transition;
  *   <li>{@link petriNet.impl.ArcImpl#getTransition <em>Transition</em>}</li>
  *   <li>{@link petriNet.impl.ArcImpl#getSens <em>Sens</em>}</li>
  *   <li>{@link petriNet.impl.ArcImpl#isIsReadArc <em>Is Read Arc</em>}</li>
+ *   <li>{@link petriNet.impl.ArcImpl#getNet <em>Net</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ArcImpl extends PetriElementImpl implements Arc {
+public class ArcImpl extends MinimalEObjectImpl.Container implements Arc {
 	/**
 	 * The default value of the '{@link #getPoids() <em>Poids</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -42,7 +46,7 @@ public class ArcImpl extends PetriElementImpl implements Arc {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int POIDS_EDEFAULT = 0;
+	protected static final int POIDS_EDEFAULT = 1;
 
 	/**
 	 * The cached value of the '{@link #getPoids() <em>Poids</em>}' attribute.
@@ -335,6 +339,49 @@ public class ArcImpl extends PetriElementImpl implements Arc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public PetriNet getNet() {
+		if (eContainerFeatureID() != PetriNetPackage.ARC__NET)
+			return null;
+		return (PetriNet) eInternalContainer();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetNet(PetriNet newNet, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject) newNet, PetriNetPackage.ARC__NET, msgs);
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNet(PetriNet newNet) {
+		if (newNet != eInternalContainer() || (eContainerFeatureID() != PetriNetPackage.ARC__NET && newNet != null)) {
+			if (EcoreUtil.isAncestor(this, newNet))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newNet != null)
+				msgs = ((InternalEObject) newNet).eInverseAdd(this, PetriNetPackage.PETRI_NET__ARCS, PetriNet.class,
+						msgs);
+			msgs = basicSetNet(newNet, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PetriNetPackage.ARC__NET, newNet, newNet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -347,6 +394,10 @@ public class ArcImpl extends PetriElementImpl implements Arc {
 				msgs = ((InternalEObject) transition).eInverseRemove(this, PetriNetPackage.TRANSITION__LIENS,
 						Transition.class, msgs);
 			return basicSetTransition((Transition) otherEnd, msgs);
+		case PetriNetPackage.ARC__NET:
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			return basicSetNet((PetriNet) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -363,8 +414,24 @@ public class ArcImpl extends PetriElementImpl implements Arc {
 			return basicSetPlace(null, msgs);
 		case PetriNetPackage.ARC__TRANSITION:
 			return basicSetTransition(null, msgs);
+		case PetriNetPackage.ARC__NET:
+			return basicSetNet(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+		case PetriNetPackage.ARC__NET:
+			return eInternalContainer().eInverseRemove(this, PetriNetPackage.PETRI_NET__ARCS, PetriNet.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
@@ -389,6 +456,8 @@ public class ArcImpl extends PetriElementImpl implements Arc {
 			return getSens();
 		case PetriNetPackage.ARC__IS_READ_ARC:
 			return isIsReadArc();
+		case PetriNetPackage.ARC__NET:
+			return getNet();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -415,6 +484,9 @@ public class ArcImpl extends PetriElementImpl implements Arc {
 			return;
 		case PetriNetPackage.ARC__IS_READ_ARC:
 			setIsReadArc((Boolean) newValue);
+			return;
+		case PetriNetPackage.ARC__NET:
+			setNet((PetriNet) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -443,6 +515,9 @@ public class ArcImpl extends PetriElementImpl implements Arc {
 		case PetriNetPackage.ARC__IS_READ_ARC:
 			setIsReadArc(IS_READ_ARC_EDEFAULT);
 			return;
+		case PetriNetPackage.ARC__NET:
+			setNet((PetriNet) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -465,6 +540,8 @@ public class ArcImpl extends PetriElementImpl implements Arc {
 			return sens != SENS_EDEFAULT;
 		case PetriNetPackage.ARC__IS_READ_ARC:
 			return isReadArc != IS_READ_ARC_EDEFAULT;
+		case PetriNetPackage.ARC__NET:
+			return getNet() != null;
 		}
 		return super.eIsSet(featureID);
 	}

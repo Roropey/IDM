@@ -19,14 +19,14 @@ public class PDLFormatter extends AbstractFormatter2 {
   @Inject
   @Extension
   private PDLGrammarAccess _pDLGrammarAccess;
-
+  
   protected void _format(final simplepdl.Process process, @Extension final IFormattableDocument document) {
     EList<ProcessElement> _processElements = process.getProcessElements();
     for (final ProcessElement processElement : _processElements) {
       document.<ProcessElement>format(processElement);
     }
   }
-
+  
   public void format(final Object process, final IFormattableDocument document) {
     if (process instanceof XtextResource) {
       _format((XtextResource)process, document);
