@@ -4,15 +4,11 @@ package petriNet
 
 context PetriNet
 inv NomsPlace('Les noms de deux places différentes de ' + self.name + ' sont identiques.'):
-	self.petriElements->select(p:PetriElement | p.oclIsKindOf(Place))
-						->collect(p:PetriElement | p.oclAsType(Place))
-						->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
+	self.places->forAll(p1, p2 | p1 = p2 or p1.name <> p2.name)
 						
 context PetriNet
 inv NomsTransition('Les noms de deux transitions différentes de ' + self.name + ' sont identiques.'):
-	self.petriElements->select(p:PetriElement | p.oclIsKindOf(Transition))
-						->collect(p:PetriElement | p.oclAsType(Transition))
-						->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
+	self.transitions->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
 						
 context PetriNet
 inv validNamePetriNet('Invalid name: ' + self.name+ '.'):

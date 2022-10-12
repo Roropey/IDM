@@ -1,0 +1,54 @@
+module SimplePDL2PetriNet;
+create OUT: petriNet from  IN: simplepdl;
+
+-- Obtenir le processus qui contient ce process element.
+-- Remarque: Ce helper ne serait pas utile si une r�f�rence opposite
+-- avait �t� plac�e entre Process et ProcessElement
+helper context simplepdl!ProcessElement
+def: getProcess(): simplepdl!Process =
+	simplepdl!Process.allInstances()
+		->select(p | p.processElements->includes(self))
+		->asSequence()->first();
+
+-- Traduire un Process en un PetriNet de m�me nom
+rule Process2PetriNet {
+	from p: simplepdl!Process
+	to pn: petriNet!PetriNet (name <- p.name)
+}
+
+-- Traduire une WorkDefinition en un motif sur le r�seau de Petri
+rule WorkDefinition2PetriNet {
+	from wd: simplepdl!WorkDefinition
+	to
+		-- PLACES d'une WorkDefinition
+		p_ready: petriNet!Place(
+				name <- wd.name + '_ready',
+				jeton <- 1,
+				net <- wd.getProcess()),
+		p_started: petriNet!Place(
+				name <- wd.name + '_started',
+				jeton <- 0,
+				net <- wd.getProcess()),
+		p_running: petriNet!Place(
+				name <- wd.name + '_running',
+				jeton <- 0,
+				net <- wd.getProcess()),
+		p_finished : petriNet!Place(
+				name <- wd.name + '_finished',
+				jeton <- 0,
+				net <- wd.getProcess()),
+				
+		-- TRANSITIONS d'une WorkDefinition
+		t_start: petriNet!Transition(
+				name <- wd.name + '_start',
+				net <- wd.getProcess()),
+		t_finish: petriNet!Transition(
+				name <- wd.name + '_finish',
+				net <- wd.getProcess()),
+				
+		-- ARCS d'une WorkDefinition
+		a_ready_to_start: petriNet!Arc(
+				poids <- 1,
+				
+		)
+}

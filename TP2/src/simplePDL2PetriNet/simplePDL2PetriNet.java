@@ -80,7 +80,8 @@ public class simplePDL2PetriNet {
 		//pour les relier lors de "l'analyse" des WorkSequences
 		Map<WorkSequence, Place> ws2place= new HashMap<>();
 		Map<WorkSequence, Transition> ws2trans= new HashMap<>();
-		
+		// /!\ modifications nécessaire car enlever PetriElement (modif à faire au niveau normalement du add)*
+		// préciser poids et jetons
 		for (Object oWD : process.getProcessElements()) {
 			if (oWD instanceof WorkDefinition) {
 				WorkDefinition wd = (WorkDefinition) oWD;

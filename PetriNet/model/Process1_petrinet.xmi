@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<petriNet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:petriNet="http://petrinet" name="test">
+  <places name="Activite1_ready" jeton="1"/>
+  <places name="Activite22_ready" jeton="1"/>
+  <places name="Activite333_ready" jeton="1"/>
+</petriNet:PetriNet>
