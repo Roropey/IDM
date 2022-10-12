@@ -49,6 +49,50 @@ rule WorkDefinition2PetriNet {
 		-- ARCS d'une WorkDefinition
 		a_ready_to_start: petriNet!Arc(
 				poids <- 1,
-				
-		)
+				place <- p_ready,
+				transition <- t_start,
+				sens <- #placeToTransition,
+				isReadArc <- false,
+				net <- wd.getProcess()),
+		a_start_to_started: petriNet!Arc(
+				poids <- 1,
+				place <- p_started,
+				transition <- t_start,
+				sens <- #transitionToPlace,
+				isReadArc <- false,
+				net <- wd.getProcess()),
+		a_start_to_running: petriNet!Arc(
+				poids <- 1,
+				place <- p_running,
+				transition <- t_start,
+				sens <- #transitionToPlace,
+				isReadArc <- false,
+				net <- wd.getProcess()),
+		a_running_to_finish: petriNet!Arc(
+				poids <- 1,
+				place <- p_running,
+				transition <- t_finish,
+				sens <- #placeToTransition,
+				isReadArc <- false,
+				net <- wd.getProcess()),
+		a_finish_to_finished: petriNet!Arc(
+				poids <- 1,
+				place <- p_finished,
+				transition <- t_finish,
+				sens <- #transitionToPlace,
+				isReadArc <- false,
+				net <- wd.getProcess())
+}
+
+rule WorkSequence2PetriNet {
+	from ws: simplepdl!WorkSequence
+	to 
+		a_link: petriNet!Arc(
+			poids <- 1,
+			place <- thisModule.resolveTemp(ws.predecessor,if (ws.linkType = #startToStart or ws.linkType = #startToFinish) then 'p_started' else 'p_finished' endif),
+			transition <- thisModule.resolveTemp(ws.successor,if (ws.linkType = #startToStart or ws.linkType = #finishToStart) then 't_start' else 't_finish' endif),
+			sens <- #placeToTransition,
+			isReadArc <- true,
+			net <- ws.getProcess())
+		
 }
