@@ -24,7 +24,11 @@
       xsi:type="simplepdl:WorkDefinition"
       linksToPredecessors="//@processElements.3"
       linksToSuccessors="//@processElements.5"
-      name="Activite22"/>
+      name="Activite22">
+    <askedRessource
+        ressource="//@processElements.8"
+        quantity="18"/>
+  </processElements>
   <processElements
       xsi:type="simplepdl:WorkSequence"
       predecessor="//@processElements.0"
@@ -42,4 +46,13 @@
       xsi:type="simplepdl:WorkSequence"
       predecessor="//@processElements.4"
       successor="//@processElements.0"/>
+  <processElements
+      xsi:type="simplepdl:Guidance"
+      elements="//@processElements.4 //@processElements.2"
+      text="J'adore !!!!"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      name="Ordinateur"
+      stock="10"
+      work="//@processElements.2/@askedRessource.0"/>
 </simplepdl:Process>

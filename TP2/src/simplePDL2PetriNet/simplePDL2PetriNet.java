@@ -101,14 +101,17 @@ public class simplePDL2PetriNet {
 				pReady.setName(wd.getName()+"_ready");
 				pReady.setJeton(1);
 				pReady.setNet(petriNet);
+				
 				Place pRunning = myFactory.createPlace();
 				pRunning.setName(wd.getName()+"_running");
 				pRunning.setJeton(0);
 				pRunning.setNet(petriNet);
+				
 				Place pStarted = myFactory.createPlace();
 				pStarted.setName(wd.getName()+"_started");
 				pStarted.setJeton(0);
 				pStarted.setNet(petriNet);
+				
 				Place pFinished = myFactory.createPlace();
 				pFinished.setName(wd.getName()+"_finished");
 				pFinished.setJeton(0);
@@ -117,7 +120,8 @@ public class simplePDL2PetriNet {
 				//Création des transitions
 				Transition tStart = myFactory.createTransition();
 				tStart.setName(wd.getName()+"_start");
-				tStart.setNet(petriNet);				
+				tStart.setNet(petriNet);	
+				
 				Transition tFinish = myFactory.createTransition();
 				tFinish.setName(wd.getName()+"_finish");
 				tFinish.setNet(petriNet);
@@ -129,24 +133,28 @@ public class simplePDL2PetriNet {
 				aReadStart.setPlace(pReady);
 				aReadStart.setTransition(tStart);
 				aReadStart.setNet(petriNet);
+				
 				Arc aStartStarted = myFactory.createArc();
 				aStartStarted.setSens(ArcSens.TRANSITION_TO_PLACE);
 				aStartStarted.setPoids(1);
 				aStartStarted.setPlace(pStarted);
 				aStartStarted.setTransition(tStart);
 				aStartStarted.setNet(petriNet);
+				
 				Arc aStartRun = myFactory.createArc();
 				aStartRun.setSens(ArcSens.TRANSITION_TO_PLACE);
 				aStartRun.setPoids(1);
 				aStartRun.setPlace(pRunning);
 				aStartRun.setTransition(tStart);
-				aStartRun.setNet(petriNet);				
+				aStartRun.setNet(petriNet);			
+				
 				Arc aRunFin = myFactory.createArc();
 				aRunFin.setSens(ArcSens.PLACE_TO_TRANSITION);
 				aRunFin.setPoids(1);
 				aRunFin.setPlace(pRunning);
 				aRunFin.setTransition(tFinish);
-				aRunFin.setNet(petriNet);				
+				aRunFin.setNet(petriNet);		
+				
 				Arc aFinFinished = myFactory.createArc();
 				aFinFinished.setSens(ArcSens.TRANSITION_TO_PLACE);
 				aFinFinished.setPoids(1);
