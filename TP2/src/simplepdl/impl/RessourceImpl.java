@@ -3,10 +3,12 @@
 package simplepdl.impl;
 
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -14,6 +16,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+
 import simplepdl.AskedRessource;
 import simplepdl.Ressource;
 import simplepdl.SimplepdlPackage;
@@ -108,18 +111,6 @@ public class RessourceImpl extends ProcessElementImpl implements Ressource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AskedRessource> getWork() {
-		if (work == null) {
-			work = new EObjectWithInverseResolvingEList<AskedRessource>(AskedRessource.class, this, SimplepdlPackage.RESSOURCE__WORK, SimplepdlPackage.ASKED_RESSOURCE__RESSOURCE);
-		}
-		return work;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getName() {
 		return name;
 	}
@@ -155,6 +146,18 @@ public class RessourceImpl extends ProcessElementImpl implements Ressource {
 		stock = newStock;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, SimplepdlPackage.RESSOURCE__STOCK, oldStock, stock));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AskedRessource> getWork() {
+		if (work == null) {
+			work = new EObjectWithInverseResolvingEList<AskedRessource>(AskedRessource.class, this, SimplepdlPackage.RESSOURCE__WORK, SimplepdlPackage.ASKED_RESSOURCE__RESSOURCE);
+		}
+		return work;
 	}
 
 	/**

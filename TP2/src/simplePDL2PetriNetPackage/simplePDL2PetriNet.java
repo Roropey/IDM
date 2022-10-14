@@ -1,6 +1,8 @@
-package simplePDL2PetriNet;
+package simplePDL2PetriNetPackage;
 
 import java.io.File;
+import java.io.IOException;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -53,6 +55,7 @@ public class simplePDL2PetriNet {
 		
 		// Créer un objet resourceSetImpl qui contiendra une ressource EMF (notre modèle)
 		ResourceSet resSet = new ResourceSetImpl();
+		System.out.println("test resSet : "+resSet);
 
 		// Charger la ressource SimplePDL (notre modèle de départ)
 		URI modelURIOrigin = URI.createURI(f.toPath().toString());
@@ -61,9 +64,11 @@ public class simplePDL2PetriNet {
 		// Récupérer l'élément à la racine
 		Process process = (Process) resourceOrigin.getContents().get(0);
 		
-		// Définir la ressource PetriNet (le modèle créé)
-		URI modelURIFinal = URI.createURI("models/PetriNetOf"+process.getName());
+		// Définir la ressource PetriNet (le modèle créé)+process.getName()
+		URI modelURIFinal = URI.createURI("models/PetriNetOf"+process.getName()+".xmi");
+		System.out.println("test modelURI : "+modelURIFinal);
 		Resource resourceFinal = resSet.createResource(modelURIFinal);
+		System.out.println("test Ressource : "+resourceFinal);
 		
 		PetriNetFactory myFactory = PetriNetFactory.eINSTANCE;
 		PetriNet petriNet = myFactory.createPetriNet();
@@ -211,22 +216,23 @@ public class simplePDL2PetriNet {
 					arcTransition.setSens(ArcSens.PLACE_TO_TRANSITION);
 					
 					arcTransition.setIsReadArc(true);
+					arcTransition.setPoids(4);
 					
 					arcTransition.setPlace(ws2place.get(ws));
 					arcTransition.setTransition(ws2trans.get(ws));
 					arcTransition.setNet(petriNet);
 					
 				}
-			}
-			
-			
+			}		
 			
 				
 		}
-	
-		
-		
-		
+		// Sauver la ressource
+	    try {
+	    	resourceFinal.save(Collections.EMPTY_MAP);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 			
 	}
 	

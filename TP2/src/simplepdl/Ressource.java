@@ -4,7 +4,6 @@ package simplepdl;
 
 import org.eclipse.emf.common.util.EList;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Ressource</b></em>'.
@@ -24,20 +23,6 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface Ressource extends ProcessElement {
-	/**
-	 * Returns the value of the '<em><b>Work</b></em>' reference list.
-	 * The list contents are of type {@link simplepdl.AskedRessource}.
-	 * It is bidirectional and its opposite is '{@link simplepdl.AskedRessource#getRessource <em>Ressource</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work</em>' reference list.
-	 * @see simplepdl.SimplepdlPackage#getRessource_Work()
-	 * @see simplepdl.AskedRessource#getRessource
-	 * @model opposite="ressource"
-	 * @generated
-	 */
-	EList<AskedRessource> getWork();
-
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -81,5 +66,19 @@ public interface Ressource extends ProcessElement {
 	 * @generated
 	 */
 	void setStock(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Work</b></em>' reference list.
+	 * The list contents are of type {@link simplepdl.AskedRessource}.
+	 * It is bidirectional and its opposite is '{@link simplepdl.AskedRessource#getRessource <em>Ressource</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Work</em>' reference list.
+	 * @see simplepdl.SimplepdlPackage#getRessource_Work()
+	 * @see simplepdl.AskedRessource#getRessource
+	 * @model opposite="ressource"
+	 * @generated
+	 */
+	EList<AskedRessource> getWork();
 
 } // Ressource

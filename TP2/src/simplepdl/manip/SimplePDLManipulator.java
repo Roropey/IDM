@@ -49,7 +49,7 @@ public class SimplePDLManipulator {
 	    System.out.println("Nombre de ProcessElement dans " + process.getName() + " : " + nbPE);
 
 		// Afficher les sous-activitÃ©s
-		System.out.println("Les sous-activités sont :");
+		System.out.println("Les sous-activitÃ©s sont :");
 		for (Object o : process.getProcessElements()) {
 			if (o instanceof WorkDefinition) {
 				WorkDefinition wd = (WorkDefinition) o;

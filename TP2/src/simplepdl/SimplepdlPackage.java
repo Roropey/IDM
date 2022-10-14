@@ -599,6 +599,28 @@ public interface SimplepdlPackage extends EPackage {
 	EClass getRessource();
 
 	/**
+	 * Returns the meta object for the attribute '{@link simplepdl.Ressource#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see simplepdl.Ressource#getName()
+	 * @see #getRessource()
+	 * @generated
+	 */
+	EAttribute getRessource_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link simplepdl.Ressource#getStock <em>Stock</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Stock</em>'.
+	 * @see simplepdl.Ressource#getStock()
+	 * @see #getRessource()
+	 * @generated
+	 */
+	EAttribute getRessource_Stock();
+
+	/**
 	 * Returns the meta object for the reference list '{@link simplepdl.Ressource#getWork <em>Work</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -651,28 +673,6 @@ public interface SimplepdlPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getAskedRessource_WorkActivity();
-
-	/**
-	 * Returns the meta object for the attribute '{@link simplepdl.Ressource#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see simplepdl.Ressource#getName()
-	 * @see #getRessource()
-	 * @generated
-	 */
-	EAttribute getRessource_Name();
-
-	/**
-	 * Returns the meta object for the attribute '{@link simplepdl.Ressource#getStock <em>Stock</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Stock</em>'.
-	 * @see simplepdl.Ressource#getStock()
-	 * @see #getRessource()
-	 * @generated
-	 */
-	EAttribute getRessource_Stock();
 
 	/**
 	 * Returns the meta object for enum '{@link simplepdl.WorkSequenceType <em>Work Sequence Type</em>}'.
@@ -856,6 +856,22 @@ public interface SimplepdlPackage extends EPackage {
 		EClass RESSOURCE = eINSTANCE.getRessource();
 
 		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESSOURCE__NAME = eINSTANCE.getRessource_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Stock</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESSOURCE__STOCK = eINSTANCE.getRessource_Stock();
+
+		/**
 		 * The meta object literal for the '<em><b>Work</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -896,22 +912,6 @@ public interface SimplepdlPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ASKED_RESSOURCE__WORK_ACTIVITY = eINSTANCE.getAskedRessource_WorkActivity();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute RESSOURCE__NAME = eINSTANCE.getRessource_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Stock</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute RESSOURCE__STOCK = eINSTANCE.getRessource_Stock();
 
 		/**
 		 * The meta object literal for the '{@link simplepdl.WorkSequenceType <em>Work Sequence Type</em>}' enum.

@@ -22,7 +22,7 @@ WorkDefinition : 'wd' name=EString ;
 
 WorkSequence : 'ws' linkType=WorkSequenceType 'from' predecessor=[WorkDefinition] 'to' successor=[WorkDefinition];
 
-Guidance :'g' 'text' text=EString ('['  elements+=[ProcessElement] ( "," elements+=[ProcessElement])* ?']';
+Guidance :'g' 'text' text=EString ('['  elements+=[ProcessElement] ( "," elements+=[ProcessElement])* )?']';
 
 Ressource : 'r'	name=EString '{' 'stock' stock=EInt ('work' '(' work+=[AskedRessource|EString] ( "," work+=[AskedRessource|EString])* ')' )? '}';
 

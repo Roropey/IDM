@@ -4,7 +4,6 @@
 package fr.n7.tests;
 
 import com.google.inject.Inject;
-import fr.n7.tests.PDL1InjectorProvider;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.xtend2.lib.StringConcatenation;
@@ -23,7 +22,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 public class PDL1ParsingTest {
   @Inject
   private ParseHelper<fr.n7.pDL1.Process> parseHelper;
-  
+
   @Test
   public void loadModel() {
     try {

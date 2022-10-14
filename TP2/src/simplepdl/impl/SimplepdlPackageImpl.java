@@ -301,6 +301,24 @@ public class SimplepdlPackageImpl extends EPackageImpl implements SimplepdlPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getRessource_Name() {
+		return (EAttribute)ressourceEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getRessource_Stock() {
+		return (EAttribute)ressourceEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getRessource_Work() {
 		return (EReference)ressourceEClass.getEStructuralFeatures().get(2);
 	}
@@ -339,24 +357,6 @@ public class SimplepdlPackageImpl extends EPackageImpl implements SimplepdlPacka
 	 */
 	public EReference getAskedRessource_WorkActivity() {
 		return (EReference)askedRessourceEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getRessource_Name() {
-		return (EAttribute)ressourceEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getRessource_Stock() {
-		return (EAttribute)ressourceEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**

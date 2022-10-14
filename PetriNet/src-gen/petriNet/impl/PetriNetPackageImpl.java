@@ -12,7 +12,6 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import petriNet.Arc;
 import petriNet.ArcSens;
-import petriNet.PetriElement;
 import petriNet.PetriNet;
 import petriNet.PetriNetFactory;
 import petriNet.PetriNetPackage;

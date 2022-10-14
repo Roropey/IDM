@@ -4,7 +4,7 @@
     <semanticResources>developpement.simplepdl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_LCuJQEYdEe2DGq2RJVVGZQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_dejOkUYhEe2DGq2RJVVGZQ" name="Test diagram" repPath="#_deingEYhEe2DGq2RJVVGZQ" changeId="edad7321-e014-43b4-bb92-ef61a75a0c88">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_dejOkUYhEe2DGq2RJVVGZQ" name="Test diagram" repPath="#_deingEYhEe2DGq2RJVVGZQ" changeId="53255fe3-b908-481c-b2d4-73edd748bc39">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']"/>
         <target xmi:type="simplepdl:Process" href="developpement.simplepdl#/"/>
       </ownedRepresentationDescriptors>
@@ -17,9 +17,9 @@
           <children xmi:type="notation:Node" xmi:id="_d7hec0YhEe2DGq2RJVVGZQ" type="5002">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_d7hedEYhEe2DGq2RJVVGZQ" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_d7iFhUYhEe2DGq2RJVVGZQ" type="3016" element="_d7YUgUYhEe2DGq2RJVVGZQ">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_d7iFhkYhEe2DGq2RJVVGZQ" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7iFh0YhEe2DGq2RJVVGZQ"/>
+          <children xmi:type="notation:Node" xmi:id="_-rAyYEvSEe2dTINUgmAdwQ" type="3017" element="_-q3BYEvSEe2dTINUgmAdwQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_-rAyYUvSEe2dTINUgmAdwQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-rAyYkvSEe2dTINUgmAdwQ"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_d7hecUYhEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7heckYhEe2DGq2RJVVGZQ" x="275" y="35" width="136" height="36"/>
@@ -28,9 +28,9 @@
           <children xmi:type="notation:Node" xmi:id="_d7heeEYhEe2DGq2RJVVGZQ" type="5002">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_d7heeUYhEe2DGq2RJVVGZQ" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_d7iFiEYhEe2DGq2RJVVGZQ" type="3016" element="_d7YUhEYhEe2DGq2RJVVGZQ">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_d7iFiUYhEe2DGq2RJVVGZQ" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7iFikYhEe2DGq2RJVVGZQ"/>
+          <children xmi:type="notation:Node" xmi:id="_-rEcwEvSEe2dTINUgmAdwQ" type="3017" element="_-q3ockvSEe2dTINUgmAdwQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_-rEcwUvSEe2dTINUgmAdwQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-rEcwkvSEe2dTINUgmAdwQ"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_d7hedkYhEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7hed0YhEe2DGq2RJVVGZQ" x="20" y="100" width="141" height="36"/>
@@ -39,9 +39,9 @@
           <children xmi:type="notation:Node" xmi:id="_d7hefUYhEe2DGq2RJVVGZQ" type="5002">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_d7hefkYhEe2DGq2RJVVGZQ" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_d7iFi0YhEe2DGq2RJVVGZQ" type="3016" element="_d7YUh0YhEe2DGq2RJVVGZQ">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_d7iFjEYhEe2DGq2RJVVGZQ" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7iFjUYhEe2DGq2RJVVGZQ"/>
+          <children xmi:type="notation:Node" xmi:id="_-rFD0EvSEe2dTINUgmAdwQ" type="3017" element="_-q3odUvSEe2dTINUgmAdwQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_-rFD0UvSEe2dTINUgmAdwQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-rFD0kvSEe2dTINUgmAdwQ"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_d7hee0YhEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7hefEYhEe2DGq2RJVVGZQ" x="160" y="205" width="151" height="36"/>
@@ -50,9 +50,9 @@
           <children xmi:type="notation:Node" xmi:id="_d7iFg0YhEe2DGq2RJVVGZQ" type="5002">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_d7iFhEYhEe2DGq2RJVVGZQ" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_d7iFjkYhEe2DGq2RJVVGZQ" type="3016" element="_d7YUikYhEe2DGq2RJVVGZQ">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_d7iFj0YhEe2DGq2RJVVGZQ" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7iFkEYhEe2DGq2RJVVGZQ"/>
+          <children xmi:type="notation:Node" xmi:id="_-rFD00vSEe2dTINUgmAdwQ" type="3017" element="_-q4PgEvSEe2dTINUgmAdwQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_-rFD1EvSEe2dTINUgmAdwQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-rFD1UvSEe2dTINUgmAdwQ"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_d7iFgUYhEe2DGq2RJVVGZQ" fontName="Segoe UI" fontHeight="12"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7iFgkYhEe2DGq2RJVVGZQ" x="420" y="205" width="151" height="36"/>
@@ -192,8 +192,8 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Ellipse" uid="_d7YUgUYhEe2DGq2RJVVGZQ" labelSize="12" labelPosition="node">
-        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_-q3BYEvSEe2dTINUgmAdwQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']"/>
     </ownedDiagramElements>
@@ -203,8 +203,8 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Ellipse" uid="_d7YUhEYhEe2DGq2RJVVGZQ" labelSize="12" labelPosition="node">
-        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_-q3ockvSEe2dTINUgmAdwQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']"/>
     </ownedDiagramElements>
@@ -214,8 +214,8 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Ellipse" uid="_d7YUh0YhEe2DGq2RJVVGZQ" labelSize="12" labelPosition="node">
-        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_-q3odUvSEe2dTINUgmAdwQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']"/>
     </ownedDiagramElements>
@@ -225,8 +225,8 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Ellipse" uid="_d7YUikYhEe2DGq2RJVVGZQ" labelSize="12" labelPosition="node">
-        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_-q4PgEvSEe2dTINUgmAdwQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/simplepdl.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='WorkDefiniton']/@nodeMappings[name='WDNode']"/>
     </ownedDiagramElements>
