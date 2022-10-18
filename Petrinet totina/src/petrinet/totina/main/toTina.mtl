@@ -9,10 +9,12 @@ net [aPetriNet.name/]
 [let places : OrderedSet(Place) = aPetriNet.getPlaces() ]
 [let trans : OrderedSet(Transition) = aPetriNet.getTrans() ]
 	[for (p : Place | places)]
-pl [p.name/] ([p.jeton/])
+	pl [p.name/] ([p.jeton/])
 	[/for]
 	[for (t : Transition | trans) ] 
-tr [t.name/] [for (a : Arc | t.getArcEntrant())][a.place.name/][if (a.isReadArc)]?[elseif (a.poids > 0)]*[/if][if (a.poids > 0)][a.poids/][/if] [/for]-> [for (a : Arc | t.getArcSortant())][a.place.name/][if (a.isReadArc)]?[elseif (a.poids > 0)]*[/if][if (a.poids > 0)][a.poids/][/if] [/for]  
+	tr [t.name/] [for (a : Arc | t.getArcEntrant())]
+[a.place.name/][if (a.isReadArc)]?[elseif (a.poids > 0)]*[/if][if (a.poids > 0)][a.poids/][/if] [/for]-> [for (a : Arc | t.getArcSortant())]
+[a.place.name/][if (a.isReadArc)]?[elseif (a.poids > 0)]*[/if][if (a.poids > 0)][a.poids/][/if] [/for]  
 	[/for]
 [/let]
 [/let]
@@ -22,14 +24,10 @@ tr [t.name/] [for (a : Arc | t.getArcEntrant())][a.place.name/][if (a.isReadArc)
 
 
 [query public getPlaces(p: PetriNet) : OrderedSet(Place) = 
-	p.petriElements->select( e | e.oclIsTypeOf(Place) )
-		->collect( e | e.oclAsType(Place) )
-		->asOrderedSet()
+	p.places->asOrderedSet()
 /]
 [query public getTrans(p: PetriNet) : OrderedSet(Transition) = 
-	p.petriElements->select( e | e.oclIsTypeOf(Transition) )
-		->collect( e | e.oclAsType(Transition) )
-		->asOrderedSet()
+	p.transitions->asOrderedSet()
 /]
 
 [comment revoir les getArc car problemes : pas affichage entree/sortie des transitions/]
