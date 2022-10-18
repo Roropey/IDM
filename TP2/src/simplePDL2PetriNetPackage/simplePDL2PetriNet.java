@@ -95,8 +95,7 @@ public class simplePDL2PetriNet {
 		//pour les relier lors de "l'analyse" des WorkSequences
 		Map<WorkSequence, Place> ws2place= new HashMap<>();
 		Map<WorkSequence, Transition> ws2trans= new HashMap<>();
-		// /!\ modifications nécessaire car enlever PetriElement (modif à faire au niveau normalement du add)*
-		// préciser poids et jetons
+		
 		for (Object oWD : process.getProcessElements()) {
 			if (oWD instanceof WorkDefinition) {
 				WorkDefinition wd = (WorkDefinition) oWD;
@@ -206,27 +205,29 @@ public class simplePDL2PetriNet {
 				}
 				
 			}
-			
-			// Création des arcs des WorkSequences entre les WorkDefinitions
-			for (Object oWS : process.getProcessElements()) {
-				if (oWS instanceof WorkSequence) {
-					WorkSequence ws = (WorkSequence) oWS;
-					Arc arcTransition = myFactory.createArc();
-					
-					arcTransition.setSens(ArcSens.PLACE_TO_TRANSITION);
-					
-					arcTransition.setIsReadArc(true);
-					arcTransition.setPoids(4);
-					
-					arcTransition.setPlace(ws2place.get(ws));
-					arcTransition.setTransition(ws2trans.get(ws));
-					arcTransition.setNet(petriNet);
-					
-				}
-			}		
+		}	
+		// Création des arcs des WorkSequences entre les WorkDefinitions
+		for (Object oWS : process.getProcessElements()) {
+			if (oWS instanceof WorkSequence) {
+				WorkSequence ws = (WorkSequence) oWS;
+				
+				Arc arcTransition = myFactory.createArc();
+				
+				
+				arcTransition.setSens(ArcSens.PLACE_TO_TRANSITION);
+				
+				arcTransition.setIsReadArc(true);
+				arcTransition.setPoids(1);
+				
+				arcTransition.setPlace(ws2place.get(ws));
+				arcTransition.setTransition(ws2trans.get(ws));
+				arcTransition.setNet(petriNet);
+				
+			}
+		}		
 			
 				
-		}
+		
 		// Sauver la ressource
 	    try {
 	    	resourceFinal.save(Collections.EMPTY_MAP);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="toTina" nsURI="petrinet::totina::main::toTina" startHeaderPosition="29" endHeaderPosition="135">
+  <mtl:Module name="toTina" nsURI="petrinet::totina::main::toTina" startHeaderPosition="30" endHeaderPosition="140">
     <input>
       <takesTypesFrom href="http://petrinet#/"/>
     </input>
@@ -14,11 +14,11 @@
           </source>
           <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//PetriNet/name"/>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
         <body xsi:type="mtl:LetBlock">
           <body xsi:type="mtl:LetBlock">
             <body xsi:type="mtl:ForBlock">
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="pl "/>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;pl "/>
               <body xsi:type="ocl.ecore:PropertyCallExp">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                 <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/petriNetToTina/%/%.3/%/%/p">
@@ -34,14 +34,14 @@
                 </source>
                 <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//Place/jeton"/>
               </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=")&#xA;"/>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=")&#xD;&#xA;"/>
               <loopVariable name="p">
                 <eType xsi:type="ecore:EClass" href="http://petrinet#//Place"/>
               </loopVariable>
               <iterSet xsi:type="ocl.ecore:VariableExp" name="places" eType="/3/OrderedSet(Place)" referredVariable="/0/petriNetToTina/%/%.3/places"/>
             </body>
             <body xsi:type="mtl:ForBlock">
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="tr "/>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;tr "/>
               <body xsi:type="ocl.ecore:PropertyCallExp">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                 <source xsi:type="ocl.ecore:VariableExp" name="t" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/t">
@@ -49,13 +49,12 @@
                 </source>
                 <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//Transition/name"/>
               </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
               <body xsi:type="mtl:ForBlock">
                 <body xsi:type="ocl.ecore:PropertyCallExp">
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                   <source xsi:type="ocl.ecore:PropertyCallExp">
                     <eType xsi:type="ecore:EClass" href="http://petrinet#//Place"/>
-                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.3/a">
+                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.2/a">
                       <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                     </source>
                     <referredProperty xsi:type="ecore:EReference" href="http://petrinet#//Arc/place"/>
@@ -66,7 +65,7 @@
                   <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="?"/>
                   <ifExpr xsi:type="ocl.ecore:PropertyCallExp">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
-                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.3/a">
+                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.2/a">
                       <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                     </source>
                     <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//Arc/isReadArc"/>
@@ -77,7 +76,7 @@
                       <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
                       <source xsi:type="ocl.ecore:PropertyCallExp">
                         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
-                        <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.3/a">
+                        <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.2/a">
                           <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                         </source>
                         <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//Arc/poids"/>
@@ -92,7 +91,7 @@
                 <body xsi:type="mtl:IfBlock">
                   <body xsi:type="ocl.ecore:PropertyCallExp">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
-                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.3/a">
+                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.2/a">
                       <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                     </source>
                     <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//Arc/poids"/>
@@ -101,7 +100,7 @@
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
                     <source xsi:type="ocl.ecore:PropertyCallExp">
                       <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
-                      <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.3/a">
+                      <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.2/a">
                         <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                       </source>
                       <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//Arc/poids"/>
@@ -112,7 +111,6 @@
                     <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/%3E"/>
                   </ifExpr>
                 </body>
-                <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
                 <loopVariable name="a">
                   <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                 </loopVariable>
@@ -128,7 +126,7 @@
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                   <source xsi:type="ocl.ecore:PropertyCallExp">
                     <eType xsi:type="ecore:EClass" href="http://petrinet#//Place"/>
-                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.5/a">
+                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.4/a">
                       <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                     </source>
                     <referredProperty xsi:type="ecore:EReference" href="http://petrinet#//Arc/place"/>
@@ -139,7 +137,7 @@
                   <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="?"/>
                   <ifExpr xsi:type="ocl.ecore:PropertyCallExp">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
-                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.5/a">
+                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.4/a">
                       <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                     </source>
                     <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//Arc/isReadArc"/>
@@ -150,7 +148,7 @@
                       <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
                       <source xsi:type="ocl.ecore:PropertyCallExp">
                         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
-                        <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.5/a">
+                        <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.4/a">
                           <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                         </source>
                         <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//Arc/poids"/>
@@ -165,7 +163,7 @@
                 <body xsi:type="mtl:IfBlock">
                   <body xsi:type="ocl.ecore:PropertyCallExp">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
-                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.5/a">
+                    <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.4/a">
                       <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                     </source>
                     <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//Arc/poids"/>
@@ -174,7 +172,7 @@
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
                     <source xsi:type="ocl.ecore:PropertyCallExp">
                       <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
-                      <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.5/a">
+                      <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/petriNetToTina/%/%.3/%/%.1/%.4/a">
                         <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                       </source>
                       <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//Arc/poids"/>
@@ -185,7 +183,6 @@
                     <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/%3E"/>
                   </ifExpr>
                 </body>
-                <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
                 <loopVariable name="a">
                   <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
                 </loopVariable>
@@ -195,7 +192,6 @@
                   </argument>
                 </iterSet>
               </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="  &#xA;"/>
               <loopVariable name="t">
                 <eType xsi:type="ecore:EClass" href="http://petrinet#//Transition"/>
               </loopVariable>
@@ -217,7 +213,7 @@
             </initExpression>
           </letVariable>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
         <fileUrl xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:PropertyCallExp">
@@ -243,14 +239,32 @@
       <parameter name="p">
         <eType xsi:type="ecore:EClass" href="http://petrinet#//PetriNet"/>
       </parameter>
+      <expression xsi:type="ocl.ecore:OperationCallExp" eType="/3/OrderedSet(Place)">
+        <source xsi:type="ocl.ecore:PropertyCallExp" eType="/3/OrderedSet(Place)">
+          <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getPlaces/p">
+            <eType xsi:type="ecore:EClass" href="http://petrinet#//PetriNet"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http://petrinet#//PetriNet/places"/>
+        </source>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/asOrderedSet"/>
+      </expression>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="getTrans" visibility="Public" type="/3/OrderedSet(Transition)">
       <parameter name="p">
         <eType xsi:type="ecore:EClass" href="http://petrinet#//PetriNet"/>
       </parameter>
+      <expression xsi:type="ocl.ecore:OperationCallExp" eType="/3/OrderedSet(Transition)">
+        <source xsi:type="ocl.ecore:PropertyCallExp" eType="/3/OrderedSet(Transition)">
+          <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getTrans/p">
+            <eType xsi:type="ecore:EClass" href="http://petrinet#//PetriNet"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http://petrinet#//PetriNet/transitions"/>
+        </source>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/asOrderedSet"/>
+      </expression>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="1131" endPosition="1209" value=" revoir les getArc car problemes : pas affichage entree/sortie des transitions"/>
+      <body startPosition="994" endPosition="1072" value=" revoir les getArc car problemes : pas affichage entree/sortie des transitions"/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="getArcSortant" visibility="Public" type="/3/OrderedSet(Arc)">
       <parameter name="t">
@@ -440,13 +454,10 @@
       <elementType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:SetType" instanceClassName="java.util.Set">
-      <elementType xsi:type="ocl.ecore:InvalidType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclInvalid"/>
+      <elementType xsi:type="ecore:EClass" href="http://petrinet#//Place"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(OclInvalid)" instanceClassName="org.eclipse.ocl.util.Bag">
-      <elementType xsi:type="ocl.ecore:InvalidType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclInvalid"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" instanceClassName="java.util.LinkedHashSet">
-      <elementType xsi:type="ocl.ecore:InvalidType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclInvalid"/>
+    <eClassifiers xsi:type="ocl.ecore:SetType" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://petrinet#//Transition"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:SetType" instanceClassName="java.util.Set">
       <elementType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
@@ -570,9 +581,6 @@
     <eType xsi:type="ecore:EClass" href="http://petrinet#//PetriNet"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://petrinet#//PetriNet"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
@@ -580,21 +588,6 @@
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://petrinet#//PetriNet"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://petrinet#//PetriNet"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://petrinet#//PetriNet"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://petrinet#//PetriNet"/>
@@ -622,588 +615,598 @@
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/petriNetToTina">
-      <details key="start" value="66"/>
-      <details key="end" value="759"/>
+      <details key="start" value="70"/>
+      <details key="end" value="785"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/petriNetToTina/%">
-      <details key="start" value="138"/>
-      <details key="end" value="747"/>
+      <details key="start" value="144"/>
+      <details key="end" value="772"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/petriNetToTina/%/%">
-      <details key="start" value="187"/>
-      <details key="end" value="191"/>
+      <details key="start" value="194"/>
+      <details key="end" value="198"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/petriNetToTina/%/%.1">
-      <details key="start" value="192"/>
-      <details key="end" value="206"/>
+      <details key="start" value="199"/>
+      <details key="end" value="213"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/petriNetToTina/%/%.1/aPetriNet">
-      <details key="start" value="192"/>
-      <details key="end" value="201"/>
+      <details key="start" value="199"/>
+      <details key="end" value="208"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/petriNetToTina/%/%.2">
-      <details key="start" value="208"/>
-      <details key="end" value="209"/>
+      <details key="start" value="215"/>
+      <details key="end" value="217"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/petriNetToTina/%/%.3">
-      <details key="start" value="209"/>
-      <details key="end" value="738"/>
+      <details key="start" value="217"/>
+      <details key="end" value="761"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/petriNetToTina/%/%.3/%">
-      <details key="start" value="267"/>
-      <details key="end" value="731"/>
+      <details key="start" value="276"/>
+      <details key="end" value="753"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/petriNetToTina/%/%.3/%/%">
-      <details key="start" value="329"/>
-      <details key="end" value="389"/>
+      <details key="start" value="339"/>
+      <details key="end" value="402"/>
       <details key="line" value="11"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/petriNetToTina/%/%.3/%/%/%">
-      <details key="start" value="356"/>
-      <details key="end" value="359"/>
+      <details key="start" value="367"/>
+      <details key="end" value="371"/>
       <details key="line" value="12"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/petriNetToTina/%/%.3/%/%/%.1">
-      <details key="start" value="360"/>
-      <details key="end" value="366"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/petriNetToTina/%/%.3/%/%/%.1/p">
-      <details key="start" value="360"/>
-      <details key="end" value="361"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/petriNetToTina/%/%.3/%/%/%.2">
-      <details key="start" value="368"/>
-      <details key="end" value="370"/>
-      <details key="line" value="12"/>
-    </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/petriNetToTina/%/%.3/%/%/%.3">
-      <details key="start" value="371"/>
+      <details key="start" value="372"/>
       <details key="end" value="378"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/petriNetToTina/%/%.3/%/%/%.3/p">
-      <details key="start" value="371"/>
-      <details key="end" value="372"/>
+    <eAnnotations source="positions.11" references="/0/petriNetToTina/%/%.3/%/%/%.1/p">
+      <details key="start" value="372"/>
+      <details key="end" value="373"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/petriNetToTina/%/%.3/%/%/%.4">
+    <eAnnotations source="positions.12" references="/0/petriNetToTina/%/%.3/%/%/%.2">
       <details key="start" value="380"/>
       <details key="end" value="382"/>
       <details key="line" value="12"/>
     </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/petriNetToTina/%/%.3/%/%/%.3">
+      <details key="start" value="383"/>
+      <details key="end" value="390"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/petriNetToTina/%/%.3/%/%/%.3/p">
+      <details key="start" value="383"/>
+      <details key="end" value="384"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/petriNetToTina/%/%.3/%/%/%.4">
+      <details key="start" value="392"/>
+      <details key="end" value="395"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
     <eAnnotations source="positions.16" references="/0/petriNetToTina/%/%.3/%/%/p">
-      <details key="start" value="335"/>
-      <details key="end" value="344"/>
+      <details key="start" value="345"/>
+      <details key="end" value="354"/>
       <details key="line" value="11"/>
     </eAnnotations>
     <eAnnotations source="positions.17" references="/0/petriNetToTina/%/%.3/%/%/places">
-      <details key="start" value="347"/>
-      <details key="end" value="353"/>
+      <details key="start" value="357"/>
+      <details key="end" value="363"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.18" references="/0/petriNetToTina/%/%.3/%/%.1">
-      <details key="start" value="391"/>
-      <details key="end" value="724"/>
+      <details key="start" value="405"/>
+      <details key="end" value="745"/>
       <details key="line" value="14"/>
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/petriNetToTina/%/%.3/%/%.1/%">
-      <details key="start" value="424"/>
-      <details key="end" value="427"/>
+      <details key="start" value="439"/>
+      <details key="end" value="443"/>
       <details key="line" value="14"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/petriNetToTina/%/%.3/%/%.1/%.1">
-      <details key="start" value="428"/>
-      <details key="end" value="434"/>
+      <details key="start" value="444"/>
+      <details key="end" value="450"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.21" references="/0/petriNetToTina/%/%.3/%/%.1/%.1/t">
-      <details key="start" value="428"/>
-      <details key="end" value="429"/>
+      <details key="start" value="444"/>
+      <details key="end" value="445"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.22" references="/0/petriNetToTina/%/%.3/%/%.1/%.2">
-      <details key="start" value="436"/>
-      <details key="end" value="437"/>
+      <details key="start" value="453"/>
+      <details key="end" value="592"/>
       <details key="line" value="15"/>
     </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/petriNetToTina/%/%.3/%/%.1/%.3">
-      <details key="start" value="437"/>
-      <details key="end" value="574"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.24" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%">
-      <details key="start" value="473"/>
-      <details key="end" value="485"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.25" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%/%">
-      <details key="start" value="473"/>
-      <details key="end" value="480"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.26" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%/%/a">
-      <details key="start" value="473"/>
-      <details key="end" value="474"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.27" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.1">
-      <details key="start" value="487"/>
-      <details key="end" value="534"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.28" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.1/%">
-      <details key="start" value="505"/>
-      <details key="end" value="506"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.29" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.1/%.1">
+    <eAnnotations source="positions.23" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%">
       <details key="start" value="491"/>
-      <details key="end" value="504"/>
+      <details key="end" value="503"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.30" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.1/%.1/a">
-      <details key="start" value="492"/>
-      <details key="end" value="493"/>
+    <eAnnotations source="positions.24" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%/%">
+      <details key="start" value="491"/>
+      <details key="end" value="498"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.31" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.1/%.2">
-      <details key="start" value="506"/>
-      <details key="end" value="529"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.32" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.1/%.2/%">
-      <details key="start" value="528"/>
-      <details key="end" value="529"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.33" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.1/%.2/%.1">
-      <details key="start" value="514"/>
-      <details key="end" value="527"/>
+    <eAnnotations source="positions.25" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%/%/a">
+      <details key="start" value="491"/>
+      <details key="end" value="492"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.34" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.1/%.2/%.1/%">
-      <details key="start" value="515"/>
+    <eAnnotations source="positions.26" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.1">
+      <details key="start" value="505"/>
+      <details key="end" value="552"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.1/%">
+      <details key="start" value="523"/>
+      <details key="end" value="524"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.1/%.1">
+      <details key="start" value="509"/>
       <details key="end" value="522"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.35" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.1/%.2/%.1/%/a">
-      <details key="start" value="515"/>
-      <details key="end" value="516"/>
+    <eAnnotations source="positions.29" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.1/%.1/a">
+      <details key="start" value="510"/>
+      <details key="end" value="511"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.36" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.1/%.2/%.1/%.1">
-      <details key="start" value="525"/>
-      <details key="end" value="526"/>
+    <eAnnotations source="positions.30" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.1/%.2">
+      <details key="start" value="524"/>
+      <details key="end" value="547"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.1/%.2/%">
+      <details key="start" value="546"/>
+      <details key="end" value="547"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.1/%.2/%.1">
+      <details key="start" value="532"/>
+      <details key="end" value="545"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.37" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.2">
-      <details key="start" value="534"/>
-      <details key="end" value="567"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.38" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.2/%">
-      <details key="start" value="553"/>
-      <details key="end" value="560"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.39" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.2/%/a">
-      <details key="start" value="553"/>
-      <details key="end" value="554"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.40" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.2/%.1">
-      <details key="start" value="538"/>
-      <details key="end" value="551"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.41" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.2/%.1/%">
-      <details key="start" value="539"/>
-      <details key="end" value="546"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.42" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.2/%.1/%/a">
-      <details key="start" value="539"/>
+    <eAnnotations source="positions.33" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.1/%.2/%.1/%">
+      <details key="start" value="533"/>
       <details key="end" value="540"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.43" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.2/%.1/%.1">
-      <details key="start" value="549"/>
-      <details key="end" value="550"/>
+    <eAnnotations source="positions.34" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.1/%.2/%.1/%/a">
+      <details key="start" value="533"/>
+      <details key="end" value="534"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.44" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.3">
+    <eAnnotations source="positions.35" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.1/%.2/%.1/%.1">
+      <details key="start" value="543"/>
+      <details key="end" value="544"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.2">
+      <details key="start" value="552"/>
+      <details key="end" value="585"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.2/%">
+      <details key="start" value="571"/>
+      <details key="end" value="578"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.2/%/a">
+      <details key="start" value="571"/>
+      <details key="end" value="572"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.2/%.1">
+      <details key="start" value="556"/>
+      <details key="end" value="569"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.2/%.1/%">
+      <details key="start" value="557"/>
+      <details key="end" value="564"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.2/%.1/%/a">
+      <details key="start" value="557"/>
+      <details key="end" value="558"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.2/%.1/%.1">
       <details key="start" value="567"/>
       <details key="end" value="568"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/a">
+      <details key="start" value="459"/>
+      <details key="end" value="466"/>
       <details key="line" value="15"/>
     </eAnnotations>
-    <eAnnotations source="positions.45" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/a">
-      <details key="start" value="443"/>
-      <details key="end" value="450"/>
-      <details key="line" value="15"/>
+    <eAnnotations source="positions.44" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.3">
+      <details key="start" value="469"/>
+      <details key="end" value="486"/>
+      <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.46" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.4">
-      <details key="start" value="453"/>
+    <eAnnotations source="positions.45" references="/0/petriNetToTina/%/%.3/%/%.1/%.2/%.3/t">
+      <details key="start" value="469"/>
       <details key="end" value="470"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.47" references="/0/petriNetToTina/%/%.3/%/%.1/%.3/%.4/t">
-      <details key="start" value="453"/>
-      <details key="end" value="454"/>
+    <eAnnotations source="positions.46" references="/0/petriNetToTina/%/%.3/%/%.1/%.3">
+      <details key="start" value="592"/>
+      <details key="end" value="595"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/petriNetToTina/%/%.3/%/%.1/%.4">
+      <details key="start" value="595"/>
+      <details key="end" value="734"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%">
+      <details key="start" value="633"/>
+      <details key="end" value="645"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.48" references="/0/petriNetToTina/%/%.3/%/%.1/%.4">
-      <details key="start" value="574"/>
-      <details key="end" value="577"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.49" references="/0/petriNetToTina/%/%.3/%/%.1/%.5">
-      <details key="start" value="577"/>
-      <details key="end" value="714"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.50" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%">
-      <details key="start" value="613"/>
-      <details key="end" value="625"/>
+    <eAnnotations source="positions.49" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%/%">
+      <details key="start" value="633"/>
+      <details key="end" value="640"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.51" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%/%">
-      <details key="start" value="613"/>
-      <details key="end" value="620"/>
+    <eAnnotations source="positions.50" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%/%/a">
+      <details key="start" value="633"/>
+      <details key="end" value="634"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.52" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%/%/a">
-      <details key="start" value="613"/>
-      <details key="end" value="614"/>
-      <details key="line" value="0"/>
+    <eAnnotations source="positions.51" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.1">
+      <details key="start" value="647"/>
+      <details key="end" value="694"/>
+      <details key="line" value="17"/>
     </eAnnotations>
-    <eAnnotations source="positions.53" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.1">
-      <details key="start" value="627"/>
-      <details key="end" value="674"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.54" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.1/%">
-      <details key="start" value="645"/>
-      <details key="end" value="646"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.55" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.1/%.1">
-      <details key="start" value="631"/>
-      <details key="end" value="644"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.56" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.1/%.1/a">
-      <details key="start" value="632"/>
-      <details key="end" value="633"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.57" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.1/%.2">
-      <details key="start" value="646"/>
-      <details key="end" value="669"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.58" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.1/%.2/%">
-      <details key="start" value="668"/>
-      <details key="end" value="669"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.59" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.1/%.2/%.1">
-      <details key="start" value="654"/>
-      <details key="end" value="667"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.60" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.1/%.2/%.1/%">
-      <details key="start" value="655"/>
-      <details key="end" value="662"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.61" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.1/%.2/%.1/%/a">
-      <details key="start" value="655"/>
-      <details key="end" value="656"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.62" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.1/%.2/%.1/%.1">
+    <eAnnotations source="positions.52" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.1/%">
       <details key="start" value="665"/>
       <details key="end" value="666"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.1/%.1">
+      <details key="start" value="651"/>
+      <details key="end" value="664"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.63" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.2">
+    <eAnnotations source="positions.54" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.1/%.1/a">
+      <details key="start" value="652"/>
+      <details key="end" value="653"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.1/%.2">
+      <details key="start" value="666"/>
+      <details key="end" value="689"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.1/%.2/%">
+      <details key="start" value="688"/>
+      <details key="end" value="689"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.1/%.2/%.1">
       <details key="start" value="674"/>
-      <details key="end" value="707"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.64" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.2/%">
-      <details key="start" value="693"/>
-      <details key="end" value="700"/>
+      <details key="end" value="687"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.65" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.2/%/a">
-      <details key="start" value="693"/>
-      <details key="end" value="694"/>
+    <eAnnotations source="positions.58" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.1/%.2/%.1/%">
+      <details key="start" value="675"/>
+      <details key="end" value="682"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.66" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.2/%.1">
-      <details key="start" value="678"/>
-      <details key="end" value="691"/>
+    <eAnnotations source="positions.59" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.1/%.2/%.1/%/a">
+      <details key="start" value="675"/>
+      <details key="end" value="676"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.67" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.2/%.1/%">
-      <details key="start" value="679"/>
+    <eAnnotations source="positions.60" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.1/%.2/%.1/%.1">
+      <details key="start" value="685"/>
       <details key="end" value="686"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.68" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.2/%.1/%/a">
-      <details key="start" value="679"/>
-      <details key="end" value="680"/>
+    <eAnnotations source="positions.61" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.2">
+      <details key="start" value="694"/>
+      <details key="end" value="727"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.2/%">
+      <details key="start" value="713"/>
+      <details key="end" value="720"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.69" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.2/%.1/%.1">
-      <details key="start" value="689"/>
-      <details key="end" value="690"/>
+    <eAnnotations source="positions.63" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.2/%/a">
+      <details key="start" value="713"/>
+      <details key="end" value="714"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.70" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.3">
-      <details key="start" value="707"/>
-      <details key="end" value="708"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.71" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/a">
-      <details key="start" value="583"/>
-      <details key="end" value="590"/>
-      <details key="line" value="15"/>
-    </eAnnotations>
-    <eAnnotations source="positions.72" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.4">
-      <details key="start" value="593"/>
-      <details key="end" value="610"/>
+    <eAnnotations source="positions.64" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.2/%.1">
+      <details key="start" value="698"/>
+      <details key="end" value="711"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.73" references="/0/petriNetToTina/%/%.3/%/%.1/%.5/%.4/t">
-      <details key="start" value="593"/>
-      <details key="end" value="594"/>
+    <eAnnotations source="positions.65" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.2/%.1/%">
+      <details key="start" value="699"/>
+      <details key="end" value="706"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.74" references="/0/petriNetToTina/%/%.3/%/%.1/%.6">
-      <details key="start" value="714"/>
-      <details key="end" value="717"/>
-      <details key="line" value="15"/>
+    <eAnnotations source="positions.66" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.2/%.1/%/a">
+      <details key="start" value="699"/>
+      <details key="end" value="700"/>
+      <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.75" references="/0/petriNetToTina/%/%.3/%/%.1/t">
-      <details key="start" value="397"/>
-      <details key="end" value="411"/>
+    <eAnnotations source="positions.67" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.2/%.1/%.1">
+      <details key="start" value="709"/>
+      <details key="end" value="710"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/a">
+      <details key="start" value="601"/>
+      <details key="end" value="608"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.3">
+      <details key="start" value="611"/>
+      <details key="end" value="628"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/petriNetToTina/%/%.3/%/%.1/%.4/%.3/t">
+      <details key="start" value="611"/>
+      <details key="end" value="612"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/petriNetToTina/%/%.3/%/%.1/t">
+      <details key="start" value="411"/>
+      <details key="end" value="425"/>
       <details key="line" value="14"/>
     </eAnnotations>
-    <eAnnotations source="positions.76" references="/0/petriNetToTina/%/%.3/%/%.1/trans">
-      <details key="start" value="414"/>
-      <details key="end" value="419"/>
+    <eAnnotations source="positions.72" references="/0/petriNetToTina/%/%.3/%/%.1/trans">
+      <details key="start" value="428"/>
+      <details key="end" value="433"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.77" references="/0/petriNetToTina/%/%.3/%/trans">
-      <details key="start" value="272"/>
-      <details key="end" value="325"/>
+    <eAnnotations source="positions.73" references="/0/petriNetToTina/%/%.3/%/trans">
+      <details key="start" value="281"/>
+      <details key="end" value="334"/>
       <details key="line" value="10"/>
     </eAnnotations>
-    <eAnnotations source="positions.78" references="/0/petriNetToTina/%/%.3/%/trans/%">
-      <details key="start" value="306"/>
-      <details key="end" value="326"/>
+    <eAnnotations source="positions.74" references="/0/petriNetToTina/%/%.3/%/trans/%">
+      <details key="start" value="315"/>
+      <details key="end" value="335"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.79" references="/0/petriNetToTina/%/%.3/%/trans/%/aPetriNet">
-      <details key="start" value="306"/>
-      <details key="end" value="315"/>
+    <eAnnotations source="positions.75" references="/0/petriNetToTina/%/%.3/%/trans/%/aPetriNet">
+      <details key="start" value="315"/>
+      <details key="end" value="324"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.80" references="/0/petriNetToTina/%/%.3/places">
-      <details key="start" value="214"/>
-      <details key="end" value="264"/>
+    <eAnnotations source="positions.76" references="/0/petriNetToTina/%/%.3/places">
+      <details key="start" value="222"/>
+      <details key="end" value="272"/>
       <details key="line" value="9"/>
     </eAnnotations>
-    <eAnnotations source="positions.81" references="/0/petriNetToTina/%/%.3/places/%">
-      <details key="start" value="244"/>
-      <details key="end" value="265"/>
+    <eAnnotations source="positions.77" references="/0/petriNetToTina/%/%.3/places/%">
+      <details key="start" value="252"/>
+      <details key="end" value="273"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.82" references="/0/petriNetToTina/%/%.3/places/%/aPetriNet">
-      <details key="start" value="244"/>
-      <details key="end" value="253"/>
+    <eAnnotations source="positions.78" references="/0/petriNetToTina/%/%.3/places/%/aPetriNet">
+      <details key="start" value="252"/>
+      <details key="end" value="261"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.83" references="/0/petriNetToTina/%/%.4">
-      <details key="start" value="739"/>
-      <details key="end" value="740"/>
-      <details key="line" value="19"/>
+    <eAnnotations source="positions.79" references="/0/petriNetToTina/%/%.4">
+      <details key="start" value="763"/>
+      <details key="end" value="765"/>
+      <details key="line" value="21"/>
     </eAnnotations>
-    <eAnnotations source="positions.84" references="/0/petriNetToTina/%/%.5">
-      <details key="start" value="145"/>
-      <details key="end" value="168"/>
+    <eAnnotations source="positions.80" references="/0/petriNetToTina/%/%.5">
+      <details key="start" value="151"/>
+      <details key="end" value="174"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.85" references="/0/petriNetToTina/%/%.5/%">
-      <details key="start" value="145"/>
-      <details key="end" value="159"/>
+    <eAnnotations source="positions.81" references="/0/petriNetToTina/%/%.5/%">
+      <details key="start" value="151"/>
+      <details key="end" value="165"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.86" references="/0/petriNetToTina/%/%.5/%/aPetriNet">
-      <details key="start" value="145"/>
-      <details key="end" value="154"/>
+    <eAnnotations source="positions.82" references="/0/petriNetToTina/%/%.5/%/aPetriNet">
+      <details key="start" value="151"/>
+      <details key="end" value="160"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.87" references="/0/petriNetToTina/%/%.5/%.1">
-      <details key="start" value="162"/>
-      <details key="end" value="168"/>
+    <eAnnotations source="positions.83" references="/0/petriNetToTina/%/%.5/%.1">
+      <details key="start" value="168"/>
+      <details key="end" value="174"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.88" references="/0/petriNetToTina/%/%.6">
-      <details key="start" value="177"/>
-      <details key="end" value="184"/>
+    <eAnnotations source="positions.84" references="/0/petriNetToTina/%/%.6">
+      <details key="start" value="183"/>
+      <details key="end" value="190"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.89" references="/0/petriNetToTina/aPetriNet">
-      <details key="start" value="98"/>
-      <details key="end" value="118"/>
+    <eAnnotations source="positions.85" references="/0/petriNetToTina/aPetriNet">
+      <details key="start" value="102"/>
+      <details key="end" value="122"/>
       <details key="line" value="5"/>
     </eAnnotations>
-    <eAnnotations source="positions.90" references="/0/getPlaces">
-      <details key="start" value="762"/>
-      <details key="end" value="934"/>
-      <details key="line" value="24"/>
+    <eAnnotations source="positions.86" references="/0/getPlaces">
+      <details key="start" value="791"/>
+      <details key="end" value="881"/>
+      <details key="line" value="26"/>
     </eAnnotations>
-    <eAnnotations source="positions.91" references="/0/getPlaces/p">
-      <details key="start" value="786"/>
-      <details key="end" value="797"/>
-      <details key="line" value="24"/>
+    <eAnnotations source="positions.87" references="/0/getPlaces/p">
+      <details key="start" value="815"/>
+      <details key="end" value="826"/>
+      <details key="line" value="26"/>
     </eAnnotations>
-    <eAnnotations source="positions.92" references="/0/getTrans">
-      <details key="start" value="935"/>
-      <details key="end" value="1121"/>
+    <eAnnotations source="positions.88" references="/0/getPlaces/%">
+      <details key="start" value="853"/>
+      <details key="end" value="877"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/getPlaces/%/%">
+      <details key="start" value="853"/>
+      <details key="end" value="861"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/getPlaces/%/%/p">
+      <details key="start" value="853"/>
+      <details key="end" value="854"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/getTrans">
+      <details key="start" value="883"/>
+      <details key="end" value="982"/>
       <details key="line" value="29"/>
     </eAnnotations>
-    <eAnnotations source="positions.93" references="/0/getTrans/p">
-      <details key="start" value="958"/>
-      <details key="end" value="969"/>
+    <eAnnotations source="positions.92" references="/0/getTrans/p">
+      <details key="start" value="906"/>
+      <details key="end" value="917"/>
       <details key="line" value="29"/>
     </eAnnotations>
-    <eAnnotations source="positions.94" references="/0/%">
-      <details key="start" value="1123"/>
-      <details key="end" value="1211"/>
+    <eAnnotations source="positions.93" references="/0/getTrans/%">
+      <details key="start" value="949"/>
+      <details key="end" value="978"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.95" references="/0/getArcSortant">
-      <details key="start" value="1212"/>
-      <details key="end" value="1357"/>
-      <details key="line" value="36"/>
-    </eAnnotations>
-    <eAnnotations source="positions.96" references="/0/getArcSortant/t">
-      <details key="start" value="1240"/>
-      <details key="end" value="1253"/>
-      <details key="line" value="36"/>
-    </eAnnotations>
-    <eAnnotations source="positions.97" references="/0/getArcSortant/%">
-      <details key="start" value="1277"/>
-      <details key="end" value="1354"/>
+    <eAnnotations source="positions.94" references="/0/getTrans/%/%">
+      <details key="start" value="949"/>
+      <details key="end" value="962"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.98" references="/0/getArcSortant/%/select">
-      <details key="start" value="1277"/>
-      <details key="end" value="1335"/>
+    <eAnnotations source="positions.95" references="/0/getTrans/%/%/p">
+      <details key="start" value="949"/>
+      <details key="end" value="950"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.99" references="/0/getArcSortant/%/select/%">
-      <details key="start" value="1277"/>
-      <details key="end" value="1284"/>
+    <eAnnotations source="positions.96" references="/0/%">
+      <details key="start" value="986"/>
+      <details key="end" value="1074"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.100" references="/0/getArcSortant/%/select/%/t">
-      <details key="start" value="1277"/>
-      <details key="end" value="1278"/>
+    <eAnnotations source="positions.97" references="/0/getArcSortant">
+      <details key="start" value="1076"/>
+      <details key="end" value="1224"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.98" references="/0/getArcSortant/t">
+      <details key="start" value="1104"/>
+      <details key="end" value="1117"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.99" references="/0/getArcSortant/%">
+      <details key="start" value="1142"/>
+      <details key="end" value="1220"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.101" references="/0/getArcSortant/%/select/%.1">
-      <details key="start" value="1298"/>
-      <details key="end" value="1333"/>
+    <eAnnotations source="positions.100" references="/0/getArcSortant/%/select">
+      <details key="start" value="1142"/>
+      <details key="end" value="1200"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.102" references="/0/getArcSortant/%/select/%.1/%">
-      <details key="start" value="1298"/>
-      <details key="end" value="1304"/>
+    <eAnnotations source="positions.101" references="/0/getArcSortant/%/select/%">
+      <details key="start" value="1142"/>
+      <details key="end" value="1149"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.103" references="/0/getArcSortant/%/select/%.1/%/p">
-      <details key="start" value="1298"/>
+    <eAnnotations source="positions.102" references="/0/getArcSortant/%/select/%/t">
+      <details key="start" value="1142"/>
+      <details key="end" value="1143"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.103" references="/0/getArcSortant/%/select/%.1">
+      <details key="start" value="1163"/>
+      <details key="end" value="1198"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.104" references="/0/getArcSortant/%/select/%.1/%">
+      <details key="start" value="1163"/>
+      <details key="end" value="1169"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/getArcSortant/%/select/%.1/%/p">
+      <details key="start" value="1163"/>
+      <details key="end" value="1164"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/getArcSortant/%/select/%.1/%.1">
+      <details key="start" value="1172"/>
+      <details key="end" value="1198"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/getArcSortant/%/select/p">
+      <details key="start" value="1159"/>
+      <details key="end" value="1160"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/getArcEntrant">
+      <details key="start" value="1226"/>
+      <details key="end" value="1374"/>
+      <details key="line" value="38"/>
+    </eAnnotations>
+    <eAnnotations source="positions.109" references="/0/getArcEntrant/t">
+      <details key="start" value="1254"/>
+      <details key="end" value="1267"/>
+      <details key="line" value="38"/>
+    </eAnnotations>
+    <eAnnotations source="positions.110" references="/0/getArcEntrant/%">
+      <details key="start" value="1292"/>
+      <details key="end" value="1370"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/getArcEntrant/%/select">
+      <details key="start" value="1292"/>
+      <details key="end" value="1350"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/getArcEntrant/%/select/%">
+      <details key="start" value="1292"/>
       <details key="end" value="1299"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.104" references="/0/getArcSortant/%/select/%.1/%.1">
-      <details key="start" value="1307"/>
-      <details key="end" value="1333"/>
+    <eAnnotations source="positions.113" references="/0/getArcEntrant/%/select/%/t">
+      <details key="start" value="1292"/>
+      <details key="end" value="1293"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.105" references="/0/getArcSortant/%/select/p">
-      <details key="start" value="1294"/>
-      <details key="end" value="1295"/>
+    <eAnnotations source="positions.114" references="/0/getArcEntrant/%/select/%.1">
+      <details key="start" value="1313"/>
+      <details key="end" value="1348"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.106" references="/0/getArcEntrant">
-      <details key="start" value="1358"/>
-      <details key="end" value="1503"/>
-      <details key="line" value="40"/>
-    </eAnnotations>
-    <eAnnotations source="positions.107" references="/0/getArcEntrant/t">
-      <details key="start" value="1386"/>
-      <details key="end" value="1399"/>
-      <details key="line" value="40"/>
-    </eAnnotations>
-    <eAnnotations source="positions.108" references="/0/getArcEntrant/%">
-      <details key="start" value="1423"/>
-      <details key="end" value="1500"/>
+    <eAnnotations source="positions.115" references="/0/getArcEntrant/%/select/%.1/%">
+      <details key="start" value="1313"/>
+      <details key="end" value="1319"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.109" references="/0/getArcEntrant/%/select">
-      <details key="start" value="1423"/>
-      <details key="end" value="1481"/>
+    <eAnnotations source="positions.116" references="/0/getArcEntrant/%/select/%.1/%/p">
+      <details key="start" value="1313"/>
+      <details key="end" value="1314"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.110" references="/0/getArcEntrant/%/select/%">
-      <details key="start" value="1423"/>
-      <details key="end" value="1430"/>
+    <eAnnotations source="positions.117" references="/0/getArcEntrant/%/select/%.1/%.1">
+      <details key="start" value="1322"/>
+      <details key="end" value="1348"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.111" references="/0/getArcEntrant/%/select/%/t">
-      <details key="start" value="1423"/>
-      <details key="end" value="1424"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.112" references="/0/getArcEntrant/%/select/%.1">
-      <details key="start" value="1444"/>
-      <details key="end" value="1479"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.113" references="/0/getArcEntrant/%/select/%.1/%">
-      <details key="start" value="1444"/>
-      <details key="end" value="1450"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.114" references="/0/getArcEntrant/%/select/%.1/%/p">
-      <details key="start" value="1444"/>
-      <details key="end" value="1445"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.115" references="/0/getArcEntrant/%/select/%.1/%.1">
-      <details key="start" value="1453"/>
-      <details key="end" value="1479"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.116" references="/0/getArcEntrant/%/select/p">
-      <details key="start" value="1440"/>
-      <details key="end" value="1441"/>
+    <eAnnotations source="positions.118" references="/0/getArcEntrant/%/select/p">
+      <details key="start" value="1309"/>
+      <details key="end" value="1310"/>
       <details key="line" value="0"/>
     </eAnnotations>
   </ecore:EAnnotation>

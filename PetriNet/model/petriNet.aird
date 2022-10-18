@@ -5,6 +5,7 @@
     <semanticResources>petriNet.genmodel</semanticResources>
     <semanticResources>petriNetOCL.ocl</semanticResources>
     <semanticResources>PetriNet_test_2.xmi</semanticResources>
+    <semanticResources>PetriNet_test_3.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_bkdwoD5DEe2eL-JoL-8BBQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_blhgkD5DEe2eL-JoL-8BBQ" name="petriNet" repPath="#_blAjMD5DEe2eL-JoL-8BBQ" changeId="c97a3e59-c73a-4fc3-95ca-48f1d477d7b9">
