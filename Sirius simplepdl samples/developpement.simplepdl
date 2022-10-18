@@ -9,7 +9,8 @@
   <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish" predecessor="//@processElements.0" successor="//@processElements.1"/>
   <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToStart" predecessor="//@processElements.0" successor="//@processElements.2"/>
   <processElements xsi:type="simplepdl:WorkSequence" predecessor="//@processElements.0" successor="//@processElements.3"/>
-  <processElements xsi:type="simplepdl:Guidance" elements="//@processElements.0 //@processElements.3 //@processElements.2" text="Lol c'est un test"/>
+  <processElements xsi:type="simplepdl:Guidance" elements="//@processElements.0 //@processElements.3 //@processElements.2 //@processElements.1" text="Lol c'est un test"/>
   <processElements xsi:type="simplepdl:WorkSequence" linkType="startToFinish" predecessor="//@processElements.3" successor="//@processElements.2"/>
   <processElements xsi:type="simplepdl:Ressource" name="Chocolat" stock="5" work="//@processElements.0/@askedRessource.0"/>
+  <processElements xsi:type="simplepdl:Ressource" name="Vanille" stock="2"/>
 </simplepdl:Process>

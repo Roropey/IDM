@@ -10,19 +10,15 @@
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_blhgkD5DEe2eL-JoL-8BBQ" name="petriNet" repPath="#_blAjMD5DEe2eL-JoL-8BBQ" changeId="c97a3e59-c73a-4fc3-95ca-48f1d477d7b9">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
-        <target xmi:type="ecore:EPackage" href="petriNet.ecore#/"/>
       </ownedRepresentationDescriptors>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_RL58AEChEe21dKgeGgGjog" name="petriNet class diagram" repPath="#_RL3fwEChEe21dKgeGgGjog" changeId="f81a73b8-9159-43f2-a8c7-1a4373f08f7a">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
-        <target xmi:type="ecore:EPackage" href="petriNet.ecore#/"/>
       </ownedRepresentationDescriptors>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_3FR_IEClEe2mH74WJ3QBdQ" name="petriNet class diagram" repPath="#_3FQJ8EClEe2mH74WJ3QBdQ" changeId="6b5a327a-5281-44b3-886c-ae758bc3ad60">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
-        <target xmi:type="ecore:EPackage" href="petriNet.ecore#/"/>
       </ownedRepresentationDescriptors>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_1RnnwEoqEe2HaIuUyRfajQ" name="petriNet class diagram" repPath="#_1RkkcEoqEe2HaIuUyRfajQ" changeId="0a283c8d-ae79-4357-a47b-e6b6d4076863">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
-        <target xmi:type="ecore:EPackage" href="petriNet.ecore#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_Qo7KwEChEe21dKgeGgGjog">
@@ -163,8 +159,6 @@
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_agIgcEChEe21dKgeGgGjog" name="Place" tooltipText="" outgoingEdges="__b6S6UClEe2mH74WJ3QBdQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Place"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Place"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -173,16 +167,12 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_agMK1kChEe21dKgeGgGjog" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_agMx4UChEe21dKgeGgGjog" labelAlignment="LEFT" description="_agMx4EChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_agMx4kChEe21dKgeGgGjog" name="jeton : EInt" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/jeton"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/jeton"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_agMx40ChEe21dKgeGgGjog" labelAlignment="LEFT" description="_agMx4EChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -190,8 +180,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_agJHgEChEe21dKgeGgGjog" name="Transition" tooltipText="" outgoingEdges="__b5r0EClEe2mH74WJ3QBdQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Transition"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Transition"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -200,8 +188,6 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_agNY8EChEe21dKgeGgGjog" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Transition/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Transition/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_agNY8UChEe21dKgeGgGjog" labelAlignment="LEFT" description="_agMx4EChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -209,8 +195,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_agJukEChEe21dKgeGgGjog" name="Arc" tooltipText="" incomingEdges="__b5r0EClEe2mH74WJ3QBdQ __b6S6UClEe2mH74WJ3QBdQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Arc"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Arc"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -219,24 +203,18 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_agNY8kChEe21dKgeGgGjog" name="poids : EInt = 1" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/poids"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/poids"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_agOAAEChEe21dKgeGgGjog" labelAlignment="LEFT" description="_agMx4EChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_agOAAUChEe21dKgeGgGjog" name="sens : ArcSens = placeToTransition" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/sens"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/sens"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_agOAAkChEe21dKgeGgGjog" labelAlignment="LEFT" description="_agMx4EChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_agOAA0ChEe21dKgeGgGjog" name="isReadArc : EBoolean = false" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/isReadArc"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/isReadArc"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_agOnEEChEe21dKgeGgGjog" labelAlignment="LEFT" description="_agMx4EChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -244,8 +222,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_agJuk0ChEe21dKgeGgGjog" name="ArcSens" tooltipText="" width="12" height="10">
-      <target xmi:type="ecore:EEnum" href="petriNet.ecore#//ArcSens"/>
-      <semanticElements xmi:type="ecore:EEnum" href="petriNet.ecore#//ArcSens"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -254,16 +230,12 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_agPOIUChEe21dKgeGgGjog" name="placeToTransition" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/placeToTransition"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/placeToTransition"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_agPOIkChEe21dKgeGgGjog" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_agPOI0ChEe21dKgeGgGjog" name="transitionToPlace" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/transitionToPlace"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/transitionToPlace"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_agPOJEChEe21dKgeGgGjog" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
@@ -271,9 +243,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__b5r0EClEe2mH74WJ3QBdQ" sourceNode="_agJHgEChEe21dKgeGgGjog" targetNode="_agJukEChEe21dKgeGgGjog" beginLabel="[1..1] transition" endLabel="[1..*] liens">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Transition/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Transition/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/transition"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__b6S40ClEe2mH74WJ3QBdQ" description="__b6S4EClEe2mH74WJ3QBdQ" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="__b6S5EClEe2mH74WJ3QBdQ" showIcon="false">
           <labelFormat>bold</labelFormat>
@@ -285,9 +254,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__b6S6UClEe2mH74WJ3QBdQ" sourceNode="_agIgcEChEe21dKgeGgGjog" targetNode="_agJukEChEe21dKgeGgGjog" beginLabel="[1..1] place" endLabel="[0..*] liens">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Place/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Place/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/place"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__b658EClEe2mH74WJ3QBdQ" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="__b658UClEe2mH74WJ3QBdQ" showIcon="false"/>
@@ -301,7 +267,6 @@
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Archetype']/@ownedRepresentationExtensions[name='Entities%20With%20Archetypes']/@layers[name='Archetypes']"/>
-    <target xmi:type="ecore:EPackage" href="petriNet.ecore#/"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_RL3fwEChEe21dKgeGgGjog">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_RMB30EChEe21dKgeGgGjog" source="GMF_DIAGRAMS">
@@ -462,8 +427,6 @@
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_RncBcEChEe21dKgeGgGjog" name="Place" tooltipText="" outgoingEdges="_RnqD4EChEe21dKgeGgGjog" incomingEdges="_Rnr5GUChEe21dKgeGgGjog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Place"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Place"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -472,16 +435,12 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_RnkkUEChEe21dKgeGgGjog" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_RnkkUkChEe21dKgeGgGjog" labelAlignment="LEFT" description="_RnkkUUChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_RnlLYEChEe21dKgeGgGjog" name="jeton : EInt" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/jeton"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/jeton"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_RnlLYUChEe21dKgeGgGjog" labelAlignment="LEFT" description="_RnkkUUChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -489,8 +448,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Rnd2oEChEe21dKgeGgGjog" name="Transition" tooltipText="" outgoingEdges="_RnrSA0ChEe21dKgeGgGjog" incomingEdges="_RntHMEChEe21dKgeGgGjog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Transition"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Transition"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -499,8 +456,6 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_RnlycEChEe21dKgeGgGjog" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Transition/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Transition/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_RnmZgEChEe21dKgeGgGjog" labelAlignment="LEFT" description="_RnkkUUChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -508,8 +463,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_RnfEwEChEe21dKgeGgGjog" name="Arc" tooltipText="" outgoingEdges="_Rnr5GUChEe21dKgeGgGjog _RntHMEChEe21dKgeGgGjog" incomingEdges="_RnqD4EChEe21dKgeGgGjog _RnrSA0ChEe21dKgeGgGjog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Arc"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Arc"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -518,24 +471,18 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_RnmZgUChEe21dKgeGgGjog" name="poid : EInt" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/poids"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/poids"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_RnnAkEChEe21dKgeGgGjog" labelAlignment="LEFT" description="_RnkkUUChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_RnnAkUChEe21dKgeGgGjog" name="sens : ArcSens = placeToTransition" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/sens"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/sens"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_RnnnoEChEe21dKgeGgGjog" labelAlignment="LEFT" description="_RnkkUUChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_RnnnoUChEe21dKgeGgGjog" name="isReadArc : EBoolean = false" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/isReadArc"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/isReadArc"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_RnoOsEChEe21dKgeGgGjog" labelAlignment="LEFT" description="_RnkkUUChEe21dKgeGgGjog">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -543,8 +490,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Rnfr0UChEe21dKgeGgGjog" name="ArcSens" tooltipText="" width="12" height="10">
-      <target xmi:type="ecore:EEnum" href="petriNet.ecore#//ArcSens"/>
-      <semanticElements xmi:type="ecore:EEnum" href="petriNet.ecore#//ArcSens"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -553,16 +498,12 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_Rno1wUChEe21dKgeGgGjog" name="placeToTransition" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/placeToTransition"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/placeToTransition"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_Rno1wkChEe21dKgeGgGjog" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_Rno1w0ChEe21dKgeGgGjog" name="transitionToPlace" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/transitionToPlace"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/transitionToPlace"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_Rno1xEChEe21dKgeGgGjog" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
@@ -570,8 +511,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_RnqD4EChEe21dKgeGgGjog" name="[0..*] liens" sourceNode="_RncBcEChEe21dKgeGgGjog" targetNode="_RnfEwEChEe21dKgeGgGjog">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Place/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Place/liens"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Rnqq8EChEe21dKgeGgGjog" routingStyle="manhattan" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Rnqq8kChEe21dKgeGgGjog" showIcon="false">
@@ -584,8 +523,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_RnrSA0ChEe21dKgeGgGjog" name="[1..*] liens" sourceNode="_Rnd2oEChEe21dKgeGgGjog" targetNode="_RnfEwEChEe21dKgeGgGjog">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Transition/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Transition/liens"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Rnr5E0ChEe21dKgeGgGjog" description="_Rnr5EEChEe21dKgeGgGjog" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Rnr5FUChEe21dKgeGgGjog" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -597,8 +534,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Rnr5GUChEe21dKgeGgGjog" name="[1..1] place" sourceNode="_RnfEwEChEe21dKgeGgGjog" targetNode="_RncBcEChEe21dKgeGgGjog">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/place"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/place"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_RnsgIEChEe21dKgeGgGjog" description="_Rnr5EEChEe21dKgeGgGjog" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_RnsgIkChEe21dKgeGgGjog" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -610,8 +545,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_RntHMEChEe21dKgeGgGjog" name="[1..1] transition" sourceNode="_RnfEwEChEe21dKgeGgGjog" targetNode="_Rnd2oEChEe21dKgeGgGjog">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/transition"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/transition"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_RntHMUChEe21dKgeGgGjog" description="_Rnr5EEChEe21dKgeGgGjog" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_RntHM0ChEe21dKgeGgGjog" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -628,7 +561,6 @@
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Archetype']/@ownedRepresentationExtensions[name='Entities%20With%20Archetypes']/@layers[name='Archetypes']"/>
-    <target xmi:type="ecore:EPackage" href="petriNet.ecore#/"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_3FQJ8EClEe2mH74WJ3QBdQ">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_3FWQkEClEe2mH74WJ3QBdQ" source="GMF_DIAGRAMS">
@@ -853,8 +785,6 @@
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3XVYcEClEe2mH74WJ3QBdQ" name="Place" tooltipText="" outgoingEdges="_3XhluUClEe2mH74WJ3QBdQ __b0MQEClEe2mH74WJ3QBdQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Place"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Place"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -863,16 +793,12 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_3XbfGkClEe2mH74WJ3QBdQ" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_3XcGIUClEe2mH74WJ3QBdQ" labelAlignment="LEFT" description="_3XcGIEClEe2mH74WJ3QBdQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_3XcGIkClEe2mH74WJ3QBdQ" name="jeton : EInt" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/jeton"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/jeton"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_3XctMEClEe2mH74WJ3QBdQ" labelAlignment="LEFT" description="_3XcGIEClEe2mH74WJ3QBdQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -880,8 +806,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3XWmkEClEe2mH74WJ3QBdQ" name="Transition" tooltipText="" outgoingEdges="_3XiMxkClEe2mH74WJ3QBdQ __by-MkClEe2mH74WJ3QBdQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Transition"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Transition"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -890,8 +814,6 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_3XctMUClEe2mH74WJ3QBdQ" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Transition/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Transition/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_3XctMkClEe2mH74WJ3QBdQ" labelAlignment="LEFT" description="_3XcGIEClEe2mH74WJ3QBdQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -899,8 +821,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3XXNokClEe2mH74WJ3QBdQ" name="Arc" tooltipText="" outgoingEdges="_3XiMzUClEe2mH74WJ3QBdQ" incomingEdges="__by-MkClEe2mH74WJ3QBdQ __b0MQEClEe2mH74WJ3QBdQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Arc"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Arc"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -909,24 +829,18 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_3XdUQEClEe2mH74WJ3QBdQ" name="poids : EInt" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/poids"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/poids"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_3XdUQUClEe2mH74WJ3QBdQ" labelAlignment="LEFT" description="_3XcGIEClEe2mH74WJ3QBdQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_3XdUQkClEe2mH74WJ3QBdQ" name="sens : ArcSens = placeToTransition" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/sens"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/sens"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_3Xd7UEClEe2mH74WJ3QBdQ" labelAlignment="LEFT" description="_3XcGIEClEe2mH74WJ3QBdQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_3Xd7UUClEe2mH74WJ3QBdQ" name="isReadArc : EBoolean = false" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/isReadArc"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/isReadArc"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_3Xd7UkClEe2mH74WJ3QBdQ" labelAlignment="LEFT" description="_3XcGIEClEe2mH74WJ3QBdQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -934,23 +848,17 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3XX0sEClEe2mH74WJ3QBdQ" name="ArcSens" tooltipText="" width="12" height="10">
-      <target xmi:type="ecore:EEnum" href="petriNet.ecore#//ArcSens"/>
-      <semanticElements xmi:type="ecore:EEnum" href="petriNet.ecore#//ArcSens"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_3XX0sUClEe2mH74WJ3QBdQ" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="221,236,202">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_3XfJcUClEe2mH74WJ3QBdQ" name="placeToTransition" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/placeToTransition"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/placeToTransition"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_3XfJckClEe2mH74WJ3QBdQ" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_3XfJc0ClEe2mH74WJ3QBdQ" name="transitionToPlace" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/transitionToPlace"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/transitionToPlace"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_3XfJdEClEe2mH74WJ3QBdQ" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
@@ -966,8 +874,6 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3XYbwkClEe2mH74WJ3QBdQ" name="PetriNet" tooltipText="" outgoingEdges="_3Xg-qkClEe2mH74WJ3QBdQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//PetriNet"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//PetriNet"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -976,8 +882,6 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_3Xd7U0ClEe2mH74WJ3QBdQ" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//PetriNet/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//PetriNet/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_3XeiYEClEe2mH74WJ3QBdQ" labelAlignment="LEFT" description="_3XcGIEClEe2mH74WJ3QBdQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -998,8 +902,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_3XhluUClEe2mH74WJ3QBdQ" sourceNode="_3XVYcEClEe2mH74WJ3QBdQ" targetNode="_3XX0s0ClEe2mH74WJ3QBdQ">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Place"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Place"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3XiMwEClEe2mH74WJ3QBdQ" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3XiMwUClEe2mH74WJ3QBdQ" showIcon="false">
@@ -1010,8 +912,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_3XiMxkClEe2mH74WJ3QBdQ" sourceNode="_3XWmkEClEe2mH74WJ3QBdQ" targetNode="_3XX0s0ClEe2mH74WJ3QBdQ">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Transition"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Transition"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3XiMx0ClEe2mH74WJ3QBdQ" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3XiMyEClEe2mH74WJ3QBdQ" showIcon="false">
@@ -1022,8 +922,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_3XiMzUClEe2mH74WJ3QBdQ" sourceNode="_3XXNokClEe2mH74WJ3QBdQ" targetNode="_3XX0s0ClEe2mH74WJ3QBdQ">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Arc"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Arc"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3Xiz0EClEe2mH74WJ3QBdQ" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3Xiz0UClEe2mH74WJ3QBdQ" showIcon="false">
@@ -1034,9 +932,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__by-MkClEe2mH74WJ3QBdQ" sourceNode="_3XWmkEClEe2mH74WJ3QBdQ" targetNode="_3XXNokClEe2mH74WJ3QBdQ" beginLabel="[1..1] transition" endLabel="[1..*] liens">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Transition/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Transition/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/transition"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__bzlM0ClEe2mH74WJ3QBdQ" description="__bzlMEClEe2mH74WJ3QBdQ" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="__bzlNEClEe2mH74WJ3QBdQ" showIcon="false">
           <labelFormat>bold</labelFormat>
@@ -1048,9 +943,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__b0MQEClEe2mH74WJ3QBdQ" sourceNode="_3XVYcEClEe2mH74WJ3QBdQ" targetNode="_3XXNokClEe2mH74WJ3QBdQ" beginLabel="[1..1] place" endLabel="[0..*] liens">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Place/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Place/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/place"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__b0zUEClEe2mH74WJ3QBdQ" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="__b0zUUClEe2mH74WJ3QBdQ" showIcon="false"/>
@@ -1064,7 +956,6 @@
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Archetype']/@ownedRepresentationExtensions[name='Entities%20With%20Archetypes']/@layers[name='Archetypes']"/>
-    <target xmi:type="ecore:EPackage" href="petriNet.ecore#/"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_1RkkcEoqEe2HaIuUyRfajQ">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_1RsgQEoqEe2HaIuUyRfajQ" source="GMF_DIAGRAMS">
@@ -1266,8 +1157,6 @@
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_1oyKkEoqEe2HaIuUyRfajQ" name="Place" tooltipText="" outgoingEdges="_1pHhyUoqEe2HaIuUyRfajQ _RQS5IEorEe2HaIuUyRfajQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Place"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Place"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1276,16 +1165,12 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_1o9JsEoqEe2HaIuUyRfajQ" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_1o9wwEoqEe2HaIuUyRfajQ" labelAlignment="LEFT" description="_1o9JsUoqEe2HaIuUyRfajQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_1o9wwUoqEe2HaIuUyRfajQ" name="jeton : EInt" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/jeton"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Place/jeton"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_1o-X0EoqEe2HaIuUyRfajQ" labelAlignment="LEFT" description="_1o9JsUoqEe2HaIuUyRfajQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -1293,8 +1178,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_1oz_wEoqEe2HaIuUyRfajQ" name="Transition" tooltipText="" outgoingEdges="_1pG6sEoqEe2HaIuUyRfajQ _elMdtkorEe2HaIuUyRfajQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Transition"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Transition"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1303,8 +1186,6 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_1o-X0UoqEe2HaIuUyRfajQ" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Transition/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Transition/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_1o--4EoqEe2HaIuUyRfajQ" labelAlignment="LEFT" description="_1o9JsUoqEe2HaIuUyRfajQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -1312,8 +1193,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_1o0m0EoqEe2HaIuUyRfajQ" name="Arc" tooltipText="" outgoingEdges="_YGhxLEorEe2HaIuUyRfajQ" incomingEdges="_1pG6sEoqEe2HaIuUyRfajQ _1pHhyUoqEe2HaIuUyRfajQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//Arc"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//Arc"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1323,24 +1202,18 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_1o--4UoqEe2HaIuUyRfajQ" name="poids : EInt = 1" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/poids"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/poids"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_1o_l8EoqEe2HaIuUyRfajQ" labelAlignment="LEFT" description="_1o9JsUoqEe2HaIuUyRfajQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_1o_l8UoqEe2HaIuUyRfajQ" name="sens : ArcSens = placeToTransition" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/sens"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/sens"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_1o_l8koqEe2HaIuUyRfajQ" labelAlignment="LEFT" description="_1o9JsUoqEe2HaIuUyRfajQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_1pANAEoqEe2HaIuUyRfajQ" name="isReadArc : EBoolean = false" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/isReadArc"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/isReadArc"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_1pANAUoqEe2HaIuUyRfajQ" labelAlignment="LEFT" description="_1o9JsUoqEe2HaIuUyRfajQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -1348,23 +1221,17 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_1o1N4UoqEe2HaIuUyRfajQ" name="ArcSens" tooltipText="" width="12" height="10">
-      <target xmi:type="ecore:EEnum" href="petriNet.ecore#//ArcSens"/>
-      <semanticElements xmi:type="ecore:EEnum" href="petriNet.ecore#//ArcSens"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_1o108EoqEe2HaIuUyRfajQ" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="221,236,202">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_1pCCMEoqEe2HaIuUyRfajQ" name="placeToTransition" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/placeToTransition"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/placeToTransition"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_1pCCMUoqEe2HaIuUyRfajQ" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_1pCCMkoqEe2HaIuUyRfajQ" name="transitionToPlace" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/transitionToPlace"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="petriNet.ecore#//ArcSens/transitionToPlace"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_1pCpQEoqEe2HaIuUyRfajQ" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
@@ -1372,8 +1239,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_1o3DEEoqEe2HaIuUyRfajQ" name="PetriNet" tooltipText="" incomingEdges="_RQS5IEorEe2HaIuUyRfajQ _YGhxLEorEe2HaIuUyRfajQ _elMdtkorEe2HaIuUyRfajQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="petriNet.ecore#//PetriNet"/>
-      <semanticElements xmi:type="ecore:EClass" href="petriNet.ecore#//PetriNet"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1382,8 +1247,6 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_1pA0EEoqEe2HaIuUyRfajQ" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//PetriNet/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//PetriNet/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_1pA0EUoqEe2HaIuUyRfajQ" labelAlignment="LEFT" description="_1o9JsUoqEe2HaIuUyRfajQ">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -1391,9 +1254,6 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_1pG6sEoqEe2HaIuUyRfajQ" sourceNode="_1oz_wEoqEe2HaIuUyRfajQ" targetNode="_1o0m0EoqEe2HaIuUyRfajQ" beginLabel="[1..1] transition" endLabel="[1..*] liens">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Transition/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Transition/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/transition"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_1pHhw0oqEe2HaIuUyRfajQ" description="_1pHhwEoqEe2HaIuUyRfajQ" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_1pHhxEoqEe2HaIuUyRfajQ" showIcon="false">
           <labelFormat>bold</labelFormat>
@@ -1405,9 +1265,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_1pHhyUoqEe2HaIuUyRfajQ" sourceNode="_1oyKkEoqEe2HaIuUyRfajQ" targetNode="_1o0m0EoqEe2HaIuUyRfajQ" beginLabel="[1..1] place" endLabel="[0..*] liens">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Place/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Place/liens"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/place"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_1pII0EoqEe2HaIuUyRfajQ" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_1pII0UoqEe2HaIuUyRfajQ" showIcon="false"/>
@@ -1416,9 +1273,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_RQS5IEorEe2HaIuUyRfajQ" sourceNode="_1oyKkEoqEe2HaIuUyRfajQ" targetNode="_1o3DEEoqEe2HaIuUyRfajQ" beginLabel="[0..*] places" endLabel="[1..1] net">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Place/net"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Place/net"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//PetriNet/places"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_RQTgM0orEe2HaIuUyRfajQ" description="_RQTgMEorEe2HaIuUyRfajQ" sourceArrow="InputArrow" targetArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_RQTgNEorEe2HaIuUyRfajQ" showIcon="false">
           <labelFormat>bold</labelFormat>
@@ -1430,9 +1284,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_YGhxLEorEe2HaIuUyRfajQ" sourceNode="_1o0m0EoqEe2HaIuUyRfajQ" targetNode="_1o3DEEoqEe2HaIuUyRfajQ" beginLabel="[0..*] arcs" endLabel="[1..1] net">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/net"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//PetriNet/arcs"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Arc/net"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_YGiYMEorEe2HaIuUyRfajQ" description="_RQTgMEorEe2HaIuUyRfajQ" sourceArrow="InputArrow" targetArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_YGiYMUorEe2HaIuUyRfajQ" showIcon="false">
           <labelFormat>bold</labelFormat>
@@ -1444,9 +1295,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_elMdtkorEe2HaIuUyRfajQ" sourceNode="_1oz_wEoqEe2HaIuUyRfajQ" targetNode="_1o3DEEoqEe2HaIuUyRfajQ" beginLabel="[0..*] transitions" endLabel="[1..1] net">
-      <target xmi:type="ecore:EReference" href="petriNet.ecore#//Transition/net"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//Transition/net"/>
-      <semanticElements xmi:type="ecore:EReference" href="petriNet.ecore#//PetriNet/transitions"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_elNEwEorEe2HaIuUyRfajQ" description="_RQTgMEorEe2HaIuUyRfajQ" sourceArrow="InputArrow" targetArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_elNEwUorEe2HaIuUyRfajQ" showIcon="false">
           <labelFormat>bold</labelFormat>
@@ -1463,6 +1311,5 @@
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Archetype']/@ownedRepresentationExtensions[name='Entities%20With%20Archetypes']/@layers[name='Archetypes']"/>
-    <target xmi:type="ecore:EPackage" href="petriNet.ecore#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

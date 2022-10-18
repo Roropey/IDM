@@ -1,0 +1,22 @@
+net test
+	pl Ressource1_free (3)
+	pl Ordinateur_free (10)
+	pl Activite1_ready (1)
+	pl Activite1_running (0)
+	pl Activite1_started (0)
+	pl Activite1_finished (0)
+	pl Activite22_ready (1)
+	pl Activite22_running (0)
+	pl Activite22_started (0)
+	pl Activite22_finished (0)
+	pl Activite333_ready (1)
+	pl Activite333_running (0)
+	pl Activite333_started (0)
+	pl Activite333_finished (0)
+	tr Activite1_start Activite1_ready*1 Ressource1_free*5 Activite333_started?4 -> Activite1_started*1 Activite1_running*1   
+	tr Activite1_finish Activite1_running*1 -> Activite1_finished*1 Ressource1_free*5   
+	tr Activite22_start Activite22_ready*1 Ordinateur_free*18 Activite1_started?4 -> Activite22_started*1 Activite22_running*1   
+	tr Activite22_finish Activite22_running*1 -> Activite22_finished*1 Ordinateur_free*18   
+	tr Activite333_start Activite333_ready*1 Activite22_started?4 -> Activite333_started*1 Activite333_running*1   
+	tr Activite333_finish Activite333_running*1 -> Activite333_finished*1   
+

@@ -24,6 +24,8 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 
+import petriNet.PetriNetPackage;
+
 /**
  * Entry point of the 'ToTina' generation module.
  *
@@ -335,7 +337,7 @@ public class ToTina extends AbstractAcceleoGenerator {
      * 
      * @param resourceSet
      *            The resource set which registry has to be updated.
-     * @generated
+     * @generated NOT
      */
     @Override
     public void registerPackages(ResourceSet resourceSet) {
@@ -360,12 +362,12 @@ public class ToTina extends AbstractAcceleoGenerator {
          * If the package is located in another plug-in, already installed in Eclipse. The following content should
          * have been generated at the beginning of this method. Do not register the package using this mechanism if
          * the metamodel is located in the workspace.
-         *  
-         * if (!isInWorkspace(UMLPackage.class)) {
-         *     // The normal package registration if your metamodel is in a plugin.
-         *     resourceSet.getPackageRegistry().put(UMLPackage.eNS_URI, UMLPackage.eINSTANCE);
-         * }
-         * 
+         */  
+         if (!isInWorkspace(PetriNetPackage.class)) {
+              // The normal package registration if your metamodel is in a plugin.
+            resourceSet.getPackageRegistry().put(PetriNetPackage.eNS_URI, PetriNetPackage.eINSTANCE);
+         }
+         /* 
          * If the package is located in another project in your workspace, the plugin containing the package has not
          * been register by EMF and Acceleo should register it automatically. If you want to use the generator in
          * stand alone, the regular registration (seen a couple lines before) is needed.

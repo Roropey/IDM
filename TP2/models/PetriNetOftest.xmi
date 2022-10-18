@@ -33,9 +33,9 @@
   <arcs place="//@places.11" transition="//@transitions.4" sens="transitionToPlace"/>
   <arcs place="//@places.11" transition="//@transitions.5"/>
   <arcs place="//@places.13" transition="//@transitions.5" sens="transitionToPlace"/>
-  <arcs poids="4" place="//@places.4" transition="//@transitions.2" isReadArc="true"/>
-  <arcs poids="4" place="//@places.8" transition="//@transitions.4" isReadArc="true"/>
-  <arcs poids="4" place="//@places.12" transition="//@transitions.0" isReadArc="true"/>
+  <arcs place="//@places.4" transition="//@transitions.2" isReadArc="true"/>
+  <arcs place="//@places.8" transition="//@transitions.4" isReadArc="true"/>
+  <arcs place="//@places.12" transition="//@transitions.0" isReadArc="true"/>
   <transitions name="Activite1_start" liens="//@arcs.0 //@arcs.1 //@arcs.2 //@arcs.5 //@arcs.21"/>
   <transitions name="Activite1_finish" liens="//@arcs.3 //@arcs.4 //@arcs.6"/>
   <transitions name="Activite22_start" liens="//@arcs.7 //@arcs.8 //@arcs.9 //@arcs.12 //@arcs.19"/>

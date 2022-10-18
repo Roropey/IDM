@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<petriNet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:petriNet="http://petrinet" xsi:schemaLocation="http://petrinet petriNet.ecore"/>
+<petriNet:PetriNet
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:petriNet="http://petrinet"
+    xsi:schemaLocation="http://petrinet petriNet.ecore"
+    name="Test3">
+  <places name="place1"
+      jeton="1"
+      liens="//@arcs.0"/>
+  <arcs place="//@places.0"
+      transition="//@transitions.0"
+      isReadArc="true"/>
+  <transitions
+      name="transition1"
+      liens="//@arcs.0"/>
+</petriNet:PetriNet>

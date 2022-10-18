@@ -1,0 +1,4 @@
+net Test3
+	pl place1 (1)
+	tr transition1 place1?1 ->   
+

@@ -2,4 +2,5 @@ net Test2
 	pl Place1 (0)
 	pl Place2 (0)
 	pl Place3 (0)
-	tr Transition1Place1*1-> Place2*1Place3*1
+	tr Transition1 Place1*1 -> Place2*1 Place3*1   
+
