@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: IDM.TP2.simplePDL;singleton:=true
+Bundle-SymbolicName: fr.n7.simplePDL;singleton:=true
 Automatic-Module-Name: IDM.TP2.simplePDL
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
@@ -14,5 +14,5 @@ Export-Package: simplepdl,
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.emf.ecore.xmi,
- PetriNet
+ fr.n7.PetriNet
 Bundle-ActivationPolicy: lazy

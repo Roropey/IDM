@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Acceleo Todot Module Runtime Plug-in
-Bundle-SymbolicName: simplepdl.todot
+Bundle-SymbolicName: fr.n7.simplepdl.todot
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: simplepdl.todot.Activator
 Bundle-Vendor: Eclipse Modeling Project

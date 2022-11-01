@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="toTina" name="petrinet.totina">
+<project default="toTina" name="fr.n7.petrinet.totina">
     <property name="ECLIPSE_HOME" value="../../../../../../../eclipse/modeling-2022-09/eclipse"/>
     <property name="ECLIPSE_WORKSPACE" value="../../../../../../../eclipse-workspace"/>
 
     <!-- The classpath with only the dependencies used by the project -->
-    <path id="petrinet.totina.libraryclasspath">
-        <pathelement location="${ECLIPSE_WORKSPACE}/petrinet.totina/bin"/>
+    <path id="fr.n7.petrinet.totina.libraryclasspath">
+        <pathelement location="${ECLIPSE_WORKSPACE}/fr.n7.petrinet.totina/bin"/>
     </path>
 
-    <path id="petrinet.totina.classpath">
-        <path refid="petrinet.totina.libraryclasspath"/>
+    <path id="fr.n7.petrinet.totina.classpath">
+        <path refid="fr.n7.petrinet.totina.libraryclasspath"/>
     </path>
 
     <!-- The classpath with only the jars available in the plugin folder of Eclipse -->
-    <path id="petrinet.totina.libraryclasspath.alljars">
-        <pathelement location="../petrinet.totina/bin"/>
+    <path id="fr.n7.petrinet.totina.libraryclasspath.alljars">
+        <pathelement location="../fr.n7.petrinet.totina/bin"/>
         <fileset dir="${ECLIPSE_HOME}/plugins/" includes="*.jar"/>
     </path>
 
-    <path id="petrinet.totina.classpath.alljars">
-        <path refid="petrinet.totina.libraryclasspath.alljars"/>
+    <path id="fr.n7.petrinet.totina.classpath.alljars">
+        <path refid="fr.n7.petrinet.totina.libraryclasspath.alljars"/>
     </path>
 
     <!-- The default task with the jars used by this project -->
     <target name="toTina">
-        <java classname="petrinet.totina.main.ToTina" classpathref="petrinet.totina.classpath">
+        <java classname="petrinet.totina.main.ToTina" classpathref="fr.n7.petrinet.totina.classpath">
             <arg value="${model}"/>
             <arg value="${target}"/>
         </java>
@@ -35,7 +35,7 @@
         Keep in mind that having two versions of the same jar can create problems
     -->
     <target name="toTina.alljars">
-        <java classname="petrinet.totina.main.ToTina" classpathref="petrinet.totina.classpath">
+        <java classname="petrinet.totina.main.ToTina" classpathref="fr.n7.petrinet.totina.classpath">
             <arg value="${model}"/>
             <arg value="${target}"/>
         </java>

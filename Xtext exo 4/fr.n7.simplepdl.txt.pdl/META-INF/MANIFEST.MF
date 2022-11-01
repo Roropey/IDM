@@ -6,7 +6,7 @@ Bundle-Vendor: My Company
 Bundle-Version: 1.0.0.qualifier
 Bundle-SymbolicName: fr.n7.simplepdl.txt.pdl; singleton:=true
 Bundle-ActivationPolicy: lazy
-Require-Bundle: IDM.TP2.simplePDL,
+Require-Bundle: fr.n7.simplePDL,
  org.eclipse.xtext,
  org.eclipse.xtext.xbase,
  org.eclipse.equinox.common;bundle-version="3.5.0",

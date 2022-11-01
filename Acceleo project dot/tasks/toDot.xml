@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="toDot" name="simplepdl.todot">
+<project default="toDot" name="fr.n7.simplepdl.todot">
     <property name="ECLIPSE_HOME" value="../../../../../../../eclipse/modeling-2022-09/eclipse"/>
     <property name="ECLIPSE_WORKSPACE" value="../../../../../../../eclipse-workspace"/>
 
     <!-- The classpath with only the dependencies used by the project -->
-    <path id="simplepdl.todot.libraryclasspath">
-        <pathelement location="${ECLIPSE_WORKSPACE}/simplepdl.todot/bin"/>
+    <path id="fr.n7.simplepdl.todot.libraryclasspath">
+        <pathelement location="${ECLIPSE_WORKSPACE}/fr.n7.simplepdl.todot/bin"/>
     </path>
 
-    <path id="simplepdl.todot.classpath">
-        <path refid="simplepdl.todot.libraryclasspath"/>
+    <path id="fr.n7.simplepdl.todot.classpath">
+        <path refid="fr.n7.simplepdl.todot.libraryclasspath"/>
     </path>
 
     <!-- The classpath with only the jars available in the plugin folder of Eclipse -->
-    <path id="simplepdl.todot.libraryclasspath.alljars">
-        <pathelement location="../simplepdl.todot/bin"/>
+    <path id="fr.n7.simplepdl.todot.libraryclasspath.alljars">
+        <pathelement location="../fr.n7.simplepdl.todot/bin"/>
         <fileset dir="${ECLIPSE_HOME}/plugins/" includes="*.jar"/>
     </path>
 
-    <path id="simplepdl.todot.classpath.alljars">
-        <path refid="simplepdl.todot.libraryclasspath.alljars"/>
+    <path id="fr.n7.simplepdl.todot.classpath.alljars">
+        <path refid="fr.n7.simplepdl.todot.libraryclasspath.alljars"/>
     </path>
 
     <!-- The default task with the jars used by this project -->
     <target name="toDot">
-        <java classname="simplepdl.todot.main.ToDot" classpathref="simplepdl.todot.classpath">
+        <java classname="simplepdl.todot.main.ToDot" classpathref="fr.n7.simplepdl.todot.classpath">
             <arg value="${model}"/>
             <arg value="${target}"/>
         </java>
@@ -35,7 +35,7 @@
         Keep in mind that having two versions of the same jar can create problems
     -->
     <target name="toDot.alljars">
-        <java classname="simplepdl.todot.main.ToDot" classpathref="simplepdl.todot.classpath">
+        <java classname="simplepdl.todot.main.ToDot" classpathref="fr.n7.simplepdl.todot.classpath">
             <arg value="${model}"/>
             <arg value="${target}"/>
         </java>

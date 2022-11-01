@@ -2,39 +2,61 @@ import 'petriNet.ecore'
 
 package petriNet
 
-context PetriNet
-inv NomsPlace('Les noms de deux places différentes de ' + self.name + ' sont identiques.'):
-	self.places->forAll(p1, p2 | p1 = p2 or p1.name <> p2.name)
-						
-context PetriNet
-inv NomsTransition('Les noms de deux transitions différentes de ' + self.name + ' sont identiques.'):
-	self.transitions->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
-						
+--Tests pour PetriNet
+	--Name
 context PetriNet
 inv validNamePetriNet('Invalid name: ' + self.name+ '.'):
 	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
 
+context PetriNet
+inv lengthNamePetriNet('Invalid length name: ' + self.name+ '.'):
+	self.name.size() >= 2	
+
+--Tests pour Place
+	--Name
 context Place
 inv validNamePlace('Invalid name: ' + self.name+ '.'):
 	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
 	
+context Place
+inv lengthNamePlace('Invalid length name: ' + self.name+ '.'):
+	self.name.size() >= 2	
+	
+context PetriNet
+inv NomsPlace('Les noms de deux places différentes de ' + self.name + ' sont identiques.'):
+	self.places->forAll(p1, p2 | p1 = p2 or p1.name <> p2.name)
+	
+	--Jeton
+context Place
+inv jetonPositif('La place '+self.name+' a un nombre négatif de jetons.'): self.jeton>=0
+
+--Tests pour Transition
+	--Name							
 context Transition
 inv validNameTransition('Invalid name: ' + self.name+ '.'):
 	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
 	
-context Arc
-inv poidsPositif('Poids de l\'arc entre '+self.place.name+' et '+self.transition.name+' négatif.'):	self.poids>=0
-
-context Place
-inv jetonPositif('La place '+self.name+' a un nombre négatif de jetons.'): self.jeton>=0
-
+context Transition
+inv lengthNameTransition('Invalid length name: ' + self.name+ '.'):
+	self.name.size() >= 2
+	
+context PetriNet
+inv NomsTransition('Les noms de deux transitions différentes de ' + self.name + ' sont identiques.'):
+	self.transitions->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
+		
+	--Liens	
+context Transition
+inv arcEntrant ('La transition '+self.name+' n\'a pas d\'arc entrant.'):
+	self.liens->exists(p:Arc | p.sens = ArcSens::placeToTransition)
+	
 context Transition
 inv arcSortant ('La transition '+self.name+' n\'a pas d\'arc sortant.'):
 	self.liens->exists(p:Arc | p.sens = ArcSens::transitionToPlace)
 	
-context Transition
-inv arcEntrant ('La transition '+self.name+' n\'a pas d\'arc entrant.'):
-	self.liens->exists(p:Arc | p.sens = ArcSens::placeToTransition)
+--Test pour Arc	
+	--Poids	
+context Arc
+inv poidsPositif('Poids de l\'arc entre '+self.place.name+' et '+self.transition.name+' négatif.'):	self.poids>=0
 
 
 endpackage

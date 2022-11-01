@@ -1,0 +1,7 @@
+WorkSequence pas même pred succ
+X = {Process;WorkDefinitio;Ressource;Place;Transition}
+X pas meme nom
+X nom nb char >= 2
+X nom valide...
+Y={Ressource;AskedRessource;Place;Arc}
+Y nb >= 0

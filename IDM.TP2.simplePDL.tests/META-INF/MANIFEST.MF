@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: IDM.TP2.simplePDL.tests;singleton:=true
+Bundle-SymbolicName: fr.n7.simplePDL.tests;singleton:=true
 Automatic-Module-Name: IDM.TP2.simplePDL.tests
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
@@ -10,7 +10,7 @@ Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: simplepdl.tests
 Require-Bundle: org.eclipse.core.runtime,
- IDM.TP2.simplePDL;visibility:=reexport,
+ fr.n7.simplePDL;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.junit;visibility:=reexport
 Bundle-ActivationPolicy: lazy
