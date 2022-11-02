@@ -1,0 +1,12 @@
+digraph TestCompositionClassique {
+	"Place2 0" -> Transition1 [label=1 arrowhead=vee]
+			
+	"Place3 0" -> Transition1 [label=1 arrowhead=vee]
+			
+
+
+	Transition1 -> Place1 [label=1 arrowhead=vee]
+
+
+
+}

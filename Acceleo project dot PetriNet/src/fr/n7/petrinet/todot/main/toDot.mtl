@@ -1,0 +1,64 @@
+[comment encoding = UTF-8 /]
+[module toDot('http://petrinet')]
+
+
+[template public petriNetToTina(aPetriNet : PetriNet)]
+[comment @main/]
+[file ('PetriNet'+aPetriNet.name + '.dot', false, 'UTF-8')]
+digraph [aPetriNet.name/] {
+[let places : OrderedSet(Place) = aPetriNet.getPlaces() ] 
+	[if (places->size() > 0)]
+		[for (place : Place | places)]
+			[if (place.liens->size() > 0)]
+				[for (link : Arc | place.getArcEntrant())]
+						[if (link.isReadArc)]
+	['"'+place.name+' '+place.jeton+'"'/] -> [link.transition.name/] ['['/]label=[link.poids/] arrowhead=box[']'/]
+						[else]
+	['"'+place.name+' '+place.jeton+'"'/] -> [link.transition.name/] ['['/]label=[link.poids/] arrowhead=vee[']'/]
+						[/if]
+			
+				[/for]
+			[/if]
+		[/for]
+	[/if]
+[/let]
+
+[let trans : OrderedSet(Transition) = aPetriNet.getTrans() ] 
+	[if (trans->size() > 0)]
+		[for (tran : Transition | trans)]
+			[if (tran.liens->size() > 0)]
+				[for (link : Arc | tran.getArcSortant())]
+
+						[if (link.isReadArc)]
+	[tran.name/] -> ['"'+link.place.name+' '+link.place.jeton+'"'/] ['['/]label=[link.poids/] arrowhead=box[']'/]
+						[else]
+	[tran.name/] -> ['"'+link.place.name+' '+link.place.jeton+'"'/] ['['/]label=[link.poids/] arrowhead=vee[']'/]
+						[/if]			
+				[/for]
+			[/if]
+		[/for]
+	[/if]
+[/let]
+
+
+
+}
+[/file]
+[/template]
+
+[query public getPlaces(p: PetriNet) : OrderedSet(Place) = 
+	p.places->asOrderedSet()
+/]
+[query public getTrans(p: PetriNet) : OrderedSet(Transition) = 
+	p.transitions->asOrderedSet()
+/]
+
+[query public getArcSortant(t: Transition) : OrderedSet(Arc) = 
+	t.liens->select( p | p.sens = ArcSens::transitionToPlace )
+		->asOrderedSet()
+/]
+
+[query public getArcEntrant(p: Place) : OrderedSet(Arc) = 
+	p.liens->select( t | t.sens = ArcSens::placeToTransition )
+		->asOrderedSet()
+/]
