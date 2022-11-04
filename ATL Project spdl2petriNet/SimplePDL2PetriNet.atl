@@ -1,3 +1,5 @@
+-- @nsURI SimplePDL=http://simplepdl
+-- @nsURI PetriNet=http://petrinet
 module SimplePDL2PetriNet;
 create OUT: petriNet from  IN: simplepdl;
 
@@ -14,6 +16,16 @@ def: getProcess(): simplepdl!Process =
 rule Process2PetriNet {
 	from p: simplepdl!Process
 	to pn: petriNet!PetriNet (name <- p.name)
+}
+
+-- Traduire une Ressource en une place d'un réseau de Petri
+rule Ressource2Petrinet {
+	from ress : simplepdl!Ressource
+	to
+		p_free: petriNet!Place(
+			name <- ress.name + '_free',
+			jeton <- ress.stock,
+			net <- ress.getProcess())
 }
 
 -- Traduire une WorkDefinition en un motif sur le r�seau de Petri
@@ -84,6 +96,7 @@ rule WorkDefinition2PetriNet {
 				net <- wd.getProcess())
 }
 
+-- Traduire une WorkSequence en un arc sur le réseau de Petri
 rule WorkSequence2PetriNet {
 	from ws: simplepdl!WorkSequence
 	to 
@@ -95,4 +108,27 @@ rule WorkSequence2PetriNet {
 			isReadArc <- true,
 			net <- ws.getProcess())
 		
+}
+
+
+-- Traduire une AskedRessource en deux arc sur le réseau de Petri
+rule AskedRessource2PetriNet {
+	from askRess : simplepdl!AskedRessource
+	to
+		a_give: petriNet!Arc(
+			poids <- askRess.quantity,
+			place <- thisModule.resolveTemp(askRess.ressource,'p_free'),
+			transition <- thisModule.resolveTemp(askRess.workActivity,'t_start'),
+			sens <- #placeToTransition,
+			-- les arcs des ressources ne sont pas readArc ? Même pour la lecture de la ressource ? Pas de vérification de la présence des ressources (quantité nécessaires ?)?
+			isReadArc <- false,
+			net <- askRess.workActivity.getProcess()),
+		a_return: petriNet!Arc(
+			poids <- askRess.quantity,
+			place <- thisModule.resolveTemp(askRess.ressource,'p_free'),
+			transition <- thisModule.resolveTemp(askRess.workActivity,'t_finish'),
+			sens <- #transitionToPlace,
+			isReadArc <- false,
+			net <- askRess.workActivity.getProcess())
+-- le AskedRessource.getProcess() retourne rien (bizarre), donc passage par la WorkDefinition pour accéder au process
 }

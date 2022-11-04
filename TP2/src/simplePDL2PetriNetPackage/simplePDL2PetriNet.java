@@ -55,7 +55,6 @@ public class simplePDL2PetriNet {
 		
 		// Créer un objet resourceSetImpl qui contiendra une ressource EMF (notre modèle)
 		ResourceSet resSet = new ResourceSetImpl();
-		System.out.println("test resSet : "+resSet);
 
 		// Charger la ressource SimplePDL (notre modèle de départ)
 		URI modelURIOrigin = URI.createURI(f.toPath().toString());
@@ -66,9 +65,7 @@ public class simplePDL2PetriNet {
 		
 		// Définir la ressource PetriNet (le modèle créé)+process.getName()
 		URI modelURIFinal = URI.createURI("models/PetriNetOf"+process.getName()+".xmi");
-		System.out.println("test modelURI : "+modelURIFinal);
 		Resource resourceFinal = resSet.createResource(modelURIFinal);
-		System.out.println("test Ressource : "+resourceFinal);
 		
 		PetriNetFactory myFactory = PetriNetFactory.eINSTANCE;
 		PetriNet petriNet = myFactory.createPetriNet();

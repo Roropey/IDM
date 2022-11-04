@@ -1,212 +1,29 @@
 digraph PreparationGaletteJambonFromage {
-	"FarineGramme_free 1000" -> MettreFarinePlat_finish [label=175 arrowhead=vee]
-			
-	"Oeufs_free 6" -> CasserOeuf_finish [label=1 arrowhead=vee]
-			
-	"LaitMiliLitre_free 1000" -> AjoutLait_finish [label=200 arrowhead=vee]
-			
-	"JambonTranche_free 4" -> CouperJambon_finish [label=1 arrowhead=vee]
-			
-	"HuileMiliLitre_free 1000" -> MettrePoeleAChauffer_finish [label=10 arrowhead=vee]
-			
-	"Louche_free 1" -> CuirePremiereFaceGalette_finish [label=1 arrowhead=vee]
-			
-	"PaireDeCiseaux_free 1" -> CouperJambon_finish [label=1 arrowhead=vee]
-			
-	"Plat_free 1" -> MettreFarinePlat_finish [label=1 arrowhead=vee]
-			
-	"Poele_free 1" -> MettrePoeleAChauffer_finish [label=1 arrowhead=vee]
-			
-	"Assiette_free 1" -> CouperJambon_finish [label=1 arrowhead=vee]
-			
-	"Assiette_free 1" -> MettreLaGaletteDansLAssiette_finish [label=1 arrowhead=vee]
-			
-	"MettreFarinePlat_running 0" -> MettreFarinePlat_start [label=1 arrowhead=vee]
-			
-	"MettreFarinePlat_started 0" -> MettreFarinePlat_start [label=1 arrowhead=vee]
-			
-	"MettreFarinePlat_finished 0" -> MettreFarinePlat_finish [label=1 arrowhead=vee]
-			
-	"CasserOeuf_running 0" -> CasserOeuf_start [label=1 arrowhead=vee]
-			
-	"CasserOeuf_started 0" -> CasserOeuf_start [label=1 arrowhead=vee]
-			
-	"CasserOeuf_finished 0" -> CasserOeuf_finish [label=1 arrowhead=vee]
-			
-	"AjoutLait_running 0" -> AjoutLait_start [label=1 arrowhead=vee]
-			
-	"AjoutLait_started 0" -> AjoutLait_start [label=1 arrowhead=vee]
-			
-	"AjoutLait_finished 0" -> AjoutLait_finish [label=1 arrowhead=vee]
-			
-	"MelangerAvecFouet_running 0" -> MelangerAvecFouet_start [label=1 arrowhead=vee]
-			
-	"MelangerAvecFouet_started 0" -> MelangerAvecFouet_start [label=1 arrowhead=vee]
-			
-	"MelangerAvecFouet_finished 0" -> MelangerAvecFouet_finish [label=1 arrowhead=vee]
-			
-	"LaisserReposer_running 0" -> LaisserReposer_start [label=1 arrowhead=vee]
-			
-	"LaisserReposer_started 0" -> LaisserReposer_start [label=1 arrowhead=vee]
-			
-	"LaisserReposer_finished 0" -> LaisserReposer_finish [label=1 arrowhead=vee]
-			
-	"MettrePoeleAChauffer_running 0" -> MettrePoeleAChauffer_start [label=1 arrowhead=vee]
-			
-	"MettrePoeleAChauffer_started 0" -> MettrePoeleAChauffer_start [label=1 arrowhead=vee]
-			
-	"MettrePoeleAChauffer_finished 0" -> MettrePoeleAChauffer_finish [label=1 arrowhead=vee]
-			
-	"CuirePremiereFaceGalette_running 0" -> CuirePremiereFaceGalette_start [label=1 arrowhead=vee]
-			
-	"CuirePremiereFaceGalette_started 0" -> CuirePremiereFaceGalette_start [label=1 arrowhead=vee]
-			
-	"CuirePremiereFaceGalette_finished 0" -> CuirePremiereFaceGalette_finish [label=1 arrowhead=vee]
-			
-	"CouperJambon_running 0" -> CouperJambon_start [label=1 arrowhead=vee]
-			
-	"CouperJambon_started 0" -> CouperJambon_start [label=1 arrowhead=vee]
-			
-	"CouperJambon_finished 0" -> CouperJambon_finish [label=1 arrowhead=vee]
-			
-	"CuireSecondeFaceGalette_running 0" -> CuireSecondeFaceGalette_start [label=1 arrowhead=vee]
-			
-	"CuireSecondeFaceGalette_started 0" -> CuireSecondeFaceGalette_start [label=1 arrowhead=vee]
-			
-	"CuireSecondeFaceGalette_finished 0" -> CuireSecondeFaceGalette_finish [label=1 arrowhead=vee]
-			
-	"MettreJambonSurGalette_running 0" -> MettreJambonSurGalette_start [label=1 arrowhead=vee]
-			
-	"MettreJambonSurGalette_started 0" -> MettreJambonSurGalette_start [label=1 arrowhead=vee]
-			
-	"MettreJambonSurGalette_finished 0" -> MettreJambonSurGalette_finish [label=1 arrowhead=vee]
-			
-	"MettreGruyere_running 0" -> MettreGruyere_start [label=1 arrowhead=vee]
-			
-	"MettreGruyere_started 0" -> MettreGruyere_start [label=1 arrowhead=vee]
-			
-	"MettreGruyere_finished 0" -> MettreGruyere_finish [label=1 arrowhead=vee]
-			
-	"MettreLaGaletteDansLAssiette_running 0" -> MettreLaGaletteDansLAssiette_start [label=1 arrowhead=vee]
-			
-	"MettreLaGaletteDansLAssiette_started 0" -> MettreLaGaletteDansLAssiette_start [label=1 arrowhead=vee]
-			
-	"MettreLaGaletteDansLAssiette_finished 0" -> MettreLaGaletteDansLAssiette_finish [label=1 arrowhead=vee]
-			
-	"DegusterGalette_running 0" -> DegusterGalette_start [label=1 arrowhead=vee]
-			
-	"DegusterGalette_started 0" -> DegusterGalette_start [label=1 arrowhead=vee]
-			
-	"DegusterGalette_finished 0" -> DegusterGalette_finish [label=1 arrowhead=vee]
-			
-
-
-	MettreFarinePlat_start -> MettreFarinePlat_ready [label=1 arrowhead=vee]
-
-	MettreFarinePlat_start -> Plat_free [label=1 arrowhead=vee]
-
-	MettreFarinePlat_start -> FarineGramme_free [label=175 arrowhead=vee]
-
-	MettreFarinePlat_finish -> MettreFarinePlat_running [label=1 arrowhead=vee]
-
-	CasserOeuf_start -> CasserOeuf_ready [label=1 arrowhead=vee]
-
-	CasserOeuf_start -> Oeufs_free [label=1 arrowhead=vee]
-
-	CasserOeuf_start -> MettreFarinePlat_finished [label=1 arrowhead=box]
-
-	CasserOeuf_finish -> CasserOeuf_running [label=1 arrowhead=vee]
-
-	AjoutLait_start -> AjoutLait_ready [label=1 arrowhead=vee]
-
-	AjoutLait_start -> LaitMiliLitre_free [label=200 arrowhead=vee]
-
-	AjoutLait_start -> CasserOeuf_finished [label=1 arrowhead=box]
-
-	AjoutLait_finish -> AjoutLait_running [label=1 arrowhead=vee]
-
-	MelangerAvecFouet_start -> MelangerAvecFouet_ready [label=1 arrowhead=vee]
-
-	MelangerAvecFouet_start -> AjoutLait_started [label=1 arrowhead=box]
-
-	MelangerAvecFouet_finish -> MelangerAvecFouet_running [label=1 arrowhead=vee]
-
-	LaisserReposer_start -> LaisserReposer_ready [label=1 arrowhead=vee]
-
-	LaisserReposer_start -> MelangerAvecFouet_finished [label=1 arrowhead=box]
-
-	LaisserReposer_start -> AjoutLait_finished [label=1 arrowhead=box]
-
-	LaisserReposer_finish -> LaisserReposer_running [label=1 arrowhead=vee]
-
-	MettrePoeleAChauffer_start -> MettrePoeleAChauffer_ready [label=1 arrowhead=vee]
-
-	MettrePoeleAChauffer_start -> HuileMiliLitre_free [label=10 arrowhead=vee]
-
-	MettrePoeleAChauffer_start -> Poele_free [label=1 arrowhead=vee]
-
-	MettrePoeleAChauffer_start -> LaisserReposer_finished [label=1 arrowhead=box]
-
-	MettrePoeleAChauffer_finish -> MettrePoeleAChauffer_running [label=1 arrowhead=vee]
-
-	CuirePremiereFaceGalette_start -> CuirePremiereFaceGalette_ready [label=1 arrowhead=vee]
-
-	CuirePremiereFaceGalette_start -> Louche_free [label=1 arrowhead=vee]
-
-	CuirePremiereFaceGalette_start -> MettrePoeleAChauffer_finished [label=1 arrowhead=box]
-
-	CuirePremiereFaceGalette_start -> MettreLaGaletteDansLAssiette_finished [label=1 arrowhead=box]
-
-	CuirePremiereFaceGalette_finish -> CuirePremiereFaceGalette_running [label=1 arrowhead=vee]
-
-	CouperJambon_start -> CouperJambon_ready [label=1 arrowhead=vee]
-
-	CouperJambon_start -> JambonTranche_free [label=1 arrowhead=vee]
-
-	CouperJambon_start -> Assiette_free [label=1 arrowhead=vee]
-
-	CouperJambon_start -> PaireDeCiseaux_free [label=1 arrowhead=vee]
-
-	CouperJambon_start -> CuirePremiereFaceGalette_started [label=1 arrowhead=box]
-
-	CouperJambon_finish -> CouperJambon_running [label=1 arrowhead=vee]
-
-	CuireSecondeFaceGalette_start -> CuireSecondeFaceGalette_ready [label=1 arrowhead=vee]
-
-	CuireSecondeFaceGalette_start -> CuirePremiereFaceGalette_finished [label=1 arrowhead=box]
-
-	CuireSecondeFaceGalette_finish -> CuireSecondeFaceGalette_running [label=1 arrowhead=vee]
-
-	MettreJambonSurGalette_start -> MettreJambonSurGalette_ready [label=1 arrowhead=vee]
-
-	MettreJambonSurGalette_start -> CuireSecondeFaceGalette_started [label=1 arrowhead=box]
-
-	MettreJambonSurGalette_finish -> MettreJambonSurGalette_running [label=1 arrowhead=vee]
-
-	MettreJambonSurGalette_finish -> CouperJambon_finished [label=1 arrowhead=box]
-
-	MettreGruyere_start -> MettreGruyere_ready [label=1 arrowhead=vee]
-
-	MettreGruyere_start -> MettreJambonSurGalette_finished [label=1 arrowhead=box]
-
-	MettreGruyere_finish -> MettreGruyere_running [label=1 arrowhead=vee]
-
-	MettreLaGaletteDansLAssiette_start -> MettreLaGaletteDansLAssiette_ready [label=1 arrowhead=vee]
-
-	MettreLaGaletteDansLAssiette_start -> Assiette_free [label=1 arrowhead=vee]
-
-	MettreLaGaletteDansLAssiette_start -> CuireSecondeFaceGalette_finished [label=1 arrowhead=box]
-
-	MettreLaGaletteDansLAssiette_start -> MettreGruyere_finished [label=1 arrowhead=box]
-
-	MettreLaGaletteDansLAssiette_finish -> MettreLaGaletteDansLAssiette_running [label=1 arrowhead=vee]
-
-	DegusterGalette_start -> DegusterGalette_ready [label=1 arrowhead=vee]
-
-	DegusterGalette_start -> MettreLaGaletteDansLAssiette_finished [label=1 arrowhead=box]
-
-	DegusterGalette_finish -> DegusterGalette_running [label=1 arrowhead=vee]
-
-
-
+	MettreFarinePlat -> CasserOeuf [label=finishToStart arrowhead=vee]
+					"Plat : 1" -> MettreFarinePlat[label=1 arrowhead=normal]
+					"FarineGramme : 1000" -> MettreFarinePlat[label=175 arrowhead=normal]
+	CasserOeuf -> AjoutLait [label=finishToStart arrowhead=vee]
+					"Oeufs : 6" -> CasserOeuf[label=1 arrowhead=normal]
+	AjoutLait -> MelangerAvecFouet [label=startToStart arrowhead=vee]
+	AjoutLait -> LaisserReposer [label=finishToStart arrowhead=vee]
+					"LaitMiliLitre : 1000" -> AjoutLait[label=200 arrowhead=normal]
+	MelangerAvecFouet -> LaisserReposer [label=finishToStart arrowhead=vee]
+	LaisserReposer -> MettrePoeleAChauffer [label=finishToStart arrowhead=vee]
+	MettrePoeleAChauffer -> CuirePremiereFaceGalette [label=finishToStart arrowhead=vee]
+					"HuileMiliLitre : 1000" -> MettrePoeleAChauffer[label=10 arrowhead=normal]
+					"Poele : 1" -> MettrePoeleAChauffer[label=1 arrowhead=normal]
+	CuirePremiereFaceGalette -> CouperJambon [label=startToStart arrowhead=vee]
+	CuirePremiereFaceGalette -> CuireSecondeFaceGalette [label=finishToStart arrowhead=vee]
+					"Louche : 1" -> CuirePremiereFaceGalette[label=1 arrowhead=normal]
+	CouperJambon -> MettreJambonSurGalette [label=finishToFinish arrowhead=vee]
+					"JambonTranche : 4" -> CouperJambon[label=1 arrowhead=normal]
+					"Assiette : 1" -> CouperJambon[label=1 arrowhead=normal]
+					"PaireDeCiseaux : 1" -> CouperJambon[label=1 arrowhead=normal]
+	CuireSecondeFaceGalette -> MettreJambonSurGalette [label=startToStart arrowhead=vee]
+	CuireSecondeFaceGalette -> MettreLaGaletteDansLAssiette [label=finishToStart arrowhead=vee]
+	MettreJambonSurGalette -> MettreGruyere [label=finishToStart arrowhead=vee]
+	MettreGruyere -> MettreLaGaletteDansLAssiette [label=finishToStart arrowhead=vee]
+	MettreLaGaletteDansLAssiette -> DegusterGalette [label=finishToStart arrowhead=vee]
+	MettreLaGaletteDansLAssiette -> CuirePremiereFaceGalette [label=finishToStart arrowhead=vee]
+					"Assiette : 1" -> MettreLaGaletteDansLAssiette[label=1 arrowhead=normal]
 }
