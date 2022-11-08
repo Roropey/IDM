@@ -17,7 +17,6 @@
         eOpposite="#//PetriNet/transitions"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Arc">
-    <eTypeParameters name="T"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="poids" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
         defaultValueLiteral="1"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="place" lowerBound="1" eType="#//Place"
