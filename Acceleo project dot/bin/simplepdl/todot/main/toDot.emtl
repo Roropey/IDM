@@ -52,7 +52,7 @@
                     </source>
                     <referredProperty xsi:type="ecore:EAttribute" href="http://simplepdl#//WorkSequence/linkType"/>
                   </body>
-                  <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" arrowhead=vee"/>
+                  <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" arrowhead=vee "/>
                   <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                   </body>
@@ -87,7 +87,7 @@
               </body>
               <body xsi:type="mtl:IfBlock">
                 <body xsi:type="mtl:ForBlock">
-                  <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+                  <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
                   <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                     <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
@@ -155,6 +155,62 @@
                     <referredProperty xsi:type="ecore:EAttribute" href="http://simplepdl#//AskedRessource/quantity"/>
                   </body>
                   <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" arrowhead=normal"/>
+                  <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  </body>
+                  <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;"/>
+                  <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                        <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                          <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;">
+                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                          </source>
+                          <argument xsi:type="ocl.ecore:PropertyCallExp">
+                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                            <source xsi:type="ocl.ecore:PropertyCallExp">
+                              <eType xsi:type="ecore:EClass" href="http://simplepdl#//Ressource"/>
+                              <source xsi:type="ocl.ecore:VariableExp" name="link" referredVariable="/0/processToDot/%/%.3/%/%/%.1/%/link">
+                                <eType xsi:type="ecore:EClass" href="http://simplepdl#//AskedRessource"/>
+                              </source>
+                              <referredProperty xsi:type="ecore:EReference" href="http://simplepdl#//AskedRessource/ressource"/>
+                            </source>
+                            <referredProperty xsi:type="ecore:EAttribute" href="http://simplepdl#//Ressource/name"/>
+                          </argument>
+                        </source>
+                        <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" : ">
+                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                        </argument>
+                      </source>
+                      <argument xsi:type="ocl.ecore:OperationCallExp">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                        <source xsi:type="ocl.ecore:PropertyCallExp">
+                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+                          <source xsi:type="ocl.ecore:PropertyCallExp">
+                            <eType xsi:type="ecore:EClass" href="http://simplepdl#//Ressource"/>
+                            <source xsi:type="ocl.ecore:VariableExp" name="link" referredVariable="/0/processToDot/%/%.3/%/%/%.1/%/link">
+                              <eType xsi:type="ecore:EClass" href="http://simplepdl#//AskedRessource"/>
+                            </source>
+                            <referredProperty xsi:type="ecore:EReference" href="http://simplepdl#//AskedRessource/ressource"/>
+                          </source>
+                          <referredProperty xsi:type="ecore:EAttribute" href="http://simplepdl#//Ressource/stock"/>
+                        </source>
+                        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/toString"/>
+                      </argument>
+                    </source>
+                    <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    </argument>
+                  </body>
+                  <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+                  <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  </body>
+                  <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="shape=diamond"/>
                   <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                   </body>
@@ -253,7 +309,7 @@
               <source xsi:type="ocl.ecore:VariableExp" name="e" referredVariable="/0/getWDs/%/collect/select/e">
                 <eType xsi:type="ecore:EClass" href="http://simplepdl#//ProcessElement"/>
               </source>
-              <argument xsi:type="ocl.ecore:TypeExp" eType="/38/WorkDefinition">
+              <argument xsi:type="ocl.ecore:TypeExp" eType="/41/WorkDefinition">
                 <referredType xsi:type="ecore:EClass" href="http://simplepdl#//WorkDefinition"/>
               </argument>
               <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsTypeOf"/>
@@ -267,7 +323,7 @@
             <source xsi:type="ocl.ecore:VariableExp" name="e" referredVariable="/0/getWDs/%/collect/e">
               <eType xsi:type="ecore:EClass" href="http://simplepdl#//ProcessElement"/>
             </source>
-            <argument xsi:type="ocl.ecore:TypeExp" eType="/38/WorkDefinition">
+            <argument xsi:type="ocl.ecore:TypeExp" eType="/41/WorkDefinition">
               <referredType xsi:type="ecore:EClass" href="http://simplepdl#//WorkDefinition"/>
             </argument>
             <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
@@ -467,6 +523,15 @@
     <eType xsi:type="ecore:EClass" href="http://simplepdl#//AskedRessource"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://simplepdl#//AskedRessource"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://simplepdl#//AskedRessource"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://simplepdl#//AskedRessource"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://simplepdl#//WorkDefinition"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="i">
@@ -498,12 +563,12 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/processToDot">
       <details key="start" value="66"/>
-      <details key="end" value="831"/>
+      <details key="end" value="924"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/processToDot/%">
       <details key="start" value="134"/>
-      <details key="end" value="819"/>
+      <details key="end" value="912"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/processToDot/%/%">
@@ -528,27 +593,27 @@
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/processToDot/%/%.3">
       <details key="start" value="209"/>
-      <details key="end" value="809"/>
+      <details key="end" value="902"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/processToDot/%/%.3/%">
       <details key="start" value="271"/>
-      <details key="end" value="802"/>
+      <details key="end" value="895"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/processToDot/%/%.3/%/%">
       <details key="start" value="296"/>
-      <details key="end" value="795"/>
+      <details key="end" value="888"/>
       <details key="line" value="11"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/processToDot/%/%.3/%/%/%">
       <details key="start" value="333"/>
-      <details key="end" value="534"/>
+      <details key="end" value="535"/>
       <details key="line" value="12"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/processToDot/%/%.3/%/%/%/%">
       <details key="start" value="377"/>
-      <details key="end" value="525"/>
+      <details key="end" value="526"/>
       <details key="line" value="13"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/processToDot/%/%.3/%/%/%/%/%">
@@ -613,17 +678,17 @@
     </eAnnotations>
     <eAnnotations source="positions.23" references="/0/processToDot/%/%.3/%/%/%/%/%.8">
       <details key="start" value="494"/>
-      <details key="end" value="508"/>
+      <details key="end" value="509"/>
       <details key="line" value="14"/>
     </eAnnotations>
     <eAnnotations source="positions.24" references="/0/processToDot/%/%.3/%/%/%/%/%.9">
-      <details key="start" value="509"/>
-      <details key="end" value="512"/>
+      <details key="start" value="510"/>
+      <details key="end" value="513"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.25" references="/0/processToDot/%/%.3/%/%/%/%/%.10">
-      <details key="start" value="514"/>
-      <details key="end" value="515"/>
+      <details key="start" value="515"/>
+      <details key="end" value="516"/>
       <details key="line" value="15"/>
     </eAnnotations>
     <eAnnotations source="positions.26" references="/0/processToDot/%/%.3/%/%/%/%/link">
@@ -667,333 +732,428 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.34" references="/0/processToDot/%/%.3/%/%/%.1">
-      <details key="start" value="538"/>
-      <details key="end" value="786"/>
+      <details key="start" value="539"/>
+      <details key="end" value="879"/>
       <details key="line" value="17"/>
     </eAnnotations>
     <eAnnotations source="positions.35" references="/0/processToDot/%/%.3/%/%/%.1/%">
-      <details key="start" value="579"/>
-      <details key="end" value="777"/>
+      <details key="start" value="580"/>
+      <details key="end" value="870"/>
       <details key="line" value="18"/>
     </eAnnotations>
     <eAnnotations source="positions.36" references="/0/processToDot/%/%.3/%/%/%.1/%/%">
-      <details key="start" value="628"/>
-      <details key="end" value="633"/>
+      <details key="start" value="629"/>
+      <details key="end" value="630"/>
       <details key="line" value="19"/>
     </eAnnotations>
     <eAnnotations source="positions.37" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1">
-      <details key="start" value="634"/>
-      <details key="end" value="699"/>
+      <details key="start" value="631"/>
+      <details key="end" value="696"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.38" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%">
-      <details key="start" value="634"/>
-      <details key="end" value="695"/>
+      <details key="start" value="631"/>
+      <details key="end" value="692"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.39" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%/%">
-      <details key="start" value="634"/>
-      <details key="end" value="663"/>
+      <details key="start" value="631"/>
+      <details key="end" value="660"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.40" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%/%/%">
-      <details key="start" value="634"/>
-      <details key="end" value="657"/>
+      <details key="start" value="631"/>
+      <details key="end" value="654"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.41" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%/%/%/%">
-      <details key="start" value="634"/>
-      <details key="end" value="637"/>
+      <details key="start" value="631"/>
+      <details key="end" value="634"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.42" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%/%/%/%.1">
-      <details key="start" value="638"/>
-      <details key="end" value="657"/>
+      <details key="start" value="635"/>
+      <details key="end" value="654"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.43" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%/%/%/%.1/%">
-      <details key="start" value="638"/>
-      <details key="end" value="652"/>
+      <details key="start" value="635"/>
+      <details key="end" value="649"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.44" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%/%/%/%.1/%/link">
-      <details key="start" value="638"/>
-      <details key="end" value="642"/>
+      <details key="start" value="635"/>
+      <details key="end" value="639"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.45" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%/%/%.1">
-      <details key="start" value="658"/>
-      <details key="end" value="663"/>
+      <details key="start" value="655"/>
+      <details key="end" value="660"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.46" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%/%.1">
-      <details key="start" value="664"/>
-      <details key="end" value="695"/>
+      <details key="start" value="661"/>
+      <details key="end" value="692"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.47" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%/%.1/%">
-      <details key="start" value="664"/>
-      <details key="end" value="684"/>
+      <details key="start" value="661"/>
+      <details key="end" value="681"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.48" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%/%.1/%/%">
-      <details key="start" value="664"/>
-      <details key="end" value="678"/>
+      <details key="start" value="661"/>
+      <details key="end" value="675"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.49" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%/%.1/%/%/link">
-      <details key="start" value="664"/>
-      <details key="end" value="668"/>
+      <details key="start" value="661"/>
+      <details key="end" value="665"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.50" references="/0/processToDot/%/%.3/%/%/%.1/%/%.1/%.1">
-      <details key="start" value="696"/>
-      <details key="end" value="699"/>
+      <details key="start" value="693"/>
+      <details key="end" value="696"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.51" references="/0/processToDot/%/%.3/%/%/%.1/%/%.2">
-      <details key="start" value="701"/>
-      <details key="end" value="705"/>
+      <details key="start" value="698"/>
+      <details key="end" value="702"/>
       <details key="line" value="19"/>
     </eAnnotations>
     <eAnnotations source="positions.52" references="/0/processToDot/%/%.3/%/%/%.1/%/%.3">
-      <details key="start" value="706"/>
-      <details key="end" value="713"/>
+      <details key="start" value="703"/>
+      <details key="end" value="710"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.53" references="/0/processToDot/%/%.3/%/%/%.1/%/%.3/wd">
-      <details key="start" value="706"/>
-      <details key="end" value="708"/>
+      <details key="start" value="703"/>
+      <details key="end" value="705"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.54" references="/0/processToDot/%/%.3/%/%/%.1/%/%.4">
-      <details key="start" value="716"/>
-      <details key="end" value="719"/>
+      <details key="start" value="713"/>
+      <details key="end" value="716"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.55" references="/0/processToDot/%/%.3/%/%/%.1/%/%.5">
-      <details key="start" value="721"/>
-      <details key="end" value="727"/>
+      <details key="start" value="718"/>
+      <details key="end" value="724"/>
       <details key="line" value="19"/>
     </eAnnotations>
     <eAnnotations source="positions.56" references="/0/processToDot/%/%.3/%/%/%.1/%/%.6">
-      <details key="start" value="728"/>
-      <details key="end" value="741"/>
+      <details key="start" value="725"/>
+      <details key="end" value="738"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.57" references="/0/processToDot/%/%.3/%/%/%.1/%/%.6/link">
-      <details key="start" value="728"/>
-      <details key="end" value="732"/>
+      <details key="start" value="725"/>
+      <details key="end" value="729"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.58" references="/0/processToDot/%/%.3/%/%/%.1/%/%.7">
-      <details key="start" value="743"/>
-      <details key="end" value="760"/>
+      <details key="start" value="740"/>
+      <details key="end" value="757"/>
       <details key="line" value="19"/>
     </eAnnotations>
     <eAnnotations source="positions.59" references="/0/processToDot/%/%.3/%/%/%.1/%/%.8">
-      <details key="start" value="761"/>
-      <details key="end" value="764"/>
+      <details key="start" value="758"/>
+      <details key="end" value="761"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.60" references="/0/processToDot/%/%.3/%/%/%.1/%/%.9">
-      <details key="start" value="766"/>
-      <details key="end" value="767"/>
+      <details key="start" value="763"/>
+      <details key="end" value="765"/>
       <details key="line" value="20"/>
     </eAnnotations>
-    <eAnnotations source="positions.61" references="/0/processToDot/%/%.3/%/%/%.1/%/link">
-      <details key="start" value="585"/>
-      <details key="end" value="606"/>
+    <eAnnotations source="positions.61" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10">
+      <details key="start" value="766"/>
+      <details key="end" value="831"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%">
+      <details key="start" value="766"/>
+      <details key="end" value="827"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%/%">
+      <details key="start" value="766"/>
+      <details key="end" value="795"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%/%/%">
+      <details key="start" value="766"/>
+      <details key="end" value="789"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%/%/%/%">
+      <details key="start" value="766"/>
+      <details key="end" value="769"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%/%/%/%.1">
+      <details key="start" value="770"/>
+      <details key="end" value="789"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%/%/%/%.1/%">
+      <details key="start" value="770"/>
+      <details key="end" value="784"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%/%/%/%.1/%/link">
+      <details key="start" value="770"/>
+      <details key="end" value="774"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%/%/%.1">
+      <details key="start" value="790"/>
+      <details key="end" value="795"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%/%.1">
+      <details key="start" value="796"/>
+      <details key="end" value="827"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%/%.1/%">
+      <details key="start" value="796"/>
+      <details key="end" value="816"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%/%.1/%/%">
+      <details key="start" value="796"/>
+      <details key="end" value="810"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%/%.1/%/%/link">
+      <details key="start" value="796"/>
+      <details key="end" value="800"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/%.1">
+      <details key="start" value="828"/>
+      <details key="end" value="831"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/processToDot/%/%.3/%/%/%.1/%/%.11">
+      <details key="start" value="833"/>
+      <details key="end" value="834"/>
+      <details key="line" value="20"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/processToDot/%/%.3/%/%/%.1/%/%.12">
+      <details key="start" value="835"/>
+      <details key="end" value="838"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/processToDot/%/%.3/%/%/%.1/%/%.13">
+      <details key="start" value="840"/>
+      <details key="end" value="853"/>
+      <details key="line" value="20"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/processToDot/%/%.3/%/%/%.1/%/%.14">
+      <details key="start" value="854"/>
+      <details key="end" value="857"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/processToDot/%/%.3/%/%/%.1/%/%.15">
+      <details key="start" value="859"/>
+      <details key="end" value="860"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/processToDot/%/%.3/%/%/%.1/%/link">
+      <details key="start" value="586"/>
+      <details key="end" value="607"/>
       <details key="line" value="18"/>
     </eAnnotations>
-    <eAnnotations source="positions.62" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10">
-      <details key="start" value="608"/>
-      <details key="end" value="625"/>
+    <eAnnotations source="positions.81" references="/0/processToDot/%/%.3/%/%/%.1/%/%.16">
+      <details key="start" value="609"/>
+      <details key="end" value="626"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.63" references="/0/processToDot/%/%.3/%/%/%.1/%/%.10/wd">
-      <details key="start" value="608"/>
-      <details key="end" value="610"/>
+    <eAnnotations source="positions.82" references="/0/processToDot/%/%.3/%/%/%.1/%/%.16/wd">
+      <details key="start" value="609"/>
+      <details key="end" value="611"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.64" references="/0/processToDot/%/%.3/%/%/%.1/%.1">
-      <details key="start" value="542"/>
+    <eAnnotations source="positions.83" references="/0/processToDot/%/%.3/%/%/%.1/%.1">
+      <details key="start" value="543"/>
+      <details key="end" value="574"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/processToDot/%/%.3/%/%/%.1/%.1/%">
+      <details key="start" value="544"/>
+      <details key="end" value="569"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/processToDot/%/%.3/%/%/%.1/%.1/%/%">
+      <details key="start" value="544"/>
+      <details key="end" value="561"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/processToDot/%/%.3/%/%/%.1/%.1/%/%/wd">
+      <details key="start" value="544"/>
+      <details key="end" value="546"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/processToDot/%/%.3/%/%/%.1/%.1/%.1">
+      <details key="start" value="572"/>
       <details key="end" value="573"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.65" references="/0/processToDot/%/%.3/%/%/%.1/%.1/%">
-      <details key="start" value="543"/>
-      <details key="end" value="568"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.66" references="/0/processToDot/%/%.3/%/%/%.1/%.1/%/%">
-      <details key="start" value="543"/>
-      <details key="end" value="560"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.67" references="/0/processToDot/%/%.3/%/%/%.1/%.1/%/%/wd">
-      <details key="start" value="543"/>
-      <details key="end" value="545"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.68" references="/0/processToDot/%/%.3/%/%/%.1/%.1/%.1">
-      <details key="start" value="571"/>
-      <details key="end" value="572"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.69" references="/0/processToDot/%/%.3/%/%/wd">
+    <eAnnotations source="positions.88" references="/0/processToDot/%/%.3/%/%/wd">
       <details key="start" value="302"/>
       <details key="end" value="321"/>
       <details key="line" value="11"/>
     </eAnnotations>
-    <eAnnotations source="positions.70" references="/0/processToDot/%/%.3/%/%/wds">
+    <eAnnotations source="positions.89" references="/0/processToDot/%/%.3/%/%/wds">
       <details key="start" value="324"/>
       <details key="end" value="327"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.71" references="/0/processToDot/%/%.3/%/%.1">
+    <eAnnotations source="positions.90" references="/0/processToDot/%/%.3/%/%.1">
       <details key="start" value="275"/>
       <details key="end" value="292"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.72" references="/0/processToDot/%/%.3/%/%.1/%">
+    <eAnnotations source="positions.91" references="/0/processToDot/%/%.3/%/%.1/%">
       <details key="start" value="276"/>
       <details key="end" value="287"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.73" references="/0/processToDot/%/%.3/%/%.1/%/wds">
+    <eAnnotations source="positions.92" references="/0/processToDot/%/%.3/%/%.1/%/wds">
       <details key="start" value="276"/>
       <details key="end" value="279"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.74" references="/0/processToDot/%/%.3/%/%.1/%.1">
+    <eAnnotations source="positions.93" references="/0/processToDot/%/%.3/%/%.1/%.1">
       <details key="start" value="290"/>
       <details key="end" value="291"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.75" references="/0/processToDot/%/%.3/wds">
+    <eAnnotations source="positions.94" references="/0/processToDot/%/%.3/wds">
       <details key="start" value="214"/>
       <details key="end" value="266"/>
       <details key="line" value="9"/>
     </eAnnotations>
-    <eAnnotations source="positions.76" references="/0/processToDot/%/%.3/wds/%">
+    <eAnnotations source="positions.95" references="/0/processToDot/%/%.3/wds/%">
       <details key="start" value="250"/>
       <details key="end" value="267"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.77" references="/0/processToDot/%/%.3/wds/%/aProcess">
+    <eAnnotations source="positions.96" references="/0/processToDot/%/%.3/wds/%/aProcess">
       <details key="start" value="250"/>
       <details key="end" value="258"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.78" references="/0/processToDot/%/%.4">
-      <details key="start" value="810"/>
-      <details key="end" value="812"/>
-      <details key="line" value="25"/>
+    <eAnnotations source="positions.97" references="/0/processToDot/%/%.4">
+      <details key="start" value="903"/>
+      <details key="end" value="905"/>
+      <details key="line" value="26"/>
     </eAnnotations>
-    <eAnnotations source="positions.79" references="/0/processToDot/%/%.5">
+    <eAnnotations source="positions.98" references="/0/processToDot/%/%.5">
       <details key="start" value="141"/>
       <details key="end" value="163"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.80" references="/0/processToDot/%/%.5/%">
+    <eAnnotations source="positions.99" references="/0/processToDot/%/%.5/%">
       <details key="start" value="141"/>
       <details key="end" value="154"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.81" references="/0/processToDot/%/%.5/%/aProcess">
+    <eAnnotations source="positions.100" references="/0/processToDot/%/%.5/%/aProcess">
       <details key="start" value="141"/>
       <details key="end" value="149"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.82" references="/0/processToDot/%/%.5/%.1">
+    <eAnnotations source="positions.101" references="/0/processToDot/%/%.5/%.1">
       <details key="start" value="157"/>
       <details key="end" value="163"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.83" references="/0/processToDot/%/%.6">
+    <eAnnotations source="positions.102" references="/0/processToDot/%/%.6">
       <details key="start" value="172"/>
       <details key="end" value="179"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.84" references="/0/processToDot/aProcess">
+    <eAnnotations source="positions.103" references="/0/processToDot/aProcess">
       <details key="start" value="96"/>
       <details key="end" value="114"/>
       <details key="line" value="5"/>
     </eAnnotations>
-    <eAnnotations source="positions.85" references="/0/getWDs">
-      <details key="start" value="834"/>
-      <details key="end" value="1031"/>
-      <details key="line" value="30"/>
-    </eAnnotations>
-    <eAnnotations source="positions.86" references="/0/getWDs/p">
-      <details key="start" value="855"/>
-      <details key="end" value="865"/>
-      <details key="line" value="30"/>
-    </eAnnotations>
-    <eAnnotations source="positions.87" references="/0/getWDs/%">
-      <details key="start" value="900"/>
-      <details key="end" value="1028"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.88" references="/0/getWDs/%/collect">
-      <details key="start" value="900"/>
-      <details key="end" value="1009"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.89" references="/0/getWDs/%/collect/select">
-      <details key="start" value="900"/>
-      <details key="end" value="962"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.90" references="/0/getWDs/%/collect/select/%">
-      <details key="start" value="900"/>
-      <details key="end" value="917"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.91" references="/0/getWDs/%/collect/select/%/p">
-      <details key="start" value="900"/>
-      <details key="end" value="901"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.92" references="/0/getWDs/%/collect/select/%.1">
-      <details key="start" value="931"/>
-      <details key="end" value="960"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.93" references="/0/getWDs/%/collect/select/%.1/e">
-      <details key="start" value="931"/>
-      <details key="end" value="932"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.94" references="/0/getWDs/%/collect/select/%.1/%">
-      <details key="start" value="945"/>
-      <details key="end" value="959"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.95" references="/0/getWDs/%/collect/select/e">
+    <eAnnotations source="positions.104" references="/0/getWDs">
       <details key="start" value="927"/>
-      <details key="end" value="928"/>
+      <details key="end" value="1124"/>
+      <details key="line" value="31"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/getWDs/p">
+      <details key="start" value="948"/>
+      <details key="end" value="958"/>
+      <details key="line" value="31"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/getWDs/%">
+      <details key="start" value="993"/>
+      <details key="end" value="1121"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.96" references="/0/getWDs/%/collect/%">
-      <details key="start" value="980"/>
-      <details key="end" value="1007"/>
+    <eAnnotations source="positions.107" references="/0/getWDs/%/collect">
+      <details key="start" value="993"/>
+      <details key="end" value="1102"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.97" references="/0/getWDs/%/collect/%/e">
-      <details key="start" value="980"/>
-      <details key="end" value="981"/>
+    <eAnnotations source="positions.108" references="/0/getWDs/%/collect/select">
+      <details key="start" value="993"/>
+      <details key="end" value="1055"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.98" references="/0/getWDs/%/collect/%/%">
-      <details key="start" value="992"/>
-      <details key="end" value="1006"/>
+    <eAnnotations source="positions.109" references="/0/getWDs/%/collect/select/%">
+      <details key="start" value="993"/>
+      <details key="end" value="1010"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.99" references="/0/getWDs/%/collect/e">
-      <details key="start" value="976"/>
-      <details key="end" value="977"/>
+    <eAnnotations source="positions.110" references="/0/getWDs/%/collect/select/%/p">
+      <details key="start" value="993"/>
+      <details key="end" value="994"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/getWDs/%/collect/select/%.1">
+      <details key="start" value="1024"/>
+      <details key="end" value="1053"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/getWDs/%/collect/select/%.1/e">
+      <details key="start" value="1024"/>
+      <details key="end" value="1025"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.113" references="/0/getWDs/%/collect/select/%.1/%">
+      <details key="start" value="1038"/>
+      <details key="end" value="1052"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.114" references="/0/getWDs/%/collect/select/e">
+      <details key="start" value="1020"/>
+      <details key="end" value="1021"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.115" references="/0/getWDs/%/collect/%">
+      <details key="start" value="1073"/>
+      <details key="end" value="1100"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.116" references="/0/getWDs/%/collect/%/e">
+      <details key="start" value="1073"/>
+      <details key="end" value="1074"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.117" references="/0/getWDs/%/collect/%/%">
+      <details key="start" value="1085"/>
+      <details key="end" value="1099"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.118" references="/0/getWDs/%/collect/e">
+      <details key="start" value="1069"/>
+      <details key="end" value="1070"/>
       <details key="line" value="0"/>
     </eAnnotations>
   </ecore:EAnnotation>

@@ -4,7 +4,6 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:simplepdl="http://simplepdl"
-    xsi:schemaLocation="http://simplepdl SimplePDL.ecore"
     name="PreparationGaletteJambonFromage">
   <processElements
       xsi:type="simplepdl:Ressource"

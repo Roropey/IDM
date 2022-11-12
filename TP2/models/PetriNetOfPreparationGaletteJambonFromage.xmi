@@ -3,67 +3,67 @@
   <places name="FarineGramme_free" jeton="1000" liens="//@arcs.7 //@arcs.8"/>
   <places name="Oeufs_free" jeton="6" liens="//@arcs.14 //@arcs.15"/>
   <places name="LaitMiliLitre_free" jeton="1000" liens="//@arcs.21 //@arcs.22"/>
-  <places name="GruyereRapeeGramme_free" jeton="100"/>
-  <places name="JambonTranche_free" jeton="4" liens="//@arcs.54 //@arcs.55"/>
-  <places name="HuileMiliLitre_free" jeton="1000" liens="//@arcs.38 //@arcs.39"/>
-  <places name="Louche_free" jeton="1" liens="//@arcs.47 //@arcs.48"/>
-  <places name="Fouet_free" jeton="1"/>
-  <places name="PaireDeCiseaux_free" jeton="1" liens="//@arcs.58 //@arcs.59"/>
+  <places name="GruyereRapeeGramme_free" jeton="100" liens="//@arcs.77 //@arcs.78"/>
+  <places name="JambonTranche_free" jeton="4" liens="//@arcs.56 //@arcs.57"/>
+  <places name="HuileMiliLitre_free" jeton="1000" liens="//@arcs.40 //@arcs.41"/>
+  <places name="Louche_free" jeton="1" liens="//@arcs.49 //@arcs.50"/>
+  <places name="Fouet_free" jeton="1" liens="//@arcs.28 //@arcs.29"/>
+  <places name="PaireDeCiseaux_free" jeton="1" liens="//@arcs.60 //@arcs.61"/>
   <places name="Plat_free" jeton="1" liens="//@arcs.5 //@arcs.6"/>
-  <places name="Poele_free" jeton="1" liens="//@arcs.40 //@arcs.41"/>
-  <places name="Assiette_free" jeton="1" liens="//@arcs.56 //@arcs.57 //@arcs.80 //@arcs.81"/>
+  <places name="Poele_free" jeton="1" liens="//@arcs.42 //@arcs.43"/>
+  <places name="Assiette_free" jeton="1" liens="//@arcs.58 //@arcs.59 //@arcs.84 //@arcs.85"/>
   <places name="MettreFarinePlat_ready" jeton="1" liens="//@arcs.0"/>
   <places name="MettreFarinePlat_running" liens="//@arcs.2 //@arcs.3"/>
   <places name="MettreFarinePlat_started" liens="//@arcs.1"/>
-  <places name="MettreFarinePlat_finished" liens="//@arcs.4 //@arcs.87"/>
+  <places name="MettreFarinePlat_finished" liens="//@arcs.4 //@arcs.91"/>
   <places name="CasserOeuf_ready" jeton="1" liens="//@arcs.9"/>
   <places name="CasserOeuf_running" liens="//@arcs.11 //@arcs.12"/>
   <places name="CasserOeuf_started" liens="//@arcs.10"/>
-  <places name="CasserOeuf_finished" liens="//@arcs.13 //@arcs.88"/>
+  <places name="CasserOeuf_finished" liens="//@arcs.13 //@arcs.92"/>
   <places name="AjoutLait_ready" jeton="1" liens="//@arcs.16"/>
   <places name="AjoutLait_running" liens="//@arcs.18 //@arcs.19"/>
-  <places name="AjoutLait_started" liens="//@arcs.17 //@arcs.89"/>
-  <places name="AjoutLait_finished" liens="//@arcs.20 //@arcs.91"/>
+  <places name="AjoutLait_started" liens="//@arcs.17 //@arcs.93"/>
+  <places name="AjoutLait_finished" liens="//@arcs.20 //@arcs.95"/>
   <places name="MelangerAvecFouet_ready" jeton="1" liens="//@arcs.23"/>
   <places name="MelangerAvecFouet_running" liens="//@arcs.25 //@arcs.26"/>
   <places name="MelangerAvecFouet_started" liens="//@arcs.24"/>
-  <places name="MelangerAvecFouet_finished" liens="//@arcs.27 //@arcs.90"/>
-  <places name="LaisserReposer_ready" jeton="1" liens="//@arcs.28"/>
-  <places name="LaisserReposer_running" liens="//@arcs.30 //@arcs.31"/>
-  <places name="LaisserReposer_started" liens="//@arcs.29"/>
-  <places name="LaisserReposer_finished" liens="//@arcs.32 //@arcs.92"/>
-  <places name="MettrePoeleAChauffer_ready" jeton="1" liens="//@arcs.33"/>
-  <places name="MettrePoeleAChauffer_running" liens="//@arcs.35 //@arcs.36"/>
-  <places name="MettrePoeleAChauffer_started" liens="//@arcs.34"/>
-  <places name="MettrePoeleAChauffer_finished" liens="//@arcs.37 //@arcs.93"/>
-  <places name="CuirePremiereFaceGalette_ready" jeton="1" liens="//@arcs.42"/>
-  <places name="CuirePremiereFaceGalette_running" liens="//@arcs.44 //@arcs.45"/>
-  <places name="CuirePremiereFaceGalette_started" liens="//@arcs.43 //@arcs.94"/>
-  <places name="CuirePremiereFaceGalette_finished" liens="//@arcs.46 //@arcs.95"/>
-  <places name="CouperJambon_ready" jeton="1" liens="//@arcs.49"/>
-  <places name="CouperJambon_running" liens="//@arcs.51 //@arcs.52"/>
-  <places name="CouperJambon_started" liens="//@arcs.50"/>
-  <places name="CouperJambon_finished" liens="//@arcs.53 //@arcs.97"/>
-  <places name="CuireSecondeFaceGalette_ready" jeton="1" liens="//@arcs.60"/>
-  <places name="CuireSecondeFaceGalette_running" liens="//@arcs.62 //@arcs.63"/>
-  <places name="CuireSecondeFaceGalette_started" liens="//@arcs.61 //@arcs.96"/>
-  <places name="CuireSecondeFaceGalette_finished" liens="//@arcs.64 //@arcs.99"/>
-  <places name="MettreJambonSurGalette_ready" jeton="1" liens="//@arcs.65"/>
-  <places name="MettreJambonSurGalette_running" liens="//@arcs.67 //@arcs.68"/>
-  <places name="MettreJambonSurGalette_started" liens="//@arcs.66"/>
-  <places name="MettreJambonSurGalette_finished" liens="//@arcs.69 //@arcs.98"/>
-  <places name="MettreGruyere_ready" jeton="1" liens="//@arcs.70"/>
-  <places name="MettreGruyere_running" liens="//@arcs.72 //@arcs.73"/>
-  <places name="MettreGruyere_started" liens="//@arcs.71"/>
-  <places name="MettreGruyere_finished" liens="//@arcs.74 //@arcs.100"/>
-  <places name="MettreLaGaletteDansLAssiette_ready" jeton="1" liens="//@arcs.75"/>
-  <places name="MettreLaGaletteDansLAssiette_running" liens="//@arcs.77 //@arcs.78"/>
-  <places name="MettreLaGaletteDansLAssiette_started" liens="//@arcs.76"/>
-  <places name="MettreLaGaletteDansLAssiette_finished" liens="//@arcs.79 //@arcs.101 //@arcs.102"/>
-  <places name="DegusterGalette_ready" jeton="1" liens="//@arcs.82"/>
-  <places name="DegusterGalette_running" liens="//@arcs.84 //@arcs.85"/>
-  <places name="DegusterGalette_started" liens="//@arcs.83"/>
-  <places name="DegusterGalette_finished" liens="//@arcs.86"/>
+  <places name="MelangerAvecFouet_finished" liens="//@arcs.27 //@arcs.94"/>
+  <places name="LaisserReposer_ready" jeton="1" liens="//@arcs.30"/>
+  <places name="LaisserReposer_running" liens="//@arcs.32 //@arcs.33"/>
+  <places name="LaisserReposer_started" liens="//@arcs.31"/>
+  <places name="LaisserReposer_finished" liens="//@arcs.34 //@arcs.96"/>
+  <places name="MettrePoeleAChauffer_ready" jeton="1" liens="//@arcs.35"/>
+  <places name="MettrePoeleAChauffer_running" liens="//@arcs.37 //@arcs.38"/>
+  <places name="MettrePoeleAChauffer_started" liens="//@arcs.36"/>
+  <places name="MettrePoeleAChauffer_finished" liens="//@arcs.39 //@arcs.97"/>
+  <places name="CuirePremiereFaceGalette_ready" jeton="1" liens="//@arcs.44"/>
+  <places name="CuirePremiereFaceGalette_running" liens="//@arcs.46 //@arcs.47"/>
+  <places name="CuirePremiereFaceGalette_started" liens="//@arcs.45 //@arcs.98"/>
+  <places name="CuirePremiereFaceGalette_finished" liens="//@arcs.48 //@arcs.99"/>
+  <places name="CouperJambon_ready" jeton="1" liens="//@arcs.51"/>
+  <places name="CouperJambon_running" liens="//@arcs.53 //@arcs.54"/>
+  <places name="CouperJambon_started" liens="//@arcs.52"/>
+  <places name="CouperJambon_finished" liens="//@arcs.55 //@arcs.101"/>
+  <places name="CuireSecondeFaceGalette_ready" jeton="1" liens="//@arcs.62"/>
+  <places name="CuireSecondeFaceGalette_running" liens="//@arcs.64 //@arcs.65"/>
+  <places name="CuireSecondeFaceGalette_started" liens="//@arcs.63 //@arcs.100"/>
+  <places name="CuireSecondeFaceGalette_finished" liens="//@arcs.66 //@arcs.103"/>
+  <places name="MettreJambonSurGalette_ready" jeton="1" liens="//@arcs.67"/>
+  <places name="MettreJambonSurGalette_running" liens="//@arcs.69 //@arcs.70"/>
+  <places name="MettreJambonSurGalette_started" liens="//@arcs.68"/>
+  <places name="MettreJambonSurGalette_finished" liens="//@arcs.71 //@arcs.102"/>
+  <places name="MettreGruyere_ready" jeton="1" liens="//@arcs.72"/>
+  <places name="MettreGruyere_running" liens="//@arcs.74 //@arcs.75"/>
+  <places name="MettreGruyere_started" liens="//@arcs.73"/>
+  <places name="MettreGruyere_finished" liens="//@arcs.76 //@arcs.104"/>
+  <places name="MettreLaGaletteDansLAssiette_ready" jeton="1" liens="//@arcs.79"/>
+  <places name="MettreLaGaletteDansLAssiette_running" liens="//@arcs.81 //@arcs.82"/>
+  <places name="MettreLaGaletteDansLAssiette_started" liens="//@arcs.80"/>
+  <places name="MettreLaGaletteDansLAssiette_finished" liens="//@arcs.83 //@arcs.105 //@arcs.106"/>
+  <places name="DegusterGalette_ready" jeton="1" liens="//@arcs.86"/>
+  <places name="DegusterGalette_running" liens="//@arcs.88 //@arcs.89"/>
+  <places name="DegusterGalette_started" liens="//@arcs.87"/>
+  <places name="DegusterGalette_finished" liens="//@arcs.90"/>
   <arcs place="//@places.12" transition="//@transitions.0"/>
   <arcs place="//@places.14" transition="//@transitions.0" sens="transitionToPlace"/>
   <arcs place="//@places.13" transition="//@transitions.0" sens="transitionToPlace"/>
@@ -92,6 +92,8 @@
   <arcs place="//@places.25" transition="//@transitions.6" sens="transitionToPlace"/>
   <arcs place="//@places.25" transition="//@transitions.7"/>
   <arcs place="//@places.27" transition="//@transitions.7" sens="transitionToPlace"/>
+  <arcs place="//@places.7" transition="//@transitions.6"/>
+  <arcs place="//@places.7" transition="//@transitions.7" sens="transitionToPlace"/>
   <arcs place="//@places.28" transition="//@transitions.8"/>
   <arcs place="//@places.30" transition="//@transitions.8" sens="transitionToPlace"/>
   <arcs place="//@places.29" transition="//@transitions.8" sens="transitionToPlace"/>
@@ -139,6 +141,8 @@
   <arcs place="//@places.53" transition="//@transitions.20" sens="transitionToPlace"/>
   <arcs place="//@places.53" transition="//@transitions.21"/>
   <arcs place="//@places.55" transition="//@transitions.21" sens="transitionToPlace"/>
+  <arcs poids="20" place="//@places.3" transition="//@transitions.20"/>
+  <arcs poids="20" place="//@places.3" transition="//@transitions.21" sens="transitionToPlace"/>
   <arcs place="//@places.56" transition="//@transitions.22"/>
   <arcs place="//@places.58" transition="//@transitions.22" sens="transitionToPlace"/>
   <arcs place="//@places.57" transition="//@transitions.22" sens="transitionToPlace"/>
@@ -169,28 +173,28 @@
   <arcs place="//@places.59" transition="//@transitions.12" isReadArc="true"/>
   <transitions name="MettreFarinePlat_start" liens="//@arcs.0 //@arcs.1 //@arcs.2 //@arcs.5 //@arcs.7"/>
   <transitions name="MettreFarinePlat_finish" liens="//@arcs.3 //@arcs.4 //@arcs.6 //@arcs.8"/>
-  <transitions name="CasserOeuf_start" liens="//@arcs.9 //@arcs.10 //@arcs.11 //@arcs.14 //@arcs.87"/>
+  <transitions name="CasserOeuf_start" liens="//@arcs.9 //@arcs.10 //@arcs.11 //@arcs.14 //@arcs.91"/>
   <transitions name="CasserOeuf_finish" liens="//@arcs.12 //@arcs.13 //@arcs.15"/>
-  <transitions name="AjoutLait_start" liens="//@arcs.16 //@arcs.17 //@arcs.18 //@arcs.21 //@arcs.88"/>
+  <transitions name="AjoutLait_start" liens="//@arcs.16 //@arcs.17 //@arcs.18 //@arcs.21 //@arcs.92"/>
   <transitions name="AjoutLait_finish" liens="//@arcs.19 //@arcs.20 //@arcs.22"/>
-  <transitions name="MelangerAvecFouet_start" liens="//@arcs.23 //@arcs.24 //@arcs.25 //@arcs.89"/>
-  <transitions name="MelangerAvecFouet_finish" liens="//@arcs.26 //@arcs.27"/>
-  <transitions name="LaisserReposer_start" liens="//@arcs.28 //@arcs.29 //@arcs.30 //@arcs.90 //@arcs.91"/>
-  <transitions name="LaisserReposer_finish" liens="//@arcs.31 //@arcs.32"/>
-  <transitions name="MettrePoeleAChauffer_start" liens="//@arcs.33 //@arcs.34 //@arcs.35 //@arcs.38 //@arcs.40 //@arcs.92"/>
-  <transitions name="MettrePoeleAChauffer_finish" liens="//@arcs.36 //@arcs.37 //@arcs.39 //@arcs.41"/>
-  <transitions name="CuirePremiereFaceGalette_start" liens="//@arcs.42 //@arcs.43 //@arcs.44 //@arcs.47 //@arcs.93 //@arcs.102"/>
-  <transitions name="CuirePremiereFaceGalette_finish" liens="//@arcs.45 //@arcs.46 //@arcs.48"/>
-  <transitions name="CouperJambon_start" liens="//@arcs.49 //@arcs.50 //@arcs.51 //@arcs.54 //@arcs.56 //@arcs.58 //@arcs.94"/>
-  <transitions name="CouperJambon_finish" liens="//@arcs.52 //@arcs.53 //@arcs.55 //@arcs.57 //@arcs.59"/>
-  <transitions name="CuireSecondeFaceGalette_start" liens="//@arcs.60 //@arcs.61 //@arcs.62 //@arcs.95"/>
-  <transitions name="CuireSecondeFaceGalette_finish" liens="//@arcs.63 //@arcs.64"/>
-  <transitions name="MettreJambonSurGalette_start" liens="//@arcs.65 //@arcs.66 //@arcs.67 //@arcs.96"/>
-  <transitions name="MettreJambonSurGalette_finish" liens="//@arcs.68 //@arcs.69 //@arcs.97"/>
-  <transitions name="MettreGruyere_start" liens="//@arcs.70 //@arcs.71 //@arcs.72 //@arcs.98"/>
-  <transitions name="MettreGruyere_finish" liens="//@arcs.73 //@arcs.74"/>
-  <transitions name="MettreLaGaletteDansLAssiette_start" liens="//@arcs.75 //@arcs.76 //@arcs.77 //@arcs.80 //@arcs.99 //@arcs.100"/>
-  <transitions name="MettreLaGaletteDansLAssiette_finish" liens="//@arcs.78 //@arcs.79 //@arcs.81"/>
-  <transitions name="DegusterGalette_start" liens="//@arcs.82 //@arcs.83 //@arcs.84 //@arcs.101"/>
-  <transitions name="DegusterGalette_finish" liens="//@arcs.85 //@arcs.86"/>
+  <transitions name="MelangerAvecFouet_start" liens="//@arcs.23 //@arcs.24 //@arcs.25 //@arcs.28 //@arcs.93"/>
+  <transitions name="MelangerAvecFouet_finish" liens="//@arcs.26 //@arcs.27 //@arcs.29"/>
+  <transitions name="LaisserReposer_start" liens="//@arcs.30 //@arcs.31 //@arcs.32 //@arcs.94 //@arcs.95"/>
+  <transitions name="LaisserReposer_finish" liens="//@arcs.33 //@arcs.34"/>
+  <transitions name="MettrePoeleAChauffer_start" liens="//@arcs.35 //@arcs.36 //@arcs.37 //@arcs.40 //@arcs.42 //@arcs.96"/>
+  <transitions name="MettrePoeleAChauffer_finish" liens="//@arcs.38 //@arcs.39 //@arcs.41 //@arcs.43"/>
+  <transitions name="CuirePremiereFaceGalette_start" liens="//@arcs.44 //@arcs.45 //@arcs.46 //@arcs.49 //@arcs.97 //@arcs.106"/>
+  <transitions name="CuirePremiereFaceGalette_finish" liens="//@arcs.47 //@arcs.48 //@arcs.50"/>
+  <transitions name="CouperJambon_start" liens="//@arcs.51 //@arcs.52 //@arcs.53 //@arcs.56 //@arcs.58 //@arcs.60 //@arcs.98"/>
+  <transitions name="CouperJambon_finish" liens="//@arcs.54 //@arcs.55 //@arcs.57 //@arcs.59 //@arcs.61"/>
+  <transitions name="CuireSecondeFaceGalette_start" liens="//@arcs.62 //@arcs.63 //@arcs.64 //@arcs.99"/>
+  <transitions name="CuireSecondeFaceGalette_finish" liens="//@arcs.65 //@arcs.66"/>
+  <transitions name="MettreJambonSurGalette_start" liens="//@arcs.67 //@arcs.68 //@arcs.69 //@arcs.100"/>
+  <transitions name="MettreJambonSurGalette_finish" liens="//@arcs.70 //@arcs.71 //@arcs.101"/>
+  <transitions name="MettreGruyere_start" liens="//@arcs.72 //@arcs.73 //@arcs.74 //@arcs.77 //@arcs.102"/>
+  <transitions name="MettreGruyere_finish" liens="//@arcs.75 //@arcs.76 //@arcs.78"/>
+  <transitions name="MettreLaGaletteDansLAssiette_start" liens="//@arcs.79 //@arcs.80 //@arcs.81 //@arcs.84 //@arcs.103 //@arcs.104"/>
+  <transitions name="MettreLaGaletteDansLAssiette_finish" liens="//@arcs.82 //@arcs.83 //@arcs.85"/>
+  <transitions name="DegusterGalette_start" liens="//@arcs.86 //@arcs.87 //@arcs.88 //@arcs.105"/>
+  <transitions name="DegusterGalette_finish" liens="//@arcs.89 //@arcs.90"/>
 </petriNet:PetriNet>

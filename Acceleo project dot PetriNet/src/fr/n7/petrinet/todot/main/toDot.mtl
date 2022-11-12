@@ -16,19 +16,17 @@ digraph [aPetriNet.name/] {
 						[else]
 	['"'+place.name+' '+place.jeton+'"'/] -> [link.transition.name/] ['['/]label=[link.poids/] arrowhead=vee[']'/]
 						[/if]
-			
+	[link.transition.name/] ['['/]shape = box[']'/]			
 				[/for]
 			[/if]
 		[/for]
 	[/if]
 [/let]
-
 [let trans : OrderedSet(Transition) = aPetriNet.getTrans() ] 
 	[if (trans->size() > 0)]
 		[for (tran : Transition | trans)]
 			[if (tran.liens->size() > 0)]
 				[for (link : Arc | tran.getArcSortant())]
-
 						[if (link.isReadArc)]
 	[tran.name/] -> ['"'+link.place.name+' '+link.place.jeton+'"'/] ['['/]label=[link.poids/] arrowhead=box[']'/]
 						[else]

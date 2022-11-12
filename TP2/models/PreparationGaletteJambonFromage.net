@@ -69,8 +69,8 @@ net PreparationGaletteJambonFromage
 	tr CasserOeuf_finish CasserOeuf_running*1 -> CasserOeuf_finished*1 Oeufs_free*1   
 	tr AjoutLait_start AjoutLait_ready*1 LaitMiliLitre_free*200 CasserOeuf_finished?1 -> AjoutLait_started*1 AjoutLait_running*1   
 	tr AjoutLait_finish AjoutLait_running*1 -> AjoutLait_finished*1 LaitMiliLitre_free*200   
-	tr MelangerAvecFouet_start MelangerAvecFouet_ready*1 AjoutLait_started?1 -> MelangerAvecFouet_started*1 MelangerAvecFouet_running*1   
-	tr MelangerAvecFouet_finish MelangerAvecFouet_running*1 -> MelangerAvecFouet_finished*1   
+	tr MelangerAvecFouet_start MelangerAvecFouet_ready*1 Fouet_free*1 AjoutLait_started?1 -> MelangerAvecFouet_started*1 MelangerAvecFouet_running*1   
+	tr MelangerAvecFouet_finish MelangerAvecFouet_running*1 -> MelangerAvecFouet_finished*1 Fouet_free*1   
 	tr LaisserReposer_start LaisserReposer_ready*1 MelangerAvecFouet_finished?1 AjoutLait_finished?1 -> LaisserReposer_started*1 LaisserReposer_running*1   
 	tr LaisserReposer_finish LaisserReposer_running*1 -> LaisserReposer_finished*1   
 	tr MettrePoeleAChauffer_start MettrePoeleAChauffer_ready*1 HuileMiliLitre_free*10 Poele_free*1 LaisserReposer_finished?1 -> MettrePoeleAChauffer_started*1 MettrePoeleAChauffer_running*1   
@@ -83,8 +83,8 @@ net PreparationGaletteJambonFromage
 	tr CuireSecondeFaceGalette_finish CuireSecondeFaceGalette_running*1 -> CuireSecondeFaceGalette_finished*1   
 	tr MettreJambonSurGalette_start MettreJambonSurGalette_ready*1 CuireSecondeFaceGalette_started?1 -> MettreJambonSurGalette_started*1 MettreJambonSurGalette_running*1   
 	tr MettreJambonSurGalette_finish MettreJambonSurGalette_running*1 CouperJambon_finished?1 -> MettreJambonSurGalette_finished*1   
-	tr MettreGruyere_start MettreGruyere_ready*1 MettreJambonSurGalette_finished?1 -> MettreGruyere_started*1 MettreGruyere_running*1   
-	tr MettreGruyere_finish MettreGruyere_running*1 -> MettreGruyere_finished*1   
+	tr MettreGruyere_start MettreGruyere_ready*1 GruyereRapeeGramme_free*20 MettreJambonSurGalette_finished?1 -> MettreGruyere_started*1 MettreGruyere_running*1   
+	tr MettreGruyere_finish MettreGruyere_running*1 -> MettreGruyere_finished*1 GruyereRapeeGramme_free*20   
 	tr MettreLaGaletteDansLAssiette_start MettreLaGaletteDansLAssiette_ready*1 Assiette_free*1 CuireSecondeFaceGalette_finished?1 MettreGruyere_finished?1 -> MettreLaGaletteDansLAssiette_started*1 MettreLaGaletteDansLAssiette_running*1   
 	tr MettreLaGaletteDansLAssiette_finish MettreLaGaletteDansLAssiette_running*1 -> MettreLaGaletteDansLAssiette_finished*1 Assiette_free*1   
 	tr DegusterGalette_start DegusterGalette_ready*1 MettreLaGaletteDansLAssiette_finished?1 -> DegusterGalette_started*1 DegusterGalette_running*1   
