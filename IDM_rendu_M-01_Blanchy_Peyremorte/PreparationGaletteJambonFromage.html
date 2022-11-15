@@ -1,0 +1,20 @@
+<head><title>PreparationGaletteJambonFromage</title></head>
+<body>
+<h1>Process "PreparationGaletteJambonFromage"</h1>
+<h2>Work definitions</h2>
+  <ul>
+    <li>MettreFarinePlat</li>
+    <li>CasserOeuf requires MettreFarinePlat to be finished.</li>
+    <li>AjoutLait requires CasserOeuf to be finished.</li>
+    <li>MelangerAvecFouet requires AjoutLait to be started.</li>
+    <li>LaisserReposer requires MelangerAvecFouet to be finished.</li>
+    <li>MettrePoeleAChauffer requires LaisserReposer to be finished.</li>
+    <li>CuirePremiereFaceGalette requires MettrePoeleAChauffer to be finished, MettreLaGaletteDansLAssiette to be finished.</li>
+    <li>CouperJambon requires CuirePremiereFaceGalette to be started.</li>
+    <li>CuireSecondeFaceGalette requires CuirePremiereFaceGalette to be finished.</li>
+    <li>MettreJambonSurGalette requires CuireSecondeFaceGalette to be started, CouperJambon to be finished.</li>
+    <li>MettreGruyere requires MettreJambonSurGalette to be finished.</li>
+    <li>MettreLaGaletteDansLAssiette requires CuireSecondeFaceGalette to be finished.</li>
+    <li>DegusterGalette requires MettreLaGaletteDansLAssiette to be finished.</li>
+  </ul> 
+</body>

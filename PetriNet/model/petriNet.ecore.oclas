@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pivot:Model [
+<!ENTITY _0 "http://www.eclipse.org/ocl/2015/Library.oclas">
+<!ENTITY _1 "http://www.eclipse.org/emf/2002/Ecore.oclas">
+]>
+<pivot:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pivot="http://www.eclipse.org/ocl/2015/Pivot"
+    xsi:schemaLocation="http://www.eclipse.org/ocl/2015/Pivot java://org.eclipse.ocl.pivot.PivotPackage" xmi:id="AAAAA" name="petriNet.ecore.oclas" externalURI="platform:/resource/fr.n7.PetriNet/model/petriNet.ecore.oclas" xmiidVersion="1">
+  <ownedPackages xmi:id="h+Jom" name="petriNet" URI="http://petrinet" nsPrefix="petriNet">
+    <ownedClasses xmi:id="J7D+z" name="Place" superClasses="&_0;#zfDWR">
+      <ownedProperties xmi:id="IrjKy" name="name" type="pivot:PrimitiveType &_0;#AlwVZ"/>
+      <ownedProperties xmi:id="1ZC,3" name="jeton" type="pivot:DataType &_1;#1EhKl"/>
+      <ownedProperties xmi:id="K6eG4" name="liens" type="#gqa2a" opposite="#jl3gi"/>
+      <ownedProperties xmi:id="anG+x" name="net" type="#pg0+Q" opposite="#pxWUs"/>
+    </ownedClasses>
+    <ownedClasses xmi:id="X95a," name="Transition" superClasses="&_0;#zfDWR">
+      <ownedProperties xmi:id="eElUd" name="name" type="pivot:PrimitiveType &_0;#AlwVZ"/>
+      <ownedProperties xmi:id="gTgQj" name="liens" type="#dra2a" opposite="#x2gY1"/>
+      <ownedProperties xmi:id="wAIId" name="net" type="#pg0+Q" opposite="#bHWR1"/>
+    </ownedClasses>
+    <ownedClasses xmi:id="Ug1Xv" name="Arc" superClasses="&_0;#zfDWR">
+      <ownedProperties xmi:id="1SPhi" name="poids" type="pivot:DataType &_1;#1EhKl" defaultValueString="1"/>
+      <ownedProperties xmi:id="jl3gi" name="place" type="#J7D+z" opposite="#K6eG4"/>
+      <ownedProperties xmi:id="x2gY1" name="transition" type="#X95a," opposite="#gTgQj"/>
+      <ownedProperties xmi:id="z,GXc" name="sens" type="#LLj9l"/>
+      <ownedProperties xmi:id="uCS,5" name="isReadArc" type="pivot:PrimitiveType &_0;#XEMMs"/>
+      <ownedProperties xmi:id="5nEKc" name="net" type="#pg0+Q" opposite="#+RPQn"/>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:Enumeration" xmi:id="LLj9l" name="ArcSens" superClasses="&_0;#+8+by">
+      <ownedLiterals xmi:id="D2Vq9" name="placeToTransition"/>
+      <ownedLiterals xmi:id="jjuh," name="transitionToPlace" value="1"/>
+    </ownedClasses>
+    <ownedClasses xmi:id="pg0+Q" name="PetriNet" superClasses="&_0;#zfDWR">
+      <ownedProperties xmi:id="o6pRn" name="name" type="pivot:PrimitiveType &_0;#AlwVZ"/>
+      <ownedProperties xmi:id="pxWUs" name="places" type="#N+dA0" isComposite="true" opposite="#anG+x"/>
+      <ownedProperties xmi:id="+RPQn" name="arcs" type="#gqa2a" isComposite="true" opposite="#5nEKc"/>
+      <ownedProperties xmi:id="bHWR1" name="transitions" type="#rDnHv" isComposite="true" opposite="#wAIId"/>
+    </ownedClasses>
+  </ownedPackages>
+  <ownedPackages name="$$" URI="http://www.eclipse.org/ocl/2015/Orphanage" nsPrefix="orphanage">
+    <ownedClasses xsi:type="pivot:OrderedSetType" xmi:id="gqa2a" name="OrderedSet" superClasses="#RT9B8 #193m1" isNullFree="true">
+      <ownedBindings>
+        <ownedSubstitutions actual="#Ug1Xv" formal="&_0;#53+C2"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:OrderedSetType" xmi:id="dra2a" name="OrderedSet" superClasses="#RT9B8 #193m1" isNullFree="true" lower="1">
+      <ownedBindings>
+        <ownedSubstitutions actual="#Ug1Xv" formal="&_0;#53+C2"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:OrderedSetType" xmi:id="N+dA0" name="OrderedSet" superClasses="#+mAMV #iR7wO" isNullFree="true">
+      <ownedBindings>
+        <ownedSubstitutions actual="#J7D+z" formal="&_0;#53+C2"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:OrderedSetType" xmi:id="rDnHv" name="OrderedSet" superClasses="#csJTQ #AXE4J" isNullFree="true">
+      <ownedBindings>
+        <ownedSubstitutions actual="#X95a," formal="&_0;#53+C2"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="RT9B8" name="OrderedCollection" superClasses="#EDIrF">
+      <ownedBindings>
+        <ownedSubstitutions actual="#Ug1Xv" formal="&_0;#feFHs"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="193m1" name="UniqueCollection" superClasses="#EDIrF">
+      <ownedBindings>
+        <ownedSubstitutions actual="#Ug1Xv" formal="&_0;#jdfjE"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="+mAMV" name="OrderedCollection" superClasses="#xWL1e">
+      <ownedBindings>
+        <ownedSubstitutions actual="#J7D+z" formal="&_0;#feFHs"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="iR7wO" name="UniqueCollection" superClasses="#xWL1e">
+      <ownedBindings>
+        <ownedSubstitutions actual="#J7D+z" formal="&_0;#jdfjE"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="csJTQ" name="OrderedCollection" superClasses="#PcU8Z">
+      <ownedBindings>
+        <ownedSubstitutions actual="#X95a," formal="&_0;#feFHs"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="AXE4J" name="UniqueCollection" superClasses="#PcU8Z">
+      <ownedBindings>
+        <ownedSubstitutions actual="#X95a," formal="&_0;#jdfjE"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="EDIrF" name="Collection" superClasses="&_0;#jbMkR">
+      <ownedBindings>
+        <ownedSubstitutions actual="#Ug1Xv" formal="&_0;#qs59R"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="xWL1e" name="Collection" superClasses="&_0;#jbMkR">
+      <ownedBindings>
+        <ownedSubstitutions actual="#J7D+z" formal="&_0;#qs59R"/>
+      </ownedBindings>
+    </ownedClasses>
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="PcU8Z" name="Collection" superClasses="&_0;#jbMkR">
+      <ownedBindings>
+        <ownedSubstitutions actual="#X95a," formal="&_0;#qs59R"/>
+      </ownedBindings>
+    </ownedClasses>
+  </ownedPackages>
+</pivot:Model>

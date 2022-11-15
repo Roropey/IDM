@@ -1,0 +1,62 @@
+import 'SimplePDL.ecore'
+
+package simplepdl
+
+--Tests pour Process
+	--Name
+context Process
+inv validNameProcess('Invalid name: ' + self.name+ '.'):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+context Process
+inv lengthNameProcess('Invalid length name: ' + self.name+ '.'):
+	self.name.size() >= 2	
+
+--Tests pour WorkDefinition (Activité)
+	--Name
+context WorkDefinition
+inv validNameWD('Invalid name: ' + self.name+ '.'):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+context WorkDefinition
+inv lengthNameWD('Invalid length name: ' + self.name+ '.'):
+	self.name.size() >= 2
+
+context Process
+inv NomsActivites('Les noms de deux activités différentes de ' + self.name + ' sont dentiques.'):
+	self.processElements->select(p:ProcessElement | p.oclIsKindOf(WorkDefinition))
+						->collect(p:ProcessElement | p.oclAsType(WorkDefinition))
+						->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
+						
+--Tests pour WorkSequence												
+	--Predecessor/Successor
+context WorkSequence
+inv Reflexivite('Dépendance réflexive entre ' + self.predecessor.name + ' et ' + self.successor.name + '.'):
+	self.predecessor <> self.successor
+			
+--Tests pour Ressource
+	--Name
+context Ressource
+inv validNameRessource('Invalid name: ' + self.name+ '.'):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+context Ressource
+inv lengthNameRessource('Invalid length name: ' + self.name+ '.'):
+	self.name.size() >= 2
+	
+context Process
+inv NomsRessources('Les noms de deux ressources différentes de ' + self.name + ' sont dentiques.'):
+	self.processElements->select(p:ProcessElement | p.oclIsKindOf(Ressource))
+						->collect(p:ProcessElement | p.oclAsType(Ressource))
+						->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
+						
+	--Stock
+context Ressource
+inv stockPositif('La ressource '+self.name+' a un stock négatif.'): self.stock >= 0
+
+--Tests pour AskedRessource
+	--Quantity
+context AskedRessource
+inv demandePositif('L\'activité demande une quantité négative.'): self.quantity>=0
+
+endpackage

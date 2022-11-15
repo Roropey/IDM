@@ -169,7 +169,7 @@
       successor="//@processElements.28"/>
   <processElements
       xsi:type="simplepdl:WorkDefinition"
-      linksToPredecessors="//@processElements.27 //@processElements.43"
+      linksToPredecessors="//@processElements.27"
       linksToSuccessors="//@processElements.29 //@processElements.31"
       name="CuirePremiereFaceGalette">
     <askedRessource
@@ -246,7 +246,7 @@
   <processElements
       xsi:type="simplepdl:WorkDefinition"
       linksToPredecessors="//@processElements.38 //@processElements.39"
-      linksToSuccessors="//@processElements.41 //@processElements.43"
+      linksToSuccessors="//@processElements.41"
       name="MettreLaGaletteDansLAssiette">
     <askedRessource
         ressource="//@processElements.12"
@@ -261,11 +261,6 @@
       xsi:type="simplepdl:WorkDefinition"
       linksToPredecessors="//@processElements.41"
       name="DegusterGalette"/>
-  <processElements
-      xsi:type="simplepdl:WorkSequence"
-      linkType="finishToStart"
-      predecessor="//@processElements.40"
-      successor="//@processElements.28"/>
   <processElements
       xsi:type="simplepdl:Guidance"
       elements="//@processElements.27 //@processElements.28 //@processElements.29 //@processElements.30 //@processElements.31 //@processElements.32 //@processElements.33 //@processElements.34 //@processElements.35 //@processElements.36 //@processElements.37 //@processElements.38 //@processElements.39 //@processElements.40 //@processElements.30/@askedRessource.2 //@processElements.14/@askedRessource.0 //@processElements.26/@askedRessource.1 //@processElements.30/@askedRessource.1 //@processElements.40/@askedRessource.0"

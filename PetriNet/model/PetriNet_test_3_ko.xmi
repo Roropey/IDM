@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<petriNet:PetriNet
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:petriNet="http://petrinet"
+    xsi:schemaLocation="http://petrinet petriNet.ecore"
+    name="0 Faux">
+  <places name="10 Negatifs"
+      jeton="-10"
+      liens="//@arcs.0"/>
+  <places name="0 nom faux"
+      jeton="40"/>
+  <arcs poids="-5"
+      place="//@places.0"
+      transition="//@transitions.0"/>
+  <transitions
+      name=" 4 non faux"
+      liens="//@arcs.0"/>
+  <transitions
+      name="Transition vide"/>
+</petriNet:PetriNet>

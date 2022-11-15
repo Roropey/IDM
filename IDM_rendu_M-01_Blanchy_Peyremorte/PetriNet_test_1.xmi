@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<petriNet:PetriNet
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:petriNet="http://petrinet"
+    xsi:schemaLocation="http://petrinet petriNet.ecore"
+    name="TestCompositionClassique">
+  <places name="Place1"
+      liens="//@arcs.0"/>
+  <places name="Place2"
+      liens="//@arcs.1"/>
+  <places name="Place3"
+      liens="//@arcs.2"/>
+  <arcs place="//@places.0"
+      transition="//@transitions.0"/>
+  <arcs place="//@places.1"
+      transition="//@transitions.0"
+      sens="transitionToPlace"/>
+  <arcs place="//@places.2"
+      transition="//@transitions.0"
+      sens="transitionToPlace"/>
+  <transitions
+      name="Transition1"
+      liens="//@arcs.0 //@arcs.1 //@arcs.2"/>
+</petriNet:PetriNet>

@@ -1,0 +1,39 @@
+[comment encoding = UTF-8 /]
+[module toTina('http://petrinet')]
+
+
+[template public petriNetToTina(aPetriNet : PetriNet)]
+[comment @main/]
+[file (aPetriNet.name + '.net', false, 'UTF-8')]
+net [aPetriNet.name/]
+[let places : OrderedSet(Place) = aPetriNet.getPlaces() ]
+[let trans : OrderedSet(Transition) = aPetriNet.getTrans() ]
+	[for (p : Place | places)]
+	pl [p.name/] ([p.jeton/])
+	[/for]
+	[for (t : Transition | trans) ] 
+	tr [t.name/] [for (a : Arc | t.getArcEntrant())][a.place.name/][if (a.isReadArc)]?[elseif (a.poids > 0)]*[/if][if (a.poids > 0)][a.poids/][/if] [/for]-> [for (a : Arc | t.getArcSortant())][a.place.name/][if (a.isReadArc)]?[elseif (a.poids > 0)]*[/if][if (a.poids > 0)][a.poids/][/if] [/for]  
+	[/for]
+[/let]
+[/let]
+
+[/file]
+[/template]
+
+
+[query public getPlaces(p: PetriNet) : OrderedSet(Place) = 
+	p.places->asOrderedSet()
+/]
+[query public getTrans(p: PetriNet) : OrderedSet(Transition) = 
+	p.transitions->asOrderedSet()
+/]
+
+[comment revoir les getArc car problemes : pas affichage entree/sortie des transitions/]
+[query public getArcSortant(t: Transition) : OrderedSet(Arc) = 
+	t.liens->select( p | p.sens = ArcSens::transitionToPlace )
+		->asOrderedSet()
+/]
+[query public getArcEntrant(t: Transition) : OrderedSet(Arc) = 
+	t.liens->select( p | p.sens = ArcSens::placeToTransition )
+		->asOrderedSet()
+/]

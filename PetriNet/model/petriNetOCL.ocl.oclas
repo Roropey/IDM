@@ -69,8 +69,8 @@
               <ownedParts name="status" type="pivot:PrimitiveType &_1;#XEMMs">
                 <ownedInit xsi:type="pivot:IteratorExp" name="forAll" isRequired="false" type="pivot:PrimitiveType &_1;#XEMMs" referredIteration="&_1;#YtmML">
                   <ownedSource xsi:type="pivot:IteratorExp" name="collect" type="#ZaAGk" referredIteration="&_1;#jV1iE">
-                    <ownedSource xsi:type="pivot:IteratorExp" name="select" type="#0LtBo" referredIteration="&_1;#1ky8V">
-                      <ownedSource xsi:type="pivot:PropertyCallExp" name="petriElements" type="#0LtBo" referredProperty="&_0;#KbkPd">
+                    <ownedSource xsi:type="pivot:IteratorExp" name="select" type="#zyaTZ" referredIteration="&_1;#1ky8V">
+                      <ownedSource xsi:type="pivot:PropertyCallExp" name="petriElements" type="#zyaTZ" referredProperty="&_0;#KbkPd">
                         <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#pg0+Q" referredVariable="#1Vi2L"/>
                       </ownedSource>
                       <ownedBody xsi:type="pivot:OperationCallExp" name="oclBadOperation" isRequired="false" type="pivot:InvalidType &_1;#urQRp"
@@ -126,8 +126,8 @@
               <ownedParts name="status" type="pivot:PrimitiveType &_1;#XEMMs">
                 <ownedInit xsi:type="pivot:IteratorExp" name="forAll" isRequired="false" type="pivot:PrimitiveType &_1;#XEMMs" referredIteration="&_1;#YtmML">
                   <ownedSource xsi:type="pivot:IteratorExp" name="collect" type="#3fJNf" referredIteration="&_1;#jV1iE">
-                    <ownedSource xsi:type="pivot:IteratorExp" name="select" type="#0LtBo" referredIteration="&_1;#1ky8V">
-                      <ownedSource xsi:type="pivot:PropertyCallExp" name="petriElements" type="#0LtBo" referredProperty="&_0;#KbkPd">
+                    <ownedSource xsi:type="pivot:IteratorExp" name="select" type="#zyaTZ" referredIteration="&_1;#1ky8V">
+                      <ownedSource xsi:type="pivot:PropertyCallExp" name="petriElements" type="#zyaTZ" referredProperty="&_0;#KbkPd">
                         <ownedSource xsi:type="pivot:VariableExp" name="self" type="pivot:Class &_0;#pg0+Q" referredVariable="#RtDLS"/>
                       </ownedSource>
                       <ownedBody xsi:type="pivot:OperationCallExp" name="oclBadOperation" isRequired="false" type="pivot:InvalidType &_1;#urQRp"
@@ -361,7 +361,7 @@
         <ownedSubstitutions actual="pivot:Class &_0;#J7D+z" formal="&_1;#l1i6D"/>
       </ownedBindings>
     </ownedClasses>
-    <ownedClasses xsi:type="pivot:OrderedSetType" xmi:id="0LtBo" name="OrderedSet" superClasses="#l0PNJ #JfKyC" isNullFree="true">
+    <ownedClasses xsi:type="pivot:OrderedSetType" xmi:id="zyaTZ" name="OrderedSet" superClasses="#kb9e6 #IG4D0" isNullFree="true">
       <ownedBindings>
         <ownedSubstitutions actual="pivot:Class &_0;#IiFVo" formal="&_1;#53+C2"/>
       </ownedBindings>
@@ -381,12 +381,12 @@
         <ownedSubstitutions actual="pivot:Class &_0;#J7D+z" formal="&_1;#feFHs"/>
       </ownedBindings>
     </ownedClasses>
-    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="l0PNJ" name="OrderedCollection" superClasses="#Yka2S">
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="kb9e6" name="OrderedCollection" superClasses="#XLIIE">
       <ownedBindings>
         <ownedSubstitutions actual="pivot:Class &_0;#IiFVo" formal="&_1;#feFHs"/>
       </ownedBindings>
     </ownedClasses>
-    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="JfKyC" name="UniqueCollection" superClasses="#Yka2S">
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="IG4D0" name="UniqueCollection" superClasses="#XLIIE">
       <ownedBindings>
         <ownedSubstitutions actual="pivot:Class &_0;#IiFVo" formal="&_1;#jdfjE"/>
       </ownedBindings>
@@ -411,7 +411,7 @@
         <ownedSubstitutions actual="pivot:Class &_0;#J7D+z" formal="&_1;#qs59R"/>
       </ownedBindings>
     </ownedClasses>
-    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="Yka2S" name="Collection" superClasses="&_1;#jbMkR">
+    <ownedClasses xsi:type="pivot:CollectionType" xmi:id="XLIIE" name="Collection" superClasses="&_1;#jbMkR">
       <ownedBindings>
         <ownedSubstitutions actual="pivot:Class &_0;#IiFVo" formal="&_1;#qs59R"/>
       </ownedBindings>
